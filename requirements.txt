@@ -1,0 +1,5 @@
+numpy
+pandas
+scikit-learn
+# optional. only explore_pos.py uses it, and the script runs without it
+spacy
