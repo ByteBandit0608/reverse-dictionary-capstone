@@ -6,6 +6,9 @@
   "tied definition": 1,
   "unreachable": 213
  },
+ "median_rank_of_those": 13,
+ "n_gold_in_top100_but_not_first": 116,
  "n_queries_total": 484,
- "pct_queries_where_cue_disagrees_with_gold_class": 17.36
+ "pct_misses_where_a_hard_pos_filter_would_drop_gold": 1.45,
+ "pct_misses_where_rank1_is_named_in_the_definition": 14.46
 }

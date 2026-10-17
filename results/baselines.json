@@ -59,6 +59,9 @@
  "n_failures": 484,
  "n_queries": 500,
  "pct_queries_unreachable_without_self_row": 42.6,
+ "pct_queries_with_tie": 0.8,
+ "pct_rows_tied_3_tokens_or_more": 1.1,
+ "pct_rows_tied_under_3_tokens": 56.4,
  "random": {
   "in_dictionary": {
    "strict": {
@@ -79,7 +82,7 @@
    }
   }
  },
- "runtime_sec": 23.7,
+ "runtime_sec": 24.1,
  "table": [
   {
    "median_rank": 1,
