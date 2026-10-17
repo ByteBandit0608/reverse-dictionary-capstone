@@ -98,11 +98,12 @@ two numbers from `splits/manifest.json` set the ceilings for what the table can 
 - pct_reachable_when_self_removed is 57.4. under leave_one_out, 42.6% of the queries lose their
   word completely, because that word had exactly one row and that row is the query. so the honest
   ceiling on that protocol is about 0.574 and not 1.0
-- ceiling_strict_top1 is 0.996 on our 500 queries. the corpus level tie rate is 10.2% of rows
-  sharing a definition string, but among our queries it is 0.8%. the reason is almost certainly
-  that repeated definition strings are short ones and the query rule asks for 3 tokens or more,
-  which is worth one line to confirm before we quote either figure. the 0.944 we quoted in the EDA
-  was the whole corpus, so if someone compares the two numbers, that is the difference
+- ceiling_strict_top1 is 0.996 on our 500 queries and that is not an off by one. tie rate by
+  definition length, measured: 10.2% over all 170,140 rows, 56.4% among rows under 3 tokens,
+  1.1% among rows of 3 tokens or more. so repeated definition strings are the very short ones,
+  and our query rule which asks for 3 tokens or more filters them out. that is why the query set
+  is nearly tie free while the corpus is not. quote 0.996 for the metric table, and 0.944 only
+  when talking about the file as a whole, they are different denominators
 
 he said human written / colloquial queries are not needed for now, the held out set is enough,
 and that colloquial queries would be harder for the model. so we are not building any. if the
@@ -144,6 +145,76 @@ not OPTED so the comparison needs a word level mapping. three ways to go:
 
 needs one owner from the team. whatever happens it goes to results/wantwords.md.
 
+## baseline results, run of 17 Oct on the pushed split
+
+| method | protocol | R@1 | R@10 | R@100 | medrank | self@1 |
+|---|---|---|---|---|---|---|
+| bm25 | in_dictionary | 0.998 | 1.000 | 1.000 | 1 | 99.8% |
+| bm25 | leave_one_out | 0.032 | 0.132 | 0.264 | 1000 | 0.0% |
+| tfidf | in_dictionary | 0.998 | 1.000 | 1.000 | 1 | 99.8% |
+| tfidf | leave_one_out | 0.022 | 0.120 | 0.274 | 1000 | 0.0% |
+| random | in_dictionary | 0.000 | 0.000 | 0.004 | 1000 | 0.0% |
+| word_freq | in_dictionary | 0.000 | 0.000 | 0.000 | 1000 | 0.0% |
+
+the in_dictionary row is the self match and not skill, 499 of 500 had their own definition row at
+rank 1. leave_one_out is the column a learned model has to beat.
+
+over the 287 queries still answerable after the row is removed, bm25 is R@1 5.6% and R@100 46.0%.
+so there is somewhere for a dense model to go. 100 of those 287 share no term at all with any
+surviving row, which no lexical method can fix, that is the argument for the neural model rather
+than tuning bm25 further. median rank on leave_one_out is reported as 1000 because that is where
+we cap it, 368 of 500 never appear in the top 100 at all.
+
+bm25 0.032 against tfidf 0.022 is 16 queries against 11. not a finding, do not present it as one.
+
+the failure buckets add back to the recall columns exactly, which is how we checked the two
+scripts agree: 16 at rank 1, plus 50 more by rank 10 which is the right word but deep bucket,
+plus 66 more by rank 100, leaves 368 unretrieved, which is 213 unreachable plus 100 with no
+lexical overlap plus 55 out ranked past 100.
+
+## what the pos and role features came back with
+
+run of 17 Oct, from `results/pos_roles.md`. the short version is that POS is a real column and the
+ending is a real signal, and neither one separates astronomer from astronomy.
+
+- 97.91% of rows carry a tag, 273 distinct strings, top ones `n.` 81,092 then `a.` 34,596 and
+  `v. t.` 17,977. the EDA claim that the column was empty was our parsing error, not the data
+- 9.86% of headwords have senses with more than one POS, so the tag is per sense. that is why it
+  goes in as a feature beside the model and not as a filter over the whole word
+- 31.6% of the queries open with a cue that states the answer type, and the cue names the gold POS
+  95.6% of the time, yet a hard filter would still drop the gold answer for 4.4% of them
+- the karak point he asked about: 17 "person who" queries, gold is a noun in 100% of them, and
+  only 17.0% of all nouns in the file are agentive while 88.2% of those 17 gold words are. so the
+  ending carries about a 5x lift that the POS tag cannot see. small sample, say the 17 out loud
+- 24.2% of the whole corpus opens with a role phrase, so the role is written in the text and needs
+  no parser. agent 5,017 rows, patient 38, which is worth knowing: OPTED almost never writes a
+  patient style definition, so the patient feature will be sparse and should not be oversold
+- spaCy agrees with the column on 52.7% of sampled headwords. the tagger sees a bare word with no
+  sentence and picks the most common usage, the file knows which sense the row is. so the tagger is
+  a cross check and the column is the source
+- 0.6% of the answers are multi word entries which no POS filter can handle at all
+
+## what the failures look like, read by hand
+
+the 20 query failure analysis in the brief. `src/error_analysis.py` takes 5 from each category now
+instead of the first 20 rows, and inside a category it prefers the cases where rank 1 is a word the
+definition itself lists, because those are the ones worth a sentence.
+
+two numbers from `results/failures_annotated.csv` that change how the 0.032 reads:
+
+- 14.5% of the 484 misses returned, at rank 1, a word that appears in the query definition as a
+  synonym. Abolishment came back as Abolition, Admissible as Permissible, Amorphous as Crystalline.
+  so the retriever is mostly not lost, it hands back a different dictionary word for the same idea
+  and the strict metric calls that wrong. this is the argument for a synonym aware metric, and it
+  is the same argument as the tolerant column but counted where it matters
+- 116 queries had the gold word inside the top 100 but not at rank 1, median rank 13, 90th
+  percentile 68. that is the reorder pool. a dense model does not have to find these, only rank
+  them higher, which is why R@100 0.264 next to R@1 0.032 is not a contradiction and why the
+  reranker is on the plan
+
+the rest of the misses are structural. 213 unreachable because the protocol deleted the only row,
+100 with no shared term at all, which is the part a lexical method can never fix.
+
 ## running it
 
 local, from the repo root, needs numpy pandas scikit-learn (spacy optional):
@@ -168,9 +239,11 @@ the scripts are deterministic, same seed same splits same queries same tables.
 ## open
 
 - wantwords baseline, assigned to someone, this week
-- the 20 failures need a human read. the script does the categories, not the judgement
+- the 20 failures need a human read. the script picks them now, the judgement column is
+  still blank and that is ours to write
+- rerun run_baselines.py and error_analysis.py after the note wording fix, results/ has
+  the old sentence about the 0.996 ceiling in it
 - ask: which number is the headline one for the report, in_dictionary or leave_one_out
 - check whether their released model can be used for inference only or whether he expects us to
   retrain their architecture
-- confirm the 0.8% vs 10.2% tie gap is the 3 token query rule, then fix which ceiling we quote
 - he will push reference papers to the repo once the dataset is up. nothing there yet

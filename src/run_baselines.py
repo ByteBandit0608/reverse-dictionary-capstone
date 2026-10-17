@@ -180,6 +180,11 @@ def main():
            "ceiling_strict_top1": R.ceilings(df, qidx)["ceiling_strict_top1"],
            "pct_queries_unreachable_without_self_row": round(only_row, 2),
            "n_queries": int(nq), "runtime_sec": 0}
+    na = df.loc[qidx, "n_accept"]
+    out["pct_queries_with_tie"] = round(float((na > 1).mean()) * 100, 1)
+    short = df["ntok"] < 3
+    out["pct_rows_tied_under_3_tokens"] = round(float((df.loc[short, "n_accept"] > 1).mean()) * 100, 1)
+    out["pct_rows_tied_3_tokens_or_more"] = round(float((df.loc[~short, "n_accept"] > 1).mean()) * 100, 1)
     table = []
     for (name, proto), (rows, words) in methods.items():
         strict = summarise(rows, words, df, qidx, "strict")
@@ -258,9 +263,14 @@ def write_md(out, meta):
              % out["pct_queries_unreachable_without_self_row"])
     L.append("- tol column counts any word sharing the same definition string. string rule, "
              "not wordnet, so it undercounts. details in notes.md")
-    L.append("- strict R@1 cant pass %.3f on this set even with a perfect ranker, because "
-             "%.2f%% of rows share a definition with another word."
-             % (out["ceiling_strict_top1"], meta["pct_shared_def"]))
+    L.append("- strict R@1 cant pass %.3f on this set, because %.1f%% of these queries share the "
+             "exact string with another word. the file as a whole is %.2f%% tied, but a tied "
+             "string is nearly always a short one: %.1f%% tied among definitions under 3 tokens "
+             "against %.1f%% among those of 3 or more. our query rule asks for 3 tokens, so the "
+             "corpus figure and the query figure are different denominators and not a "
+             "contradiction."
+             % (out["ceiling_strict_top1"], out["pct_queries_with_tie"], meta["pct_shared_def"],
+                out["pct_rows_tied_under_3_tokens"], out["pct_rows_tied_3_tokens_or_more"]))
     L.append("- word_freq is 0 because it is fitted on train words and every query here is a "
              "held out word. a row level split would have hidden that, which is the main "
              "argument for splitting by word.")

@@ -1,0 +1,73 @@
+{
+ "agent_cue_queries": 17,
+ "cue_matches_gold_pos_pct": 95.57,
+ "cue_matches_gold_suffix_pct": 89.87,
+ "gold_pos_distribution": {
+  "adj": 119,
+  "adv": 5,
+  "interj": 1,
+  "missing": 6,
+  "noun": 278,
+  "other": 6,
+  "partic": 2,
+  "verb": 83
+ },
+ "headword_class_distribution": {
+  "adj": 16739,
+  "agent": 8976,
+  "noun_thing": 10541,
+  "other": 65816,
+  "place": 1358,
+  "verb": 3602
+ },
+ "headword_suffix_coverage_pct": 38.51,
+ "patient_or_instrument_cue_queries": 2,
+ "pct_agent_cue_gold_is_noun": 100.0,
+ "pct_agent_cue_headword_is_agentive": 88.24,
+ "pct_agent_role_headword_is_agentive": 87.5,
+ "pct_corpus_with_a_role": 24.18,
+ "pct_lost_by_hard_filter": 4.43,
+ "pct_multiword_answers": 0.6,
+ "pct_nouns_that_are_agentive": 17.02,
+ "pct_pos_column_filled": 97.91,
+ "pct_queries_with_a_cue": 31.6,
+ "pct_words_whose_senses_differ_in_pos": 9.86,
+ "pos_source": "csv column",
+ "queries": 500,
+ "role_counts_corpus": {
+  "action": 29173,
+  "agent": 5017,
+  "instrument": 360,
+  "location": 770,
+  "none": 129000,
+  "patient": 38,
+  "quality": 5782
+ },
+ "role_counts_queries": {
+  "action": 96,
+  "agent": 16,
+  "instrument": 2,
+  "location": 5,
+  "none": 364,
+  "quality": 17
+ },
+ "spacy_used": true,
+ "spacy_vs_column_agree_pct": 52.66,
+ "top_pos_tags": {
+  "a.": 34596,
+  "adv.": 4447,
+  "imp.": 221,
+  "imp. & p. p.": 5778,
+  "n.": 81092,
+  "n. pl.": 1479,
+  "p. p.": 202,
+  "p. pr. & vb. n.": 5770,
+  "pl. ": 3422,
+  "prep.": 310,
+  "superl.": 1296,
+  "v.": 840,
+  "v. i.": 7088,
+  "v. t.": 17977,
+  "v. t. & i.": 438
+ }
+}

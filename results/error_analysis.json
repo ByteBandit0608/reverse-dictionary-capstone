@@ -1,0 +1,11 @@
+{
+ "by_category": {
+  "no lexical overlap": 100,
+  "outranked": 120,
+  "right word, deep": 50,
+  "tied definition": 1,
+  "unreachable": 213
+ },
+ "n_queries_total": 484,
+ "pct_queries_where_cue_disagrees_with_gold_class": 17.36
+}

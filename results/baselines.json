@@ -1,0 +1,221 @@
+{
+ "bm25": {
+  "in_dictionary": {
+   "strict": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.8,
+    "recall@1": 0.998,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   },
+   "tolerant": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.8,
+    "recall@1": 1.0,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   }
+  },
+  "leave_one_out": {
+   "strict": {
+    "median_rank": 1000,
+    "pct_not_in_top1000": 62.8,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.032,
+    "recall@10": 0.132,
+    "recall@100": 0.264
+   },
+   "tolerant": {
+    "median_rank": 1000,
+    "pct_not_in_top1000": 62.0,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.04,
+    "recall@10": 0.14,
+    "recall@100": 0.272
+   }
+  }
+ },
+ "ceiling_strict_top1": 0.996,
+ "meta": {
+  "csv": "data/OPTED-Dictionary.csv",
+  "max_tie": 9,
+  "mean_ntok": 11.42,
+  "median_ntok": 8,
+  "n_def_strings": 160832,
+  "n_words": 107032,
+  "n_words_multi_sense": 24680,
+  "pct_multi_sense": 23.06,
+  "pct_pos_filled": 97.91,
+  "pct_shared_def": 10.25,
+  "rows": 170140,
+  "rows_dropped_bad_def": 5,
+  "rows_dropped_crossref": 5622,
+  "rows_dropped_dupes": 242,
+  "rows_per_word": 1.59,
+  "rows_raw": 176009
+ },
+ "n_failures": 484,
+ "n_queries": 500,
+ "pct_queries_unreachable_without_self_row": 42.6,
+ "random": {
+  "in_dictionary": {
+   "strict": {
+    "median_rank": 1000,
+    "pct_not_in_top100": 99.6,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.0,
+    "recall@10": 0.0,
+    "recall@100": 0.004
+   },
+   "tolerant": {
+    "median_rank": 1000,
+    "pct_not_in_top100": 99.6,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.0,
+    "recall@10": 0.0,
+    "recall@100": 0.004
+   }
+  }
+ },
+ "runtime_sec": 23.7,
+ "table": [
+  {
+   "median_rank": 1,
+   "method": "bm25",
+   "pct_not_in_top1000": 0.0,
+   "pct_self_row_at_1": 99.8,
+   "protocol": "in_dictionary",
+   "recall@1": 0.998,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "recall_at_100_tolerant": 1.0,
+   "recall_at_10_tolerant": 1.0,
+   "recall_at_1_tolerant": 1.0
+  },
+  {
+   "median_rank": 1000,
+   "method": "bm25",
+   "pct_not_in_top1000": 62.8,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "leave_one_out",
+   "recall@1": 0.032,
+   "recall@10": 0.132,
+   "recall@100": 0.264,
+   "recall_at_100_tolerant": 0.272,
+   "recall_at_10_tolerant": 0.14,
+   "recall_at_1_tolerant": 0.04
+  },
+  {
+   "median_rank": 1,
+   "method": "tfidf",
+   "pct_not_in_top1000": 0.0,
+   "pct_self_row_at_1": 99.8,
+   "protocol": "in_dictionary",
+   "recall@1": 0.998,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "recall_at_100_tolerant": 1.0,
+   "recall_at_10_tolerant": 1.0,
+   "recall_at_1_tolerant": 1.0
+  },
+  {
+   "median_rank": 1000,
+   "method": "tfidf",
+   "pct_not_in_top1000": 62.4,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "leave_one_out",
+   "recall@1": 0.022,
+   "recall@10": 0.12,
+   "recall@100": 0.274,
+   "recall_at_100_tolerant": 0.282,
+   "recall_at_10_tolerant": 0.128,
+   "recall_at_1_tolerant": 0.03
+  },
+  {
+   "median_rank": 1000,
+   "method": "random",
+   "pct_not_in_top100": 99.6,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "in_dictionary",
+   "recall@1": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.004,
+   "recall_at_100_tolerant": 0.004,
+   "recall_at_10_tolerant": 0.0,
+   "recall_at_1_tolerant": 0.0
+  },
+  {
+   "median_rank": 1000,
+   "method": "word_freq",
+   "pct_not_in_top100": 100.0,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "in_dictionary",
+   "recall@1": 0.0,
+   "recall@10": 0.0,
+   "recall@100": 0.0,
+   "recall_at_100_tolerant": 0.0,
+   "recall_at_10_tolerant": 0.0,
+   "recall_at_1_tolerant": 0.0
+  }
+ ],
+ "tfidf": {
+  "in_dictionary": {
+   "strict": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.8,
+    "recall@1": 0.998,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   },
+   "tolerant": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.8,
+    "recall@1": 1.0,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   }
+  },
+  "leave_one_out": {
+   "strict": {
+    "median_rank": 1000,
+    "pct_not_in_top1000": 62.4,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.022,
+    "recall@10": 0.12,
+    "recall@100": 0.274
+   },
+   "tolerant": {
+    "median_rank": 1000,
+    "pct_not_in_top1000": 61.6,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.03,
+    "recall@10": 0.128,
+    "recall@100": 0.282
+   }
+  }
+ },
+ "word_freq": {
+  "in_dictionary": {
+   "strict": {
+    "median_rank": 1000,
+    "pct_not_in_top100": 100.0,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.0,
+    "recall@10": 0.0,
+    "recall@100": 0.0
+   },
+   "tolerant": {
+    "median_rank": 1000,
+    "pct_not_in_top100": 100.0,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.0,
+    "recall@10": 0.0,
+    "recall@100": 0.0
+   }
+  }
+ }
+}

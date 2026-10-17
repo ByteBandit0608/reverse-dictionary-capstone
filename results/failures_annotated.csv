@@ -1,0 +1,485 @@
+query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3,cat,cue,gold_cls,top1_cls,wrong_class
+365,Abler,superl. of Able.,6,2,1,Biggest,Ferrest,Hinderest,"right word, deep",none,agent,other,False
+419,Abolishment,The act of abolishing; abolition; destruction.,-1,1,1,Abolition,Annulment,Eversion,unreachable,noun_thing,noun_thing,noun_thing,False
+640,Absolute,In a plane  the two imaginary circular points at infinity; in space of three dimensions the imaginary circle at infinity.,-1,10,1,Hyperspace,Circuline,Circumference,no lexical overlap,none,other,other,False
+916,Acatalepsy,Incomprehensibility of things; the doctrine held by the ancient Skeptic philosophers  that human knowledge never amounts to certainty but only to probability.,-1,1,1,Preexistence,Euhemerism,Terminism,unreachable,none,other,noun_thing,False
+1391,Acetabuliform,Shaped like a shallow cup; saucer-shaped; as  an acetabuliform calyx.,-1,1,1,Acetabular,Chaliced,Cup,unreachable,none,other,other,False
+2109,Adherent,Congenitally united with an organ of another kind  as calyx with ovary or stamens with petals.,-1,5,1,Inferior,Perigynous,Ectopic,no lexical overlap,none,adj,agent,False
+2110,Adherent,One who adheres; one who adheres; one who follows a leader  party or profession; a follower or partisan; a believer in a particular faith or church.,282,5,1,Platonist,Calvinist,Sidesman,outranked,agent,adj,agent,True
+2336,Admissible,Entitled to be admitted  or worthy of being admitted; that may be allowed or conceded; allowable; as the supposition is hardly admissible.,-1,1,1,Permissible,Allowable,Inadmissible,unreachable,none,adj,adj,False
+3456,Agony,Violent contest or striving.,-1,4,1,Contention,Affectation,Warm,no lexical overlap,none,other,noun_thing,False
+3658,Air cell,A cavity in the cellular tissue of plants  containing air only.,27,2,1,Emphysema,Sclerema,Dropsy,outranked,none,other,other,False
+3728,Al-,The Arabic definite article answering to the English the; as  Alkoran the Koran or the Book; alchemy the chemistry.,-1,3,1,Definite,Print,Enerlasting,no lexical overlap,none,other,other,False
+3768,Alarm,To keep in excitement; to disturb.,-1,8,1,Sturb,Commove,Uncalm,no lexical overlap,verb,other,other,True
+3821,Albumen,Nourishing matter stored up within the integuments of the seed in many plants  but not incorporated in the embryo. It is the floury part in corn wheat and like grains the oily part in poppy seeds the fleshy part in the cocoanut etc.,-1,2,1,sarcoderma,Grain,Ripple,no lexical overlap,none,other,other,False
+4158,Alkalimeter,An instrument to ascertain the strength of alkalies  or the quantity of alkali in a mixture.,-1,1,1,Alkaline,Alkalimetry,Tribometer,unreachable,none,agent,other,False
+4737,Alum stone,A subsulphate of alumina and potash; alunite.,-1,1,1,Gismondite,Potashes,Gibbsite,unreachable,none,other,other,False
+4791,Amanitine,The poisonous principle of some fungi.,-1,1,1,Antiarin,Cicutoxin,Pseudospore,unreachable,none,other,other,False
+5201,Amorphous,Without crystallization in the ultimate texture of a solid substance; uncrystallized.,-1,3,1,Crystalline,Imporous,Amorphism,no lexical overlap,none,adj,other,False
+5527,Anaks,A race of giants living in Palestine.,-1,1,1,Giantry,Asura,Nephilim,unreachable,none,other,other,False
+5685,Anatreptic,Overthrowing; defeating; -- applied to Plato's refutative dialogues.,-1,1,1,Deictic,Elenctical,Dialogist,unreachable,none,adj,adj,False
+5966,Anglice,In English; in the English manner; as  Livorno Anglice Leghorn.,-1,1,1,Brogue,L,Anglicize,unreachable,none,other,other,False
+6002,Angry,Inflamed and painful  as a sore.,-1,6,1,Seer,Fester,Sore,no lexical overlap,none,other,agent,False
+6384,Anorthite,A mineral of the feldspar family  commonly occurring in small glassy crystals also a constituent of some igneous rocks. It is a lime feldspar. See Feldspar.,-1,1,1,Albite,Datolite,Leucite,unreachable,none,other,other,False
+6997,Antithesis,The second of two clauses forming an antithesis.,-1,3,1,Antitheses,Sixteenth,Latter,no lexical overlap,none,other,other,False
+7194,Aphrodisiacal,Exciting venereal desire; provocative to venery.,-1,1,1,Venereous,Venereal,Antiorgastic,unreachable,none,adj,adj,False
+7963,Aptychus,A shelly plate found in the terminal chambers of ammonite shells. Some authors consider them to be jaws; others  opercula.,-1,1,1,Anaptychus,Eozoon,Multispiral,unreachable,none,other,other,False
+9737,Assyriology,The science or study of the antiquities  language etc. of ancient Assyria.,-1,1,1,Egyptology,Assyrian,Paleology,unreachable,noun_thing,other,other,True
+9879,Astrometer,An instrument for comparing the relative amount of the light of stars.,-1,1,1,Photometer,Lactoscope,Strabismometer,unreachable,none,agent,agent,False
+10009,Athletic,Befitting an athlete; strong; muscular; robust; vigorous; as  athletic Celts.,111,2,1,Robust,Stout,Lusty,outranked,none,adj,other,False
+11244,Ayegreen,The houseleek (Sempervivum tectorum).,-1,1,1,Sempervivum,Sempervive,Sengreen,unreachable,none,other,other,False
+11511,Backhanded,With the hand turned backward; as  a backhanded blow.,5,3,1,Backhander,Reverse,Clout,"right word, deep",none,other,agent,False
+11776,Bakery,The place for baking bread; a bakehouse.,-1,2,1,Baking,Pattypan,Bakehouse,no lexical overlap,place,place,other,False
+12470,Bark,To abrade or rub off any outer covering from; as to bark one's heel.,30,8,1,Abrade,Cortex,Vest,outranked,verb,other,other,True
+12766,Basilican,Of  relating to or resembling a basilica; basilical.,-1,1,1,Basilic,Bureaucratical,Basilicas,unreachable,none,other,adj,False
+13659,Bedraggle,To draggle; to soil  as garments which in walking are suffered to drag in dust mud etc.,-1,1,1,Bemire,Sag,Mire,unreachable,verb,other,other,True
+13876,Beglerbeg,The governor of a province of the Ottoman empire  next in dignity to the grand vizier.,-1,1,1,Vizier-azem,Nabob,Archmarshal,unreachable,none,other,other,False
+13901,Beguile,To cause the time of to pass without notice; to relieve the tedium or weariness of; to while away; to divert.,-1,3,1,Wile,While,Drive,no lexical overlap,verb,other,other,True
+14155,Bellwort,A genus of plants (Uvularia) with yellowish bell-shaped flowers.,-1,1,1,Campanula,Dracaena,Cobaea,unreachable,none,other,other,False
+14643,Besiegement,The act of besieging  or the state of being besieged.,-1,1,1,Obsession,Investment,Obsession,unreachable,noun_thing,noun_thing,noun_thing,False
+14989,Bewilderment,The state of being bewildered.,-1,2,1,Bewilderedness,Wilderment,Maze,no lexical overlap,noun_thing,noun_thing,noun_thing,False
+15817,Bistipuled,Having two stipules.,-1,1,1,Exstipulate,Stipular,Ochrea,unreachable,adj,other,verb,True
+15930,Bivalent,Equivalent in combining or displacing power to two atoms of hydrogen; dyad.,-1,1,1,Dyad,Equivalence,Bihydroguret,unreachable,none,adj,other,False
+16226,Blasphemer,One who blasphemes.,-1,1,1,Conferrer,Cumulatist,Delayer,unreachable,agent,agent,agent,False
+16558,Bloatedness,The state of being bloated.,-1,1,1,Bloat,Emphysematous,Indecisiveness,unreachable,noun_thing,noun_thing,other,False
+16831,Blue,Severe or over strict in morals; gloom; as  blue and sour religionists; suiting one who is over strict in morals; inculcating an impracticable severe or gloomy mortality; as blue laws.,13,10,1,Overgloom,Acerbic,Strait-laced,outranked,none,other,other,False
+16974,Bluster,Noisy and violent or threatening talk; noisy and boastful language.,27,5,1,Bravado,Clap,Rattle,outranked,none,agent,other,False
+17231,Boil,To heat to the boiling point  or so as to cause ebullition; as to boil water.,3,11,1,Simmer,Boilingly,Boil,"right word, deep",verb,other,agent,True
+17554,Booby,A dunce; a stupid fellow.,154,4,1,Numskull,Dullard,Dolt,outranked,none,other,other,False
+17656,Boon,The woody portion flax  which is separated from the fiber as refuse matter by retting braking and scutching.,-1,6,1,Scutch,Scutch,Oakum,no lexical overlap,none,other,other,False
+17962,Bottlehead,A cetacean allied to the grampus; -- called also bottle-nosed whale.,-1,1,1,Beluga,Blowhole,Grampus,unreachable,none,other,other,False
+19192,Briery,Full of briers; thorny.,7,2,1,Spinose,Spiny,Thorny,"right word, deep",none,place,other,False
+19439,Broil,A tumult; a noisy quarrel; a disturbance; a brawl; contention; discord  either between individuals or in the state.,-1,4,1,Row,Brawl,Fracas,no lexical overlap,none,other,other,False
+19563,Brookside,The bank of a brook.,-1,1,1,Brooked,Brooking,Beck,unreachable,none,other,other,False
+19653,Bruckeled,Wet and dirty; begrimed.,-1,1,1,Grimy,Slashy,Splashy,unreachable,none,other,other,False
+19818,Buckboard,A four-wheeled vehicle  having a long elastic board or frame resting on the bolsters or axletrees and a seat or seats placed transversely upon it; -- called also buck wagon.,-1,1,1,Wain,Buggy,Chariot,unreachable,none,other,other,False
+19820,Bucker,A broad-headed hammer used in bucking ore.,151,3,1,Platycephalous,Tacket,Headed,outranked,none,agent,adj,False
+21161,Caisson,A sunk panel of ceilings or soffits.,-1,7,1,Paneled,Panelled,Paneling,no lexical overlap,none,other,other,False
+21260,Calcify,To become changed into a stony or calcareous condition  in which lime is a principal ingredient as in the formation of teeth.,2,2,1,Calcification,Calcify,Petrify,"right word, deep",verb,verb,noun_thing,False
+21316,Calculus,Any solid concretion  formed in any part of the body but most frequent in the organs that act as reservoirs and in the passages connected with them; as biliary calculi; urinary calculi etc.,-1,2,1,Lithiasis,Gallstone,Antilithic,no lexical overlap,none,other,other,False
+21939,Canny,Alt. of Cannei,-1,1,1,Adamic,Adaptability,Aden-,unreachable,none,other,adj,False
+22269,Capitular,The head or prominent part.,-1,6,1,Auricle,Poll,Ramus,no lexical overlap,none,other,other,False
+22462,Caravaneer,The leader or driver of the camels in caravan.,-1,1,1,Cafileh,Forewit,Tylopoda,unreachable,none,agent,other,False
+22574,Cardcase,A case for visiting cards.,-1,1,1,Visitant,Carte de visite,Slumming,unreachable,none,other,adj,False
+22735,Carnassial,Adapted to eating flesh.,-1,2,1,Sarcophagous,Sarcophagy,Anthropophagy,no lexical overlap,none,adj,adj,False
+23534,Cathodic,A term applied to the centrifugal  or efferent course of the nervous influence.,-1,1,1,Efferent,Puncto,Centrifugal,unreachable,none,adj,adj,False
+24133,Cephalotribe,An obstetrical instrument for performing cephalotripsy.,-1,1,1,Laryngotome,Osteoclast,Obstetric,unreachable,none,other,other,False
+24144,Cerasin,A white amorphous substance  the insoluble part of cherry gum; -- called also meta-arabinic acid.,134,2,1,Metantimonic,Metachloral,Masticin,outranked,none,other,adj,False
+24531,Chalkcutter,A man who digs chalk.,-1,1,1,Ditcher,Delver,Digger,unreachable,agent,agent,agent,False
+25118,Chatoyant,Having a changeable  varying luster or color like that of a changeable silk or oa a cat's eye in the dark.,30,2,1,Orichalceous,Versicolored,Sooty,outranked,adj,adj,adj,False
+25792,Chit,A child or babe; as  a forward chit; also a young small or insignificant person or animal.,-1,6,1,Baby,Papoose,Fubs,no lexical overlap,none,other,other,False
+26042,Chord,A combination of tones simultaneously performed  producing more or less perfect harmony as the common chord.,-1,7,1,Concord,Music,Anticipation,no lexical overlap,none,other,other,False
+26387,Churl,A selfish miser; an illiberal person; a niggard.,20,4,1,Skinflint,Muckerer,Scrimp,outranked,none,other,other,False
+26421,Chyluria,A morbid condition in which the urine contains chyle or fatty matter  giving it a milky appearance.,-1,1,1,Lagophthalmos,Albuminuria,Pyuria,unreachable,none,other,other,False
+26758,Circumscriber,One who  or that which circumscribes.,-1,1,1,Portoir,Sweetener,Cheerer,unreachable,agent,agent,other,False
+27814,Cloudy,Overcast or obscured with clouds; clouded; as  a cloudy sky.,40,6,1,Subnuvolar,Cloud,Adnubilated,outranked,none,other,other,False
+28094,Coarticulation,The union or articulation of bones to form a joint.,-1,1,1,Diarthrosis,Symphysis,Enarthrosis,unreachable,none,noun_thing,other,False
+28164,Cobbing,Haughty; purse-proud. See Cob  n. 2.,13,2,1,Hautein,Orgillous,Fastuous,outranked,none,other,other,False
+28893,Collet,A small metal ring; a small collar fastened on an arbor; as  the collet on the balance arbor of a watch; a small socket on a stem for holding a drill.,19,5,1,Staff,Pendant,Drillstock,outranked,none,other,other,False
+29054,Colored,Of some other color than green.,2,6,1,Chromoplastid,Colored,Chromogen,"right word, deep",none,other,other,False
+29096,Columbary,A dovecote; a pigeon house.,-1,1,1,Columbarium,Culverhouse,Dovecot,unreachable,none,adj,place,False
+29261,Comfit,A dry sweetmeat; any kind of fruit  root or seed preserved with sugar and dried; a confection.,11,2,1,Conserve,Sweetmeat,Nougat,outranked,none,other,other,False
+29349,Commeasure,To be commensurate with; to equal.,-1,1,1,Commensurately,Compeer,Equalize,unreachable,verb,noun_thing,other,True
+30016,Compose,To dispose in proper form; to reduce to order; to put in proper state or condition; to adjust; to regulate.,329,7,1,Adjust,Set,Policy,outranked,verb,other,other,True
+30526,Concubinacy,The practice of concubinage.,-1,1,1,Concubinate,Concubinary,Concubinal,unreachable,noun_thing,noun_thing,verb,False
+30946,Confluent,The place of meeting of steams  currents etc.,161,6,1,Conflux,Rip,Trist,outranked,place,adj,other,True
+31085,Conglobation,A round body.,-1,2,1,Circlet,Trundle,Circle,no lexical overlap,none,noun_thing,other,False
+32149,Contradict,To be contrary to; to oppose; to resist.,9,3,1,Adverse,Repugn,Reluctate,"right word, deep",verb,other,other,True
+32163,Contradictory,Opposing or opposed; repugnant.,537,4,1,Contrary,Inimical,Contrarious,outranked,none,place,adj,False
+32575,Convolution,The act of rolling anything upon itself  or one thing upon another; a winding motion.,2,3,1,Trundle,Convolution,Woolding,"right word, deep",noun_thing,noun_thing,other,False
+32664,Cooly,Alt. of Coolie,-1,1,1,Coolies,Adamic,Adaptability,unreachable,none,other,other,False
+33913,Countermark,An artificial cavity made in the teeth of horses that have outgrown their natural mark  to disguise their age.,148,3,1,Pit,Holostomata,Cave,outranked,none,other,other,False
+34364,Coxalgia,Alt. of Coxalgy,-1,1,1,Aaronic,Abannation,Abassi,unreachable,none,other,adj,False
+34504,Craft,Cunning  art or skill in a bad sense or applied to bad purposes; artifice; guile; skill or dexterity employed to effect purposes by deceit or shrewd devices.,16,6,1,Guileful,Subtilty,Practice,outranked,none,other,adj,False
+34963,Creolian,Pertaining to  or characteristic of the Creoles.,-1,2,1,Creole,Lyencephalous,Cestraciont,no lexical overlap,none,agent,other,False
+35046,Cretism,A Cretan practice; lying; a falsehood.,-1,1,1,Creticism,Crete,Leasing,unreachable,none,noun_thing,noun_thing,False
+35186,Cringle,A withe for fastening a gate.,-1,2,1,Hank,Withy,Withed,no lexical overlap,none,other,other,False
+35711,Crucible,A vessel or melting pot  composed of some very refractory substance as clay graphite platinum and used for melting and calcining substances which require a strong degree of heat as metals ores etc.,-1,3,1,Pot,Capsule,Lool,no lexical overlap,none,adj,other,False
+35721,Crucifixion,The act of nailing or fastening a person to a cross  for the purpose of putting him to death; the use of the cross as a method of capital punishment.,12,3,1,Crucify,Capital,Vigesimation,outranked,noun_thing,other,verb,True
+36249,Cumshaw,To give or make a present to.,746,2,1,Presentiate,Recompense,Tip,outranked,verb,other,verb,True
+36774,Cutthroat,One who cuts throats; a murderer; an assassin.,-1,2,1,Bravo,Bloodshedder,Assassinate,no lexical overlap,agent,other,other,True
+36821,Cyanotype,A photographic picture obtained by the use of a cyanide.,-1,1,1,Photographical,Carte de visite,Chromotype,unreachable,none,other,adj,False
+37992,Debruised,Surmounted by an ordinary; as  a lion is debruised when a bend or other ordinary is placed over it as in the cut.,-1,1,1,Rompu,Enarched,Staddle,unreachable,none,other,other,False
+38567,Deductive,Of or pertaining to deduction; capable of being deduced from premises; deducible.,-1,1,1,Inferable,Gatherable,Consectary,unreachable,none,adj,adj,False
+39114,Delation,Accusation by an informer.,-1,2,1,Informant,Approver,Delator,no lexical overlap,none,noun_thing,adj,False
+39307,Deliver,To give forth in action or exercise; to discharge; as  to deliver a blow; to deliver a broadside or a ball.,575,9,1,Strike,Exonerate,Propine,outranked,verb,agent,other,True
+39311,Deliver,To admit; to allow to pass.,-1,9,1,Intromit,Consent,Yield,no lexical overlap,verb,agent,other,True
+39540,Democratism,The principles or spirit of a democracy.,-1,1,1,Dissenterism,Democracies,Democraty,unreachable,none,noun_thing,noun_thing,False
+39912,Departmental,Pertaining to a department or division.,-1,1,1,Kingdom,Periodical,Realm,unreachable,none,adj,noun_thing,False
+40296,Derisive,Expressing  serving for or characterized by derision.,-1,1,1,Atrocious,Concentrative,Aha,unreachable,none,adj,adj,False
+40469,Desert,Of or pertaining to a desert; forsaken; without life or cultivation; unproductive; waste; barren; wild; desolate; solitary; as  they landed on a desert island.,39,7,1,Vast,Inhospitable,Solitary,outranked,none,other,other,False
+40804,Detail,A narrative which relates minute points; an account which dwells on particulars.,647,5,1,Particularize,Narratory,Uncircumstandtial,outranked,none,other,verb,False
+41006,Deuteropathy,A sympathetic affection of any part of the body  as headache from an overloaded stomach.,-1,1,1,Warm-hearted,Sick,Body,unreachable,none,other,other,False
+41074,Device,Power of devising; invention; contrivance.,18,7,1,Excogitation,Frame,Contrivement,outranked,none,other,noun_thing,False
+41724,Die,That which is  or might be determined by a throw of the die; hazard; chance.,807,16,1,Adventure,Lot,Prize,outranked,tool,other,noun_thing,True
+43612,Disjudication,Judgment; discrimination. See Dijudication.,-1,1,1,Test,Skill,Doom,unreachable,none,noun_thing,other,False
+43716,Dismission,Rejection; a setting aside as trivial  invalid or unworthy of consideration.,-1,3,1,Defiance,Inconsiderable,Seposition,no lexical overlap,none,noun_thing,noun_thing,False
+43983,Dispone,To make over  or convey legally.,-1,3,1,Grant,Ride,Overarch,no lexical overlap,verb,other,adj,True
+44071,Disproportionate,Not proportioned; unsymmetrical; unsuitable to something else in bulk  form value or extent; out of proportion; inadequate; as in a perfect body none of the limbs are disproportionate; it is wisdom not to undertake a work disproportionate means.,-1,1,1,Disproportionable,Disproportional,Proportionless,unreachable,none,verb,adj,False
+44258,Dissepiment,A separating tissue; a partition; a septum.,-1,3,1,Septum,Elocular,Mesogl/a,no lexical overlap,none,noun_thing,other,False
+45123,Dock,An artificial basin or an inclosure in connection with a harbor or river  -- used for the reception of vessels and provided with gates for keeping in or shutting out the tide.,-1,10,1,Tide,Bawn,Tank,no lexical overlap,none,other,other,False
+45207,Dodge,To follow by dodging  or suddenly shifting from place to place.,6,6,1,Shifting,Veering,Second,"right word, deep",verb,other,other,True
+45389,Dolorous,Full of grief; sad; sorrowful; doleful; dismal; as  a dolorous object; dolorous discourses.,126,2,1,Doleful,Dolesome,Grieving,outranked,none,adj,adj,False
+45546,Doni,A clumsy craft  having one mast with a long sail used for trading purposes on the coasts of Coromandel and Ceylon.,-1,1,1,Trysail,Tartan,Hooker,unreachable,none,other,other,False
+45851,Douc,A monkey (Semnopithecus nemaeus)  remarkable for its varied and brilliant colors. It is a native of Cochin China.,-1,1,1,Cestus,Light-horseman,Bee-eater,unreachable,none,other,other,False
+46336,Drawbore,To enlarge the bore of a gun barrel by drawing  instead of thrusting a revolving tool through it.,649,3,1,Bore,Couching,Empale,outranked,verb,other,other,True
+46445,Dredge,Any instrument used to gather or take by dragging; as: (a) A dragnet for taking up oysters  etc. from their beds. (b) A dredging machine. (c) An iron frame with a fine net attached used in collecting animals living at the bottom of the sea.,6,5,1,Trawl,Nocturnal,Creeper,"right word, deep",none,other,other,False
+46449,Dredge,To catch or gather with a dredge; to deepen with a dredging machine.,17,5,1,Dredger,Hedgehog,Chapelet,outranked,verb,other,agent,True
+46753,Drony,Like a drone; sluggish; lazy.,-1,1,1,Sluggard,Sleepy,Slug,unreachable,adj,other,other,True
+46958,Drunkenness,Disorder of the faculties  resembling intoxication by liquors; inflammation; frenzy; rage.,219,2,1,Ebriety,Madness,Intoxicating,outranked,none,noun_thing,other,False
+47406,Dusk,Tending to darkness or blackness; moderately dark or black; dusky.,764,5,1,Dusky,Sooty,Swart,outranked,adj,other,other,True
+47407,Dusk,Imperfect obscurity; a middle degree between light and darkness; twilight; as  the dusk of the evening.,37,5,1,Gloaming,Fore-night,Night,outranked,none,other,other,False
+47754,Earthnut,The peanut. See Peanut.,-1,3,1,Goober,Pindar,Hypogaeic,no lexical overlap,none,other,agent,False
+47966,Ecgonine,A colorless  crystalline nitrogenous base obtained by the decomposition of cocaine.,-1,1,1,Dipyridil,Pyrroline,Phillygenin,unreachable,none,other,other,False
+48236,Edriophthalma,A group of Crustacea in which the eyes are without stalks; the Arthrostraca.,-1,1,1,Anomoura,Podophthalmia,Ophthalmite,unreachable,none,other,other,False
+48548,Eh,An expression of inquiry or slight surprise.,-1,1,1,Lackaday,Ey,Curious,unreachable,none,other,other,False
+48685,Elasticity,The quality of being elastic; the inherent property in bodies by which they recover their former figure or dimensions  after the removal of external pressure or altering force; springiness; tendency to rebound; as the elasticity of caoutchouc; the elasticity of the air.,-1,2,1,Elasticness,Pneumatics,Divisibility,no lexical overlap,noun_thing,noun_thing,noun_thing,False
+48724,Eld,Old times; former days; antiquity.,50,5,1,Ancientness,Antiquity,Vetust,outranked,none,other,noun_thing,False
+48935,Elegant,Very choice  and hence pleasing to good taste; characterized by grace propriety and refinement and the absence of every thing offensive; exciting admiration and approbation by symmetry completeness freedom from blemish and the like; graceful; tasteful and highly attractive; as elegant manners; elegant style of composition; an elegant speaker; an elegant structure.,12,2,1,Elegancy,Elegancy,Debonair,outranked,none,adj,other,False
+49313,Embar,To stop; to hinder by prohibition; to block up.,-1,2,1,Forbid,Choke,Prevent,no lexical overlap,verb,other,other,True
+49473,Embossment,The act of forming bosses or raised figures  or the state of being so formed.,-1,2,1,Embossed,Imposthumation,Bossism,no lexical overlap,noun_thing,noun_thing,other,False
+50182,Endear,To raise the price or cost of; to make costly or expensive.,347,2,1,Dear,Chargeful,Costly,outranked,verb,other,other,True
+50970,Enteritis,An inflammation of the intestines.,-1,1,1,Gastroenteritis,Phlegmasia,Nephritis,unreachable,none,other,other,False
+51164,Entrant,An applicant for admission.,-1,2,1,Petitor,Suitor,Admissive,no lexical overlap,none,adj,agent,False
+51310,Enwomb,To conceive in the womb.,33,2,1,Brain,Conceit,Think,outranked,verb,other,other,True
+51753,Eprouvette,An apparatus for testing or proving the strength of gunpowder.,-1,1,1,Accelerometer,Testing,Proof,unreachable,none,other,agent,False
+51926,Equivalence,To be equivalent or equal to; to counterbalance.,9,5,1,Weigh,Equiponderate,Compensate,"right word, deep",verb,noun_thing,other,True
+52099,Erodent,A medicine which eats away extraneous growths; a caustic.,-1,1,1,Pyrotic,Erosive,Escharotic,unreachable,none,adj,adj,False
+52343,Esnecy,A prerogative given to the eldest coparcener to choose first after an inheritance is divided.,-1,1,1,Beestings,Institute,Persistency,unreachable,none,other,other,False
+52430,Essene,One of a sect among the Jews in the time of our Savior  remarkable for their strictness and abstinence.,-1,1,1,Sadducee,Raca,Pharisee,unreachable,none,other,agent,False
+52445,Essentiate,To form or constitute the essence or being of.,25,2,1,Compose,Unessential,Inessential,outranked,verb,verb,other,False
+53056,Eventration,A wound  of large extent in the abdomen through which the greater part of the intestines protrude.,35,3,1,More,Pass,Colon,outranked,none,noun_thing,other,False
+53759,Exesion,The act of eating out or through.,-1,1,1,Exedent,Feed,Geophagism,unreachable,noun_thing,noun_thing,adj,False
+54487,Extensiveness,The state of being extensive; wideness; largeness; extent; diffusiveness.,-1,1,1,Amplitude,Wideness,Ampleness,unreachable,noun_thing,noun_thing,other,False
+54584,Extorsive,Serving or tending to extort.,-1,1,1,Distracting,Emasculatory,Intimidatory,unreachable,none,adj,other,False
+54694,Extravasation,The act of forcing or letting out of its proper vessels or ducts  as a fluid; effusion; as an extravasation of blood after a rupture of the vessels.,-1,1,1,Extravasate,Gore,Effluxion,unreachable,noun_thing,noun_thing,verb,False
+54800,Ey,An interj. of wonder or inquiry.,-1,2,1,Good now,Eh,Interrogation,no lexical overlap,none,other,other,False
+55391,Falsifier,One who falsifies  or gives to a thing a deceptive appearance; a liar.,-1,1,1,Varnisher,Pseudologist,Mortgagor,unreachable,agent,agent,agent,False
+55619,Farce,Ridiculous or empty show; as  a mere farce.,-1,6,1,Braggadocio,Form,Wind,no lexical overlap,none,other,other,False
+55951,Fattener,One who  or that which fattens; that which gives fatness or fertility.,-1,1,1,Premonitor,Strengthener,Redress,unreachable,agent,agent,agent,False
+56511,Fenestral,Of or pertaining to a fenestra.,254,3,1,Fenestrae,Foramen,Smock,outranked,none,adj,other,False
+57549,Firebird,The Baltimore oriole.,-1,1,1,Baltimore bird,Hangbird,Oriole,unreachable,none,other,other,False
+57616,Firmly,In a firm manner.,-1,1,1,Firm,Steady,Firm,unreachable,none,other,other,False
+57933,Flake,A platform of hurdles  or small sticks made fast or interwoven supported by stanchions for drying codfish and other things.,-1,8,1,Top-armor,Clayes,Basket,no lexical overlap,none,other,agent,False
+58274,Fleece,Any soft woolly covering resembling a fleece.,4,6,1,Woolly,Carpet,Fledge,"right word, deep",none,other,other,False
+59336,Fomes,Any substance supposed to be capable of absorbing  retaining and transporting contagious or infectious germs; as woolen clothes are said to be active fomites.,-1,1,1,Catching,Hygrometrical,Germicide,unreachable,none,other,other,False
+59541,Foray,A sudden or irregular incursion in border warfare; hence  any irregular incursion for war or spoils; a raid.,-1,2,1,Polemy,Manubial,Razzia,no lexical overlap,none,other,other,False
+60589,Fozy,Spongy; soft; fat and puffy.,-1,1,1,Spongy,Puffy,Fuffy,unreachable,none,other,other,False
+60802,Fray,A fret or chafe  as in cloth; a place injured by rubbing.,5,7,1,Chafe,Frote,Rub,"right word, deep",none,other,other,False
+61066,Fribbling,Frivolous; trining; toolishly captious.,-1,1,1,Cavil,Cavil,Tettish,unreachable,none,other,other,False
+61111,Friendship,The state of being friends; friendly relation  or attachment to a person or between persons; affection arising from mutual esteem and good will; friendliness; amity; good will.,-1,2,1,Amity,Amicable,Disaffection,no lexical overlap,noun_thing,noun_thing,noun_thing,False
+61566,Fucus,A paint; a dye; also  false show.,-1,2,1,Fucated,Affecting,Illusive,no lexical overlap,none,other,other,False
+61702,Full-winged,Beady for flight; eager.,-1,2,1,Beady,Avid,Newfangle,no lexical overlap,none,other,other,False
+61985,Furring,The strips thus laid on.,154,5,1,Rendering,Painting,Scumbling,outranked,none,other,other,False
+62112,Futureless,Without prospect of betterment in the future.,-1,1,1,Eternity,Prospect,Apprehension,unreachable,none,adj,noun_thing,False
+62272,Gainage,The profit made by tillage; also  the land itself.,112,2,1,Field,Plougland,Thwaite,outranked,none,other,other,False
+62527,Galvanology,A treatise on galvanism  or a description of its phenomena.,-1,1,1,Galvanologist,Histography,Numismatography,unreachable,none,other,agent,False
+62610,Gamomorphism,That stage of growth or development in an organism  in which the reproductive elements are generated and matured in preparation for propagating the species.,-1,1,1,Nutriment,Stage,Environment,unreachable,none,noun_thing,noun_thing,False
+62644,Ganglionic,Pertaining to  containing or consisting of ganglia or ganglion cells; as a ganglionic artery; the ganglionic columns of the spinal cord.,-1,1,1,Ganglial,Cellular,Cerebro-spinal,unreachable,none,adj,adj,False
+62678,Gap,To make an opening in; to breach.,5,3,1,Breach,Rent,Schismatize,"right word, deep",verb,other,other,True
+62708,Garb,To clothe; array; deck.,-1,6,1,Habit,Address,Betrap,no lexical overlap,verb,other,other,True
+62751,Gargil,A distemper in geese  affecting the head.,-1,1,1,Stonecray,Gargol,Distemper,unreachable,none,other,other,False
+62909,Gastralgia,Pain in the stomach or epigastrium  as in gastric disorders.,-1,1,1,Stomachal,Gastric,Neurotic,unreachable,none,other,adj,False
+62974,Gatehouse,A house connected or associated with a gate.,-1,1,1,Conjoint,Insociable,Gate,unreachable,none,other,other,False
+63630,Georgian,Of or pertaining to Georgia  in Asia or to Georgia one of the United States.,20,3,1,American,Columbian,Kentucky,outranked,none,agent,other,False
+64068,Gird,To surround; to encircle  or encompass.,46,10,1,Round,Belt,Circle,outranked,verb,other,other,True
+64262,Glandered,Affected with glanders; as  a glandered horse.,-1,1,1,Equinia,Glanderous,Greasy,unreachable,none,other,other,False
+64422,Gleg,Quick of perception; alert; sharp.,-1,1,1,Sprack,Snip-snap,Clear-headed,unreachable,none,other,other,False
+65143,Gonidium,A special groove or furrow at one or both angles of the mouth of many Anthozoa.,-1,2,1,Score,Sulcus,Gonidial,no lexical overlap,none,place,other,False
+65230,Goose,A silly creature; a simpleton.,-1,5,1,Ninnyhammer,Coot,Jack,no lexical overlap,none,other,agent,False
+66649,Grower,One who grows or produces; as  a grower of corn; also that which grows or increases; as a vine may be a rank or a slow grower.,-1,1,1,Increaser,Augmenter,Multiplier,unreachable,agent,agent,agent,False
+67735,Halloween,The evening preceding Allhallows or All Saints' Day.,-1,1,1,Allhallows,Allhallow eve,All Saints,unreachable,none,other,other,False
+67960,Handkerchief,A piece of cloth  usually square and often fine and elegant carried for wiping the face or hands.,182,2,1,Diaper,Dossil,Tessera,outranked,none,other,agent,False
+68586,Haunt,A place to which one frequently resorts; as  drinking saloons are the haunts of tipplers; a den is the haunt of wild beasts.,625,8,1,Den,Repair,Resort,outranked,place,other,other,True
+68825,Heading,A gallery  drift or adit in a mine; also the end of a drift or gallery; the vein above a drift.,363,7,1,Level,Sill,Stulm,outranked,none,other,other,False
+69442,Hellkite,A kite of infernal breed.,-1,1,1,Elanet,Puttock,Glide,unreachable,none,other,other,False
+69595,Hemihedral,Having half of the similar parts of a crystals  instead of all; consisting of half the planes which full symmetry would require as when a cube has planes only on half of its eight solid angles or one plane out of a pair on each of its edges; or as in the case of a tetrahedron which is hemihedral to an octahedron it being contained under four of the planes of an octahedron.,-1,1,1,Holohedral,Bevelled,Octahedron,unreachable,adj,adj,adj,False
+69659,Hemp,A plant of the genus Cannabis (C. sativa)  the fibrous skin or bark of which is used for making cloth and cordage. The name is also applied to various other plants yielding fiber.,7,2,1,Jute,Pita,Mahoe,"right word, deep",none,other,other,False
+70482,Highway,A road or way open to the use of the public; a main road or thoroughfare.,-1,1,1,Public,By-turning,Street,unreachable,none,other,adj,False
+70948,Hogo,High flavor; strong scent.,-1,1,1,Strong,Hautgout,Fragor,unreachable,none,other,other,False
+71342,Homotonous,Of the same tenor or tone; equable; without variation.,-1,1,1,Indecinably,Indecinably,Univocal,unreachable,adj,adj,other,False
+71575,Hopeless,Destitute of hope; having no expectation of good; despairing.,22,3,1,Despair,Hopeful,Desperation,outranked,none,adj,other,False
+71712,Horoscopist,One versed in horoscopy; an astrologer.,-1,1,1,Astrologian,Astronomer,Astronomian,unreachable,none,agent,agent,False
+72170,Huffish,Disposed to be blustering or arrogant; petulant.,-1,1,1,Blusterous,Assume,Will,unreachable,none,adj,adj,False
+72266,Humanize,To give a human character or expression to.,395,4,1,Passion,Cheep,Emotionalize,outranked,verb,verb,noun_thing,False
+72415,Hungary,A country in Central Europe  now a part of the Austro-Hungarian Empire.,-1,1,1,Bohemia,Haiduck,Turkey,unreachable,place,adj,other,True
+72563,Husbandry,Care of domestic affairs; economy; domestic management; thrift.,-1,2,1,Economical,Housekeeping,Economics,no lexical overlap,none,other,adj,False
+73060,Hyperion,The god of the sun; in the later mythology identified with Apollo  and distinguished for his beauty.,-1,1,1,Phoebus,Typhon,Parnassus,unreachable,none,other,other,False
+73101,Hyphenated,United by hyphens; hyphened; as  a hyphenated or hyphened word.,-1,1,1,Solid,Parcel,Americanism,unreachable,none,other,other,False
+73607,Idle,Not employed; unoccupied with business; inactive; doing nothing; as  idle workmen.,28,7,1,Do-nothing,Faineant,Inactive,outranked,none,other,other,False
+74519,Impend,To hang over; to be suspended above; to threaten frome near at hand; to menace; to be imminent. See Imminent.,-1,2,1,Interminate,Impending,Nearhand,no lexical overlap,verb,other,verb,True
+74895,Impotency,Want of procreative power; inability to copulate  or beget children; also sometimes sterility; barrenness.,9,3,1,Infecundity,Impotent,Incapacity,"right word, deep",none,other,noun_thing,False
+75273,Inanimated,Destitute of life; lacking animation; unanimated.,-1,1,1,Desolate,Exanimate,Exanimate,unreachable,none,other,verb,False
+75397,Incapable,As a term of disgrace  sometimes annexed to a sentence when an officer has been cashiered and rendered incapable of serving his country.,568,6,1,Reformado,Ordinary,Postliminy,outranked,none,adj,other,False
+76006,Incredibly,In an incredible manner.,-1,1,1,Uncredible,Untrowable,Incredibility,unreachable,none,other,adj,False
+77034,Infection,The act or process of infecting.,335,6,1,Disinfection,Attaint,Achromatization,outranked,noun_thing,noun_thing,noun_thing,False
+77185,Inflammable,Capable of being easily set fire; easily enkindled; combustible; as  inflammable oils or spirits.,8,2,1,Accendible,Inflamed,Combustible,"right word, deep",none,adj,adj,False
+78180,Insheathe,To insert as in a sheath; to sheathe.,-1,1,1,Invaginate,Vaginant,Sheathed,unreachable,verb,other,verb,True
+78281,Insolent,Deviating from that which is customary; novel; strange; unusual.,-1,3,1,Selcouth,Odd,Novelty,no lexical overlap,none,adj,other,False
+78369,Install,To set in a seat; to give a place to; establish (one) in a place.,-1,2,1,State,Ordain,Foot,no lexical overlap,verb,other,verb,True
+78378,Instance,Occasion; order of occurrence.,-1,7,1,Emergency,Casus,Occasioned,no lexical overlap,none,noun_thing,other,False
+78386,Instant,Pressing; urgent; importunate; earnest.,73,6,1,Important,Pressing,Entreaty,outranked,none,adj,adj,False
+78520,Insubordination,The quality of being insubordinate; disobedience to lawful authority.,-1,1,1,Wrong,Rebellion,Rebel,unreachable,noun_thing,noun_thing,other,False
+78595,Insurer,One who  or that which insures; the person or company that contracts to indemnify losses for a premium; an underwriter.,-1,1,1,Assurer,Narrower,Insurancer,unreachable,agent,agent,agent,False
+79723,Intriguer,One who intrigues.,-1,1,1,Court-craft,Termer,Backdoor,unreachable,agent,agent,other,False
+80448,Irremissible,Not remissible; unpardonable; as  irremissible crimes.,-1,1,1,Irremittable,Impardonable,Remissibility,unreachable,none,adj,adj,False
+80550,Irritant,A poison that produces inflammation.,104,5,1,Diffractive,Coagulant,Salivant,outranked,none,adj,adj,False
+80557,Irritate,To make morbidly excitable  or oversensitive; to fret; as the skin is irritated by friction; to irritate a wound by a coarse bandage.,-1,6,1,Vex,Grate,Pique,no lexical overlap,verb,verb,other,False
+80644,Islet,A little island.,-1,1,1,Eyot,Sea holm,Ey,unreachable,none,other,other,False
+80962,Jack,A machine for slicking or pebbling leather.,24,33,1,Jigger,Masticator,Creaser,outranked,tool,other,agent,True
+80967,Jack,A portable machine variously constructed  for exerting great pressure or lifting or moving a heavy body through a small distance. It consists of a lever screw rack and pinion hydraulic press or any simple combination of mechanical powers working in a compact pedestal or support and operated by a lever crank capstan bar etc. The name is often given to a jackscrew which is a kind of jack.,5,33,1,Jackscrew,Fulcrum,Bed screw,"right word, deep",none,other,other,False
+80970,Jack,A young pike; a pickerel.,11,33,1,Esox,Sauger,Pickerel,outranked,none,other,other,False
+80977,Jack,The knave of a suit of playing cards.,-1,33,1,Varlet,Diamond,Tierce,no lexical overlap,none,other,other,False
+81555,Job,A sudden thrust or stab; a jab.,29,14,1,Jab,Stoccado,Stoke,outranked,none,other,other,False
+81633,Johnnycake,A kind of bread made of the meal of maize (Indian corn)  mixed with water or milk etc. and baked.,-1,1,1,Indian,White-pot,Charlotte,unreachable,none,other,agent,False
+81853,Judaism,Conformity to the Jewish rites and ceremonies.,60,2,1,Ceremonially,Uniformity,Judaize,outranked,none,noun_thing,other,False
+82104,Jurisprudence,The science of juridical law; the knowledge of the laws  customs and rights of men in a state or community necessary for the due administration of justice.,-1,1,1,Judicature,Circuit,Court,unreachable,noun_thing,noun_thing,noun_thing,False
+82259,Khamsin,A hot southwesterly wind in Egypt  coming from the Sahara.,-1,1,1,Southwesterly,Northwest,Northeaster,unreachable,none,other,other,False
+82525,Kernelly,Full of kernels; resembling kernels; of the nature of kernels.,-1,1,1,Aciniform,Creamy,Aphthoid,unreachable,none,other,other,False
+83039,Knife,An instrument consisting of a thin blade  usually of steel and having a sharp edge for cutting fastened to a handle but of many different forms and names for different uses; as table knife drawing knife putty knife pallet knife pocketknife penknife chopping knife etc..,-1,4,1,Saw,Shave,Edge,no lexical overlap,none,other,other,False
+83215,Knuckle,A contrivance  usually of brass or iron and furnished with points worn to protect the hand to add force to a blow and to disfigure the person struck; as brass knuckles; -- called also knuckle duster.,14,8,1,Armed,Clout,Handystroke,outranked,none,other,other,False
+83617,Lactation,A giving suck; the secretion and yielding of milk by the mammary gland.,-1,1,1,Lactant,Milky,Mamma,unreachable,none,noun_thing,adj,False
+83642,Lactometer,An instrument for estimating the purity or richness of milk  as a measuring glass a specific gravity bulb or other apparatus.,-1,1,1,Areometer,Galactometer,Gravimeter,unreachable,none,agent,agent,False
+84589,Latinize,To give Latin terminations or forms to  as to foreign words in writing Latin.,8,5,1,Hispanicize,Macaronic,Illiberal,"right word, deep",verb,verb,verb,False
+85030,Leaky,Permitting water or other fluid to leak in or out; as  a leaky roof or cask.,-1,2,1,Leak,Leak,Drown,no lexical overlap,none,other,other,False
+85160,Leaver,One who leaves  or withdraws.,-1,1,1,Withdrawer,Shrinker,Knobstick,unreachable,agent,agent,agent,False
+85933,Liability,The state of being liable; as  the liability of an insurer; liability to accidents; liability to the law.,-1,3,1,Liableness,Suability,Quakness,no lexical overlap,noun_thing,noun_thing,noun_thing,False
+86117,Licorice,A plant of the genus Glycyrrhiza (G. glabra)  the root of which abounds with a sweet juice and is much used in demulcent compositions.,13,2,1,Glycyrrhiza,Borage,Dibs,outranked,none,other,other,False
+86471,Lilac,A light purplish color like that of the flower of the purplish lilac.,36,2,1,Lavender,Amaranthine,Gold,outranked,none,other,agent,False
+86733,Lineolate,Marked with little lines.,3,2,1,Lineated,Cancellated,Lineolate,"right word, deep",none,verb,other,False
+86780,Linguiform,Having the form of the tongue; tongue-shaped.,-1,1,1,Mammose,Floriform,Lachrymiform,unreachable,adj,other,other,True
+87942,Loose,Unbound; untied; unsewed; not attached  fastened fixed or confined; as the loose sheets of a book.,8,17,1,Empight,Unclasp,Cabled,"right word, deep",none,other,other,False
+88252,Love-sick,Languishing with love or amorous desire; as  a love-sick maid.,2,2,1,Fancy-sick,Love-sick,Cupidity,"right word, deep",none,other,other,False
+89420,Maiden,Never having been married; not having had sexual intercourse; virgin; -- said usually of the woman  but sometimes of the man; as a maiden aunt.,3,9,1,Maid,Adulterer,Maiden,"right word, deep",none,other,other,False
+89541,Majestatic,Alt. of Majestatal,-1,1,1,Adaptability,Aden-,Adenalgia,unreachable,none,adj,noun_thing,False
+89644,Malacostomous,Having soft jaws without teeth  as certain fishes.,-1,1,1,Cyclostomi,Myriacanthous,Osteopterygious,unreachable,adj,adj,other,False
+89674,Malaria,Air infected with some noxious substance capable of engendering disease; esp.  an unhealthy exhalation from certain soils as marshy or wet lands producing fevers; miasma.,-1,2,1,Draco,Morbose,Dragon,no lexical overlap,none,other,other,False
+89747,Malicious,Indulging or exercising malice; harboring ill will or enmity.,5,3,1,Maltalent,Grudge,Envy,"right word, deep",none,adj,adj,False
+90390,Mappery,The making  or study of maps.,-1,1,1,Cartography,Cartographer,Chartometer,unreachable,none,place,other,False
+91059,Matador,In the game of quadrille or omber  the three principal trumps the ace of spades being the first the ace of clubs the third and the second being the deuce of a black trump or the seven of a red one.,-1,2,1,Spadille,Basto,Low,no lexical overlap,none,agent,other,False
+91470,Mean,That through which  or by the help of which an end is attained; something tending to an object desired; intermediate agency or measure; necessary condition or coagent; instrument.,130,18,1,Instrumentally,Memorandum,Desire,outranked,none,other,other,False
+91866,Megrim,A fancy; a whim; a freak; a humor; esp.  in the plural lowness of spirits.,-1,4,1,Fad,Braid,Whimwham,no lexical overlap,none,other,other,False
+92224,Mensurableness,The quality or state of being mensurable; measurableness.,-1,1,1,Mensurability,Settledness,Absorbability,unreachable,noun_thing,noun_thing,noun_thing,False
+92660,Metage,Measurement  especially of coal.,-1,2,1,Underclay,Mismeasurement,Pantometry,no lexical overlap,none,other,other,False
+93043,Miamis,A tribe of Indians that formerly occupied the country between the Wabash and Maumee rivers.,-1,1,1,Illinois,Iowas,Sacs,unreachable,none,other,other,False
+93137,Microphone,An instrument for intensifying and making audible very feeble sounds. It produces its effects by the changes of intensity in an electric current  occasioned by the variations in the contact resistance of conducting bodies especially of imperfect conductors under the action of acoustic vibrations.,-1,1,1,Thermoelectrometer,Echoscope,Phonometer,unreachable,none,other,agent,False
+93423,Milliampere,The thousandth part of one ampere.,-1,1,1,Milliweber,Microampere,Micron,unreachable,none,other,agent,False
+93498,Mimicry,Protective resemblance; the resemblance which certain animals and plants exhibit to other animals and plants or to the natural objects among which they live  -- a characteristic which serves as their chief means of protection against enemies; imitation; mimesis; mimetism.,-1,2,1,Armature,Noctilucin,Group,no lexical overlap,none,other,noun_thing,False
+93507,Minacity,Disposition to threaten.,-1,1,1,Threat,Ballarag,Interminate,unreachable,none,noun_thing,other,False
+93894,Miscall,To call by a bad name; to abuse.,2,2,1,Misusage,Miscall,Designate,"right word, deep",verb,other,other,True
+94194,Mislive,To live amiss.,-1,1,1,Misconduct,Misconsecrate,Miscopy,unreachable,verb,adj,other,True
+94748,Moderatress,A female moderator.,-1,1,2,Moderatrix,Moderate,Moderatorship,unreachable,none,other,other,False
+95142,Moneyed,Supplied with money; having money; wealthy; as  moneyey men.,159,3,1,Pecunious,Rich,Ready,outranked,none,other,adj,False
+95212,Monkey,To act or treat as a monkey does; to ape; to act in a grotesque or meddlesome manner.,-1,7,1,Jackanapes,Simian,Grotesquely,no lexical overlap,verb,other,other,True
+95566,Moon,A crescentlike outwork. See Half-moon.,152,6,1,Half-moon,Semilunar,Half-moon,outranked,none,other,other,False
+95722,Moralize,To render moral; to correct the morals of.,16,5,1,Demoralize,Ethical,Correctify,outranked,verb,verb,verb,False
+95995,Mosasauria,An order of large  extinct marine reptiles found in the Cretaceous rocks especially in America. They were serpentlike in form and in having loosely articulated and dilatable jaws with large recurved tteth but they had paddlelike feet. Some of them were over fifty feet long. They are essentially fossil sea serpents with paddles. Called also Pythonomarpha and Mosasauria.,-1,1,1,Ichthyosauria,Stegocephala,Paleechinoidea,unreachable,none,other,other,False
+96605,Multiaxial,Having more than one axis; developing in more than a single line or plain; -- opposed to monoaxial.,-1,1,1,Uniaxial,Monaxial,Peritomous,unreachable,adj,adj,adj,False
+96617,Multidigitate,Having many fingers  or fingerlike processes.,-1,1,1,Digitation,Bidigitate,Multidentate,unreachable,adj,verb,noun_thing,True
+97262,Myosin,An albuminous body present in dead muscle  being formed in the process of coagulation which takes place in rigor mortis; the clot formed in the coagulation of muscle plasma. See Muscle plasma under Plasma.,-1,1,1,Coagulum,Crassamentum,Coagulation,unreachable,none,other,other,False
+97292,Myricyl,A hypothetical radical regarded as the essential residue of myricin; -- called also melissyl.,-1,1,1,Octoyl,Methenyl,Propyl,unreachable,none,other,other,False
+97761,Nativistic,Relating to nativism.,-1,1,1,Nativist,Adjective,Anapnoic,unreachable,none,adj,agent,False
+98052,Necrobiosis,The death of a part by molecular disintegration and without loss of continuity  as in the processes of degeneration and atrophy.,-1,1,1,Necrosis,Bereavement,Casualty,unreachable,none,other,other,False
+98137,Needless,Having no need.,-1,3,1,Occasion,Sinewless,Acapsular,no lexical overlap,adj,adj,noun_thing,False
+98877,Night-faring,Going or traveling in the night.,-1,1,1,Noctivagant,Noctivagation,Going,unreachable,none,other,adj,False
+99050,Nitrification,A process of oxidation  in which nitrogenous vegetable and animal matter in the presence of air moisture and some basic substances as lime or alkali carbonate is converted into nitrates.,819,3,1,Mineral,Manure,Alkalifiable,outranked,noun_thing,noun_thing,adj,False
+99652,Northeast,Of or pertaining to the northeast; proceeding toward the northeast  or coming from that point; as a northeast course; a northeast wind.,8,3,1,Northeasterly,Southeast,Northeaster,"right word, deep",none,other,other,False
+100140,Numeration,The act or art of reading numbers when expressed by means of numerals. The term is almost exclusively applied to the art of reading numbers written in the scale of tens  by the Arabic method.,98,2,1,Decimal,Roman,Decimally,outranked,noun_thing,noun_thing,adj,False
+100232,Nursery,A place where young trees  shrubs vines etc. are propagated for the purpose of transplanting; a plantation of young trees.,172,7,1,Shrubbery,Orangery,Plant,outranked,place,place,place,False
+100561,Obliquation,The act of becoming oblique; a turning to one side; obliquity; as  the obliquation of the eyes.,-1,2,1,Declination,Splay,Contraversion,no lexical overlap,noun_thing,noun_thing,noun_thing,False
+100710,Obsess,To besiege; to beset.,-1,1,2,Siege,Assiege,Leaguer,unreachable,verb,other,other,True
+101859,Open,Free or cleared of obstruction to progress or to view; accessible; as  an open tract; the open sea.,13,24,1,Unstop,Clear,Clearing,outranked,none,other,other,False
+102892,Osiris,One of the principal divinities of Egypt  the brother and husband of Isis. He was figured as a mummy wearing the royal cap of Upper Egypt and was symbolized by the sacred bull called Apis. Cf. Serapis.,-1,1,1,Zeus,Idolize,Hamadryas,unreachable,none,other,other,False
+103085,Otitis,Inflammation of the ear.,-1,1,1,Tympanitis,Pinna,Phlogosis,unreachable,none,other,other,False
+103266,Outfield,A field beyond  or separated from the inclosed land about the homestead; an uninclosed or unexplored tract. Also used figuratively.,76,4,1,Tract,Common,Incense,outranked,none,other,other,False
+103301,Outgoing,The extreme limit; the place of ending.,-1,5,1,Descent,But,Utter,no lexical overlap,none,other,adj,False
+103302,Outgoing,Going out; departing; as  the outgoing administration; an outgoing steamer.,6,5,1,Passing,Outing,Way-going,"right word, deep",none,other,other,False
+103414,Output,That which is thrown out as products of the metabolic activity of the body; the egesta other than the faeces. See Income.,-1,2,1,Metabolic,Outgo,Disbursement,no lexical overlap,tool,other,adj,True
+103553,Outward,Forming the superficial part; external; exterior; -- opposed to inward; as  an outward garment or layer.,13,6,1,Exterior,Outterm,Outside,outranked,none,other,agent,False
+104033,Overpass,To go over or beyond; to cross; as  to overpass a river; to overpass limits.,593,4,1,Transcend,Overhip,Extravagation,outranked,verb,other,other,True
+104131,Overrun,To exceed in distance or speed of running; to go beyond or pass in running.,18,9,1,Transcend,Outtravel,Outpass,outranked,verb,other,other,True
+104547,Oxy-,A compound containing oxygen.,18,3,1,Oxysulphide,Oxygenic,Oxychloride,outranked,none,other,other,False
+104855,Page,Any one of several species of beautiful South American moths of the genus Urania.,-1,10,1,Tamarin,Tinamou,Houtou,no lexical overlap,none,other,other,False
+104965,Palace,The residence of a sovereign  including the lodgings of high officers of state and rooms for business as well as halls for ceremony and reception.,294,3,1,Parlor,Court,Company,outranked,none,other,agent,False
+105128,Palisade,To surround  inclose or fortify with palisades.,-1,3,1,Mound,Stockade,Inwall,no lexical overlap,verb,other,other,True
+105706,Papillose,Covered with  or bearing papillae; resembling papillae; papillate; papillar; papillary.,-1,1,1,Papillary,Hairy,Piligerous,unreachable,none,other,adj,False
+105724,Papuars,The native black race of Papua or New Guinea  and the adjacent islands.,-1,1,1,Bird of paradise,Rossel current,Goura,unreachable,none,other,verb,False
+106803,Paste,To unite with paste; to fasten or join by means of paste.,-1,7,1,Enjoin,Injoint,Dovetail,no lexical overlap,verb,other,other,True
+107087,Patronization,The act of patronizing; patronage; support.,-1,1,1,Patrocination,Pap,Patronage,unreachable,noun_thing,noun_thing,noun_thing,False
+107534,Pedantize,To play the pedant; to use pedantic expressions.,-1,1,1,Pedantical,Compliment,Double,unreachable,verb,verb,adj,False
+107596,Pedigerous,Bearing or having feet or legs.,-1,1,1,Macropodous,Saltigrade,Remiped,unreachable,none,adj,adj,False
+107711,Pehlevi,An ancient Persian dialect in which words were partly represented by their Semitic equivalents. It was in use from the 3d century (and perhaps earlier) to the middle of the 7th century  and later in religious writings.,-1,1,1,Zend-Avesta,Falconet,Moton,unreachable,none,other,other,False
+108406,Perfidiousness,The quality of being perfidious; perfidy.,-1,1,1,Treachery,Perfidies,Perfidious,unreachable,noun_thing,noun_thing,place,False
+108457,Perfuse,To suffuse; to fill full or to excess.,-1,1,1,overfill,Overset,Refill,unreachable,verb,other,other,True
+108815,Perpendicle,Something hanging straight down; a plumb line.,-1,1,1,Plummet,Dependency,Downright,unreachable,none,other,other,False
+109763,Phonogram,A record of sounds made by a phonograph.,-1,2,1,Anemogram,Phonographical,Chronogram,no lexical overlap,none,other,other,False
+110438,Piercer,An instrument used in forming eyelets; a stiletto.,-1,5,1,Eyeleteer,Stilet,Strickle,no lexical overlap,none,agent,agent,False
+110612,Pill,The peel or skin.,2,7,1,Peel,Pill,Skin,"right word, deep",none,other,other,False
+111111,Piston,A sliding piece which either is moved by  or moves against fluid pressure. It usually consists of a short cylinder fitting within a cylindrical vessel along which it moves back and forth. It is used in steam engines to receive motion from the steam and in pumps to transmit motion to a fluid; also for other purposes.,-1,1,1,Receiver,Truck,Boiler,unreachable,none,other,agent,False
+111112,Pit,A large cavity or hole in the ground  either natural or artificial; a cavity in the surface of a body; an indentation,27,16,1,Cave,Hollow,Dimple,outranked,none,other,other,False
+111323,Placitum,A public court or assembly in the Middle Ages  over which the sovereign president when a consultation was held upon affairs of state.,108,3,1,Vestry,Mediaevalism,Corset,outranked,none,other,other,False
+111909,Pleasurist,A person devoted to worldly pleasure.,-1,1,1,Sybarite,Earthly-minded,Fleshing,unreachable,none,agent,other,False
+111935,Plectospondylous,Of or pertaining to the Plectospondyli.,-1,1,1,Acritan,Acrodont,Acromial,unreachable,none,adj,other,False
+112060,Pleuritical,Suffering from pleurisy.,3,2,1,Pleuritis,Respiration,Pleuritical,"right word, deep",none,adj,other,False
+112378,Pluperfect,More than perfect; past perfect; -- said of the tense which denotes that an action or event was completed at or before the time of another past action or event.,263,2,1,Aorist,Preterit,Foreadvise,outranked,none,other,agent,False
+112382,Pluralism,The quality or state of being plural  or in the plural number.,-1,2,1,Overmuchness,More,Oneness,no lexical overlap,noun_thing,noun_thing,noun_thing,False
+112837,Polemical,Polemic; controversial; disputatious.,-1,1,1,Controversial,Polemic,Controversal,unreachable,none,adj,adj,False
+113246,Polyphyllous,Many-leaved; as  a polyphyllous calyx or perianth.,-1,1,1,Monophyllous,Leaved,Perianthium,unreachable,none,adj,adj,False
+113403,Pomposity,The quality or state of being pompous; pompousness.,-1,1,1,Showiness,Magniloquence,Settledness,unreachable,noun_thing,noun_thing,noun_thing,False
+113425,Ponderation,The act of weighing.,-1,1,2,Trutination,Balance,Tronage,unreachable,noun_thing,noun_thing,noun_thing,False
+113469,Pontifice,Bridgework; structure or edifice of a bridge.,-1,1,1,Fabric,Ruinous,Panel,unreachable,none,other,adj,False
+113737,Portage group,A subdivision of the Chemung period in American geology. See Chart of Geology.,-1,1,1,Potsdam group,Miocene,Permian,unreachable,none,other,other,False
+113828,Portraiture,Pictures  collectively; painting.,-1,4,1,Rhyparography,Picture,Xylopyrography,no lexical overlap,none,noun_thing,other,False
+114030,Posthouse,A house for distributing the malls; a post office.,2,2,1,Monitorship,Posthouse,Post,"right word, deep",none,other,noun_thing,False
+114361,Pound,A certain specified weight; especially  a legal standard consisting of an established number of ounces.,-1,11,1,Light,As,Hectogram,no lexical overlap,none,other,other,False
+114891,Predation,The act of pillaging.,-1,1,1,Pillage,Sackage,Plunder,unreachable,noun_thing,noun_thing,other,False
+115038,Preexist,To exist previously; to exist before something else.,-1,1,1,Premise,Praecognita,Aforementioned,unreachable,verb,agent,verb,True
+115104,Prefrontal,Situated in front of the frontal bone  or the frontal region of the skull; ectethmoid as a certain bone in the nasal capsule of many animals and certain scales of reptiles and fishes.,988,2,1,Postfrontal,Postorbital,Septomaxillary,outranked,none,adj,adj,False
+115658,Presternum,The anterior segment of the sternum; the manubrium.,-1,1,1,Suprasternal,Manubrium,Buckler,unreachable,none,other,adj,False
+116646,Profanation,The act of violating sacred things  or of treating them with contempt or irreverence; irreverent or too familiar treatment or use of what is sacred; desecration; as the profanation of the Sabbath; the profanation of a sanctuary; the profanation of the name of God.,39,2,1,Profane,Violation,Profaner,outranked,noun_thing,noun_thing,other,False
+116895,Proliferation,The continuous development of cells in tissue formation; cell formation.,-1,2,1,Cytogenesis,Histogenetic,Vasoformative,no lexical overlap,none,noun_thing,other,False
+117131,Propagable,Capable of being spread or extended by any means; -- said of tenets  doctrines or principles.,83,2,1,Extensive,Extendible,Circumfusile,outranked,none,adj,adj,False
+117768,Provand,Alt. of Proant,-1,1,1,Aden-,Adenalgia,Adenoid,unreachable,none,other,other,False
+117779,Prove,To take a trial impression of; to take a proof of; as  to prove a page.,68,9,1,Approof,Probacy,Proof,outranked,verb,other,other,True
+117911,Proxenet,A negotiator; a factor.,-1,1,1,Negotiant,Loanmonger,Factored,unreachable,none,other,adj,False
+119177,Pygal,Situated in the region of the rump  or posterior end of the backbone; -- applied especially to the posterior median plates in the carapace of chelonians.,-1,1,1,Nuchal,Opisthocoelous,Postanal,unreachable,none,adj,adj,False
+119694,Quarrel,A square or lozenge-shaped paving tile.,61,16,1,Mascled,Quadrel,Lozenged,outranked,none,other,other,False
+120200,Quininism,Alt. of Quinism,-1,1,1,Adiposeness,Adjacence,Adoor,unreachable,none,noun_thing,noun_thing,False
+120325,Quittance,To repay; to requite.,-1,3,2,Foryelde,Cope,Redub,tied definition,verb,noun_thing,other,True
+120384,Quotable,Capable or worthy of being quoted; as  a quotable writer; a quotable sentence.,-1,1,1,Rememberable,Wishable,Comparable,unreachable,none,adj,adj,False
+120571,Racovian,One of a sect of Socinians or Unitarians in Poland.,-1,1,1,Unitarianism,Cracovian,Socinian,unreachable,none,agent,noun_thing,False
+120772,Ragious,Raging; furious; rageful.,-1,1,1,Furial,Rabid,Madding,unreachable,none,adj,adj,False
+121216,Rape,The act of seizing and carrying away by force; violent seizure; robbery.,968,11,1,Rapine,Reseizure,Taking,outranked,noun_thing,other,other,True
+121293,Rarefy,To become less dense; to become thin and porous.,2,2,1,Attenuant,Rarefy,Attenuate,"right word, deep",verb,other,adj,True
+121480,Rattle,Noisy  rapid talk.,70,14,1,Clatter,Clap,Bluster,outranked,none,other,agent,False
+121778,Realism,Fidelity to nature or to real life; representation without idealization  and making no appeal to the imagination; adherence to the actual fact.,-1,3,1,Veritable,Positive,Fanciless,no lexical overlap,none,noun_thing,adj,False
+121788,Realization,The act of realizing  or the state of being realized.,-1,1,1,Realizable,Tangible,Accomplicity,unreachable,noun_thing,noun_thing,adj,False
+124493,Repeat,To go over again; to attempt  do make or utter again; to iterate; to recite; as to repeat an effort an order or a poem.,68,6,1,Refar,Renew,Iterate,outranked,verb,other,other,True
+124541,Repercuss,To drive or beat back; hence  to reflect; to reverberate.,-1,1,1,Retort,Revert,Rebut,unreachable,verb,other,other,True
+124571,Repiner,One who repines.,-1,1,1,Inwardly,Conferrer,Cumulatist,unreachable,agent,agent,other,False
+124995,Rescind,To cut off; to abrogate; to annul.,-1,2,1,Forcarve,Forcut,Abscind,no lexical overlap,verb,other,other,True
+124996,Rescind,Specifically  to vacate or make void as an act by the enacting authority or by superior authority; to repeal; as to rescind a law a resolution or a vote; to rescind a decree or a judgment.,-1,2,1,Repeal,Avoid,Grace,no lexical overlap,none,other,adj,False
+125055,Resemble,To liken; to compare; to represent as like.,235,4,1,Liken,Assemble,Like,outranked,verb,other,other,True
+125057,Resemble,To cause to imitate or be like.,7,4,1,Liken,Twin,Unbe,"right word, deep",verb,other,other,True
+125072,Resent,To give forth an odor; to smell; to savor.,854,7,1,Stench,Season,Stench,outranked,verb,adj,other,True
+125381,Respite,To give or grant a respite to.,-1,8,1,Misgive,Reprieve,Beteem,no lexical overlap,verb,other,adj,True
+125438,Rest,A state of quiet or repose; a cessation from motion or labor; tranquillity; as  rest from mental exertion; rest of body or mind.,17,24,1,Quietude,Peace,Composure,outranked,noun_thing,other,other,True
+125604,Resurrection,State of being risen from the dead; future state.,17,4,1,Rise,Futurition,Futurity,outranked,noun_thing,noun_thing,verb,False
+125630,Retailment,The act of retailing.,-1,1,1,Retail,Peddler,Conformation,unreachable,noun_thing,noun_thing,other,False
+125825,Retraxit,The withdrawing  or open renunciation of a suit in court by the plaintiff by which he forever lost his right of action.,-1,1,1,Cause,Nonsuit,Libel,unreachable,none,other,other,False
+127533,Rogue,A worthless plant occuring among seedlings of some choice variety.,-1,8,1,Catchpenny,Selenite,Ambrosia,no lexical overlap,none,other,other,False
+128482,Rucervine,Of  like or pertaining to a deer of the genus Rucervus which includes the swamp deer of India.,-1,1,1,Rusine,Thamyn,Mulliod,unreachable,none,other,other,False
+128605,Rufflement,The act of ruffling.,-1,1,1,Heading,Crimper,Conformation,unreachable,noun_thing,noun_thing,other,False
+128981,Russ,A Russian  or the Russians.,2,3,1,Russianize,Russ,Russ,"right word, deep",none,other,verb,False
+129300,Sacrificer,One who sacrifices.,-1,1,1,Laborious,Laver,Martyr,unreachable,agent,agent,adj,False
+129481,Sail,Anything resembling a sail  or regarded as a sail.,97,14,1,Island,Worm,Heel,outranked,none,other,other,False
+129491,Sail,To set sail; to begin a voyage.,41,14,1,Loose,Onset,Voyage,outranked,verb,other,other,True
+129611,Salient,Moving by leaps or springs; leaping; bounding; jumping.,78,6,1,Subsultory,Saltation,Saltant,outranked,none,adj,place,False
+130064,Santonate,A salt of santonic acid.,-1,1,1,Supersalt,Arsenate,Bromate,unreachable,none,verb,other,False
+130640,Scabbard,The case in which the blade of a sword  dagger etc. is kept; a sheath.,-1,2,1,Steel,Grain,Creese,no lexical overlap,none,other,other,False
+131441,Sconce,Hence  the circular tube with a brim in a candlestick into which the candle is inserted.,2,12,1,Socket,Sconce,Wheel-shaped,"right word, deep",none,other,other,False
+131471,Scope,Length; extent; sweep; as  scope of cable.,99,5,1,Latitude,Area,Purview,outranked,none,other,other,False
+131789,Screw,Specifically  a kind of nail with a spiral thread and a head with a nick to receive the end of the screw-driver. Screws are much used to hold together pieces of wood or to fasten something; -- called also wood screws and screw nails. See also Screw bolt below.,14,17,1,Bolt,Button,Nail,outranked,none,other,other,False
+132838,Security,An evidence of debt or of property  as a bond a certificate of stock etc.; as government securities.,611,8,1,Debenture,Fund,Undue,outranked,none,noun_thing,noun_thing,False
+133325,Self-propagating,Propagating by one's self or by itself.,-1,1,1,Self-regulated,Self-suspended,Self-consuming,unreachable,none,other,other,False
+133569,Semnifical,Forming or producing seed  or the male generative product of animals or of plants.,-1,1,1,Generant,Prolific,Semen,unreachable,none,adj,adj,False
+133583,Semiorbicular,Having the shape of a half orb or sphere.,-1,1,1,Orbicle,Semispherical,Circle,unreachable,adj,other,other,True
+134635,Sewen,A British trout usually regarded as a variety (var. Cambricus) of the salmon trout.,-1,1,1,Bull trout,Bluepoll,Namaycush,unreachable,none,other,other,False
+134930,Shallow-waisted,Having a flush deck  or with only a moderate depression amidships; -- said of a vessel.,-1,1,1,Shallow-bodied,Undecked,Camber,unreachable,adj,other,other,True
+135427,Shelving,Material for shelves; shelves  collectively.,79,5,1,Slating,Studding,Belting,outranked,none,other,other,False
+135534,Shifting,Adapted or used for shifting anything.,9,3,1,Measuring,Veering,Stridulatory,"right word, deep",none,other,other,False
+135544,Shill,To put under cover; to sheal.,-1,2,1,Sheal,Succeed,Depose,no lexical overlap,verb,other,adj,True
+135672,Shipwright,One whose occupation is to construct ships; a builder of ships or other vessels.,-1,1,1,Shipbuilder,Potter,Mariner,unreachable,none,other,agent,False
+135804,Shogun,A title originally conferred by the Mikado on the military governor of the eastern provinces of Japan. By gradual usurpation of power the Shoguns (known to foreigners as Tycoons) became finally the virtual rulers of Japan. The title was abolished in 1867.,-1,1,1,Tycoon,Pasha,Waywode,unreachable,none,other,other,False
+136161,Shrink,To express fear  horror or pain by contracting the body or part of it; to shudder; to quake.,7,6,1,Tremble,Agrise,Ugh,"right word, deep",verb,other,other,True
+137395,Sitting,A brooding over eggs for hatching  as by fowls.,820,8,1,Eccaleobion,Incubation,Incubate,outranked,none,other,other,False
+138073,Sledge,A large  heavy hammer usually wielded with both hands; -- called also sledge hammer.,9,6,1,Uphand,Club,Hammer,"right word, deep",none,other,other,False
+138203,Slicker,A curved tool for smoothing the surfaces of a mold after the withdrawal of the pattern.,-1,4,1,Trowel,Rabbler,Grozing iron,no lexical overlap,none,agent,other,False
+138578,Slumber,To sleep; especially  to sleep lightly; to doze.,5,5,1,Drowse,Nap,Nap,"right word, deep",verb,agent,other,True
+141241,Spelt,To split; to break; to spalt.,-1,5,1,Spalt,Diffind,Resplit,no lexical overlap,verb,other,other,True
+141332,Spetches,Parings and refuse of hides  skins etc. from which glue is made.,-1,1,1,Skinner,Taurocolla,Rape,unreachable,none,other,agent,False
+141517,Spikenard,A fragrant essential oil  as that from the Nardostachys Jatamansi.,9,2,1,Attar,Nard,Aspalathus,"right word, deep",none,other,other,False
+141675,Spiranthy,The occasional twisted growth of the parts of a flower.,-1,1,1,Occasionality,Contorted,Symmetry,unreachable,none,other,noun_thing,False
+141853,Splay,To spay; to castrate.,-1,6,1,Lib,Spayed,Spaying,no lexical overlap,verb,other,other,True
+141944,Splinter,A thin piece split or rent off lengthwise  as from wood bone or other solid substance; a thin piece; a sliver; as splinters of a ship's mast rent off by a shot.,5,4,1,Split,Splint,Splint,"right word, deep",none,agent,other,False
+142032,Spoliator,One who spoliates; a spoiler.,-1,1,1,Depredator,Ravager,Monopolist,unreachable,agent,agent,agent,False
+142206,Spot,A variety of the common domestic pigeon  so called from a spot on its head just above its beak.,744,12,1,Turbit,Fantail,Laugher,outranked,none,other,other,False
+142619,Squamduck,The American eider duck.,-1,1,1,Wamp,Dunbird,Troopfowl,unreachable,none,other,other,False
+142940,Staff,A series of verses so disposed that  when it is concluded the same order begins again; a stanza; a stave.,88,11,1,Verse,Circle,Bower,outranked,none,other,other,False
+143465,Starry,Shining like stars; sparkling; as  starry eyes.,4,4,1,Twinkling,Stellary,Sparkling,"right word, deep",none,other,other,False
+144031,Step,To walk; to go on foot; esp.  to walk a little distance; as to step to one of the neighbors.,19,20,1,Tread,Tread,Tiptoe,outranked,verb,other,other,True
+144036,Step,An advance or movement made by one removal of the foot; a pace.,13,20,1,Replacement,Walk,Pace,outranked,none,other,noun_thing,False
+144053,Stepchild,A son or daughter of one's wife or husband by a former marriage.,-1,2,1,Stepdaughter,Stepson,Stepsister,no lexical overlap,none,other,agent,False
+144131,Stereotypic,Of or pertaining to stereotype  or stereotype plates.,-1,1,1,Stereotype,Stereotypery,Stereotyped,unreachable,none,adj,other,False
+144500,Stinginess,The quality or state of being stingy.,-1,1,1,Settledness,Absorbability,Affectibility,unreachable,noun_thing,noun_thing,noun_thing,False
+144753,Stoma,The minute breathing pores of leaves or other organs opening into the intercellular spaces  and usually bordered by two contractile cells.,38,4,1,Water pore,Intercellular,Pistillody,outranked,none,other,other,False
+144918,Stop,Some part of the articulating organs  as the lips or the tongue and palate closed (a) so as to cut off the passage of breath or voice through the mouth and the nose (distinguished as a lip-stop or a front-stop etc. as in p t d etc.) or (b) so as to obstruct but not entirely cut off,9,20,1,Shut,Stopped,Mute,"right word, deep",none,other,other,False
+145016,Story-teller,One who tells stories; a narrator of anecdotes incidents or fictitious tales; as an amusing story-teller.,-1,3,1,Teller,Tattler,Gestour,no lexical overlap,agent,agent,agent,False
+145262,Strap,The flat part of the corolla in ligulate florets  as those of the white circle in the daisy.,-1,12,1,Semiflosculous,Radiate,Strap-shaped,no lexical overlap,none,other,adj,False
+146147,Stycerin,A triacid alcohol  related to glycerin and obtained from certain styryl derivatives as a yellow gummy amorphous substance; -- called also phenyl glycerin.,-1,1,1,Glycide,Laccin,Naphthalenic,unreachable,none,other,other,False
+146190,Stylomaxillary,Of or pertaining to the styloid process and the maxilla.,-1,1,1,Styloglossal,Styloid,Stylohyoid,unreachable,none,adj,adj,False
+147323,Suffumigation,The operation of suffumigating.,-1,1,1,Vindemiation,Uvulatomy,Inactuation,unreachable,none,noun_thing,noun_thing,False
+147346,Sugariness,The quality or state of being sugary  or sweet.,-1,1,1,Sugary,Settledness,Sweetness,unreachable,noun_thing,noun_thing,adj,False
+147743,Superb,Rich; elegant; as  superb furniture or decorations.,2,3,1,Parament,Superb,Superb,"right word, deep",none,other,noun_thing,False
+148062,Supplement,That which fills up  completes or makes an addition to something already organized arranged or set apart; specifically a part added to or issued as a continuation of a book or paper to make good its deficiencies or correct its errors.,18,4,1,Complement,Glut,Appendix,outranked,tool,noun_thing,noun_thing,True
+148118,Support,To assume and carry successfully  as the part of an actor; to represent or act; to sustain; as to support the character of King Lear.,13,13,1,Play,Impersonate,Act,outranked,verb,other,other,True
+148460,Surquedous,Alt. of Surquedrous,-1,1,1,Aden-,Adenalgia,Adenoid,unreachable,none,adj,other,False
+149777,Syntactical,Of or pertaining to syntax; according to the rules of syntax  or construction.,-1,1,1,Contrapuntal,Prosodical,Arithmetical,unreachable,none,adj,adj,False
+149798,Synthetize,To combine; to unite in regular structure.,-1,1,1,Co-une,Piece,Synthesize,unreachable,verb,verb,other,False
+149877,Systemless,Being without system.,292,3,1,Lampless,Lungless,Reproachless,outranked,adj,adj,adj,False
+151862,Terminal,Either of the ends of the conducting circuit of an electrical apparatus  as an inductorium dynamo or electric motor usually provided with binding screws for the attachment of wires by which a current may be conveyed into or from the machine; a pole.,949,4,1,Brush,Dynamo,Rheomotor,outranked,none,adj,other,False
+152519,Theme,That by means of which a thing is done; means; instrument.,-1,6,1,Lift,Grader,Shaker,no lexical overlap,tool,other,other,True
+152556,Theogonic,Of or relating to theogony.,-1,1,1,Theogonism,Theogonist,Alchemical,unreachable,none,adj,noun_thing,False
+152594,Theopneusty,Divine inspiration; the supernatural influence of the Divine Spirit in qualifying men to receive and communicate revealed truth.,-1,1,1,Inspiration,Inspire,Afflatus,unreachable,none,other,noun_thing,False
+152936,Thirdings,The third part of the corn or grain growing on the ground at the tenant's death  due to the lord for a heriot as within the manor of Turfat in Herefordshire.,-1,1,1,Seignior,Shack,Grist,unreachable,none,other,agent,False
+153202,Three-piled,Fig.: Extravagant; exaggerated; high-flown.,425,3,1,High-flown,Highfaluting,Euphuism,outranked,none,other,other,False
+154342,Toadstool,A name given to many umbrella-shaped fungi  mostly of the genus Agaricus. The species are almost numberless. They grow on decaying organic matter.,-1,1,1,Agaric,Mushroom,Mould,unreachable,none,other,adj,False
+154388,Tod,An old weight used in weighing wool  being usually twenty-eight pounds.,-1,4,1,Clove,Score,Stand,no lexical overlap,none,other,other,False
+154894,Top-timbers,The highest timbers on the side of a vessel  being those above the futtocks.,-1,1,1,Suprascalpulary,Midships,Poppet,unreachable,none,agent,adj,False
+155397,Traceries,of Tracer/y,-1,1,1,Y's,Ys,Ypsiloid,unreachable,none,other,other,False
+155902,Transfugitive,One who flees from one side to another; hence  a deserter; a turncoat; an apostate.,-1,1,1,Fugitive,Fleer,Renegade,unreachable,agent,adj,adj,True
+156274,Traverse,Lying across; being in a direction across something else; as  paths cut with traverse trenches.,4,23,1,Homotropous,Superincumbent,Transverse,"right word, deep",none,other,adj,False
+156285,Traverse,The turning of a gun so as to make it point in any desired direction.,4,23,1,Quaquaversal,Swivel,Lay,"right word, deep",none,other,adj,False
+156981,Trimethylene,A gaseous hydrocarbon  C3H6 isomeric with propylene and obtained from it indirectly. It is the base of a series of compounds analogous to the aromatic hydrocarbons.,-1,1,1,Cinnoline,Phenanthridine,Thiophthene,unreachable,none,other,other,False
+157483,Trousering,Cloth or material for making trousers.,-1,1,1,Bagging,Shirting,Quilting,unreachable,none,other,other,False
+157517,Trubu,An East India herring (Clupea toli) which is extensively caught for the sake of its roe and for its flesh.,-1,1,1,Syle,Matie,Blueback,unreachable,none,other,other,False
+157819,Tube,The narrow  hollow part of a gamopetalous corolla.,331,9,1,Calcar,Inflated,Barrel,outranked,none,other,other,False
+159030,Umber,Of or pertaining to umber; resembling umber; olive-brown; dark brown; dark; dusky.,16,5,1,Dingy,Sooty,Fuliginous,outranked,none,agent,other,False
+159031,Umber,To color with umber; to shade or darken; as  to umber over one's face.,19,5,1,Overshadow,Inumbrate,Obumbrate,outranked,verb,agent,other,True
+159091,Umpire,A third person  who is to decide a controversy or question submitted to arbitrators in case of their disagreement.,16,5,1,Award,Arbitrate,Difference,outranked,none,other,other,False
+159285,Unbenign,Not benign; malignant.,-1,1,1,Infelonious,Nonmalignant,Affable,unreachable,none,other,adj,False
+159980,Undertake,To take upon one's self  or assume any business duty or province.,9,10,1,Impropriate,Assume,Profess,"right word, deep",verb,other,verb,True
+160373,Ungulate,Shaped like a hoof.,-1,3,1,Dentoid,Nuciform,Aciform,no lexical overlap,none,verb,other,False
+160501,Unifromness,The quality or state of being uniform; uniformity.,-1,1,1,Invariability,Uniformity,Equability,unreachable,noun_thing,noun_thing,noun_thing,False
+160914,Unpaved,Not paved; not furnished with a pavement.,-1,2,1,Unrevenued,Pament,Paving,no lexical overlap,none,other,other,False
+161152,Unsatiability,Quality of being unsatiable; insatiability.,-1,1,1,Insatiableness,Alimentariness,Alibility,unreachable,noun_thing,noun_thing,noun_thing,False
+161257,Unskillful,Lacking discernment; injudicious; ignorant.,-1,2,1,Weak,Injudiciously,Discernance,no lexical overlap,none,adj,other,False
+161431,Untraded,Not traded in or bartered; hence  not hackneyed; unusual; not common.,437,3,1,Uncommon,Strange,Hack,outranked,none,other,other,False
+161575,Up,In a higher place or position  literally or figuratively; in the state of having arisen; in an upright or nearly upright position; standing; mounted on a horse; in a condition of elevation prominence advance proficiency excitement insurrection or the like; -- used with verbs of rest situation condition,4,11,1,Down,Whereness,Blindness,"right word, deep",none,other,other,False
+162019,Use,The premium paid for the possession and employment of borrowed money; interest; usury.,577,15,1,Usance,Usury,Fenerate,outranked,none,other,noun_thing,False
+162300,Vagrant,Wandering from place to place without any settled habitation; as  a vagrant beggar.,2,3,1,Vagabond,Vagrant,Gangrel,"right word, deep",none,adj,other,False
+162767,Vasum,A genus including several species of large marine gastropods having massive pyriform shells  with conspicuous folds on the columella.,-1,1,1,Turbinella,Yet,Pyrula,unreachable,none,other,other,False
+163026,Veneficial,Alt. of Veneficious,-1,1,1,Aden-,Adenalgia,Adenoid,unreachable,none,adj,other,False
+163285,Vergency,The reciprocal of the focal distance of a lens  used as measure of the divergence or convergence of a pencil of rays.,-1,2,1,Divergent,Condenser,Diacaustic,no lexical overlap,none,other,adj,False
+163932,Villain,To debase; to degrade.,-1,5,1,Disbase,Vilify,Villanize,no lexical overlap,verb,other,other,True
+164069,Violate,To commit rape on; to ravish; to outrage.,-1,4,1,Rape,Violation,Outrage,no lexical overlap,verb,verb,other,False
+164993,Wage,To put upon wages; to hire; to employ; to pay wages to.,4,9,1,Stipend,Retain,Hireling,"right word, deep",verb,other,other,True
+165007,Wagering,Hazarding; pertaining to the act of one who wagers.,-1,2,1,Wagerer,Gaming,Badgering,no lexical overlap,none,other,agent,False
+165249,Waltz,A dance performed by two persons in circular figures with a whirling motion; also  a piece of music composed in triple measure for this kind of dance.,466,2,1,Courant,Entr'acte,Trenchmore,outranked,none,other,adj,False
+165281,Wanderment,The act of wandering  or roaming.,-1,1,1,Roam,Stray,Rove,unreachable,noun_thing,noun_thing,other,False
+165598,Wart,An excrescence or protuberance more or less resembling a true wart; specifically (Bot.)  a glandular excrescence or hardened protuberance on plants.,-1,2,1,Chit,Skeleton,Excrescential,no lexical overlap,none,other,other,False
+166226,Weak,Lacking in elements of political strength; not wielding or having authority or energy; deficient in the resources that are essential to a ruler or nation; as  a weak monarch; a weak government or state.,35,23,1,Monarchy,Feeble,Deficient,outranked,none,other,other,False
+166442,Wedge,To cleave or separate with a wedge or wedges  or as with a wedge; to rive.,2,11,1,Enrive,Wedge,Dispart,"right word, deep",verb,other,adj,True
+166451,Wedge-shaped,Broad and truncate at the summit  and tapering down to the base; as a wedge-shaped leaf.,146,2,1,Cuneated,Lanceolated,Fron'tated,outranked,none,other,other,False
+167243,Whipperin,Hence  one who enforces the discipline of a party and urges the attendance and support of the members on all necessary occasions.,108,2,1,Enforcer,Whip,Urger,outranked,none,other,agent,False
+167511,Whity-brown,Of a color between white and brown.,-1,1,1,Drab,Ashen,Thenardite,unreachable,none,other,other,False
+167680,Wieldless,Not to be wielded; unmanageable; unwieldy.,-1,1,1,Unweldy,Unwieldy,Wieldy,unreachable,none,adj,other,False
+168125,Wiredraw,To pass  or to draw off (as steam) through narrow ports or the like thus reducing its pressure or force by friction.,183,4,1,Grind,Squeeze,Push,outranked,verb,other,other,True
+168190,Wistful,Longing; wishful; desirous.,-1,2,1,Wishful,Yearnful,Fond,no lexical overlap,none,adj,adj,False
+168384,Woe,A curse; a malediction.,-1,3,1,Malison,Anathema,Cursed,no lexical overlap,none,other,other,False
+168868,Wounder,One who  or that which wounds.,-1,1,1,Portoir,Sweetener,Cheerer,unreachable,agent,agent,other,False
+169411,Yawl-rigged,Having two masts with fore-and-aft sails  but differing from a schooner in that the after mast is very small and stepped as far aft as possible. See Illustration in Appendix.,-1,1,1,Catboat,Lugger,Schooner,unreachable,adj,other,other,True
+169419,Yawn,The act of opening wide  or of gaping.,86,7,1,Dehiscence,Hiation,Oscitancy,outranked,noun_thing,other,noun_thing,True
+169563,Yester-morning,The morning of yesterday.,-1,1,1,A-mornings,Yester-evening,Yesternoon,unreachable,none,other,other,False
+169668,Yoke-toed,Having two toes in front and two behind  as the trogons and woodpeckers.,-1,1,1,Heterodactylous,Zygodactylous,Orohippus,unreachable,adj,other,adj,True
+170069,Zope,A European fresh-water bream (Abramis ballerus).,-1,1,1,Zarthe,Bream,Pinfish,unreachable,none,other,other,False
