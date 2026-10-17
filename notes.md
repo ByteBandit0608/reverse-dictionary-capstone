@@ -10,8 +10,17 @@ is hand-typed from a notebook run except the parts marked as measured on the raw
 from Webster's Revised Unabridged, 1913. Public domain, so it can sit in a public repo.
 
 Columns are Word, Count, POS, Definition. Count is how often the word shows up in the source
-text. The POS column exists but only 0.02% of rows have anything in it, so tags have to be
-produced and not read.
+text.
+
+The POS column is filled, 97.9% of rows. It holds Webster's own abbreviations, `n.`, `v. i.`,
+`v. t.`, `a.`, `adv.`, `prep.`, `conj.`, `interj.`, `pron.`, `s.`, and some compounds like
+`imp. & p. pr.` and `a. & superl.`. Empty cells are written as `` in the csv, which pandas
+reads as a pair of quote characters, so a "is it empty" check has to strip quotes or it lies.
+
+We got this wrong at first. In the meeting the answer given to him was that the column is empty,
+that came from our EDA which only accepted a single letter as a tag. It isn't empty, we were
+reading it badly. So POS is read from the file and the suffix rule is kept only as the fallback
+and as the morphology channel.
 
 176,004 rows over 111,597 distinct headwords, 166,065 different definition strings. The brief
 says about 96,200 pairs which is a different version of the file. We asked, Ekansh said on
@@ -39,6 +48,10 @@ measured on the raw csv, before cleaning:
 1. drop rows where the definition is `#NAME?`, empty, or under 2 characters
 2. drop rows starting with "see" / "same as" / "same for"
 3. drop exact duplicate (word, definition) rows
+
+one consequence to know about: 4,565 headwords exist only as cross references or duplicates, so
+dropping those rows takes them out of the answer space too, 111,597 distinct words in the raw
+file becomes 107,032 after cleaning. that is the vocabulary every Recall number is over.
 
 no length filter. in the last meeting one of us said the cross references would get cleared by
 a length limit, and they would, along with 17.83% of the file, because that many definitions are
@@ -73,26 +86,35 @@ that. moving it to synsets is a week 4 job, then about 100 queries judged by han
 ## the self match thing
 
 our test queries are rows of the same file the index is built from. so bm25 gets handed the
-answer as a string and can approach 1.0 at Recall@1 without understanding anything. that number
-means nothing on its own. so `run_baselines.py` runs both protocols:
+answer as a string and can approach 1.0 at Recall@1 without understanding anything. so
+`run_baselines.py` runs both protocols:
 - in_dictionary: the query's own row is in the index. it is in-dictionary lookup
 - leave_one_out: that row is removed. now the word has to come from a sibling sense or from a
   neighbour's definition
 
-we print how often rank 1 is literally the query row, next to every number. leave_one_out has a
-ceiling too: a word with a single row becomes impossible to reach when that row is the query,
-and `splits/manifest.json` reports that share as pct_reachable_when_self_removed.
+we print how often rank 1 is literally the query row, next to every number.
+
+two numbers from `splits/manifest.json` set the ceilings for what the table can look like.
+- pct_reachable_when_self_removed is 57.4. under leave_one_out, 42.6% of the queries lose their
+  word completely, because that word had exactly one row and that row is the query. so the honest
+  ceiling on that protocol is about 0.574 and not 1.0
+- ceiling_strict_top1 is 0.996 on our 500 queries. the corpus level tie rate is 10.2% of rows
+  sharing a definition string, but among our queries it is 0.8%. the reason is almost certainly
+  that repeated definition strings are short ones and the query rule asks for 3 tokens or more,
+  which is worth one line to confirm before we quote either figure. the 0.944 we quoted in the EDA
+  was the whole corpus, so if someone compares the two numbers, that is the difference
 
 he said human written / colloquial queries are not needed for now, the held out set is enough,
 and that colloquial queries would be harder for the model. so we are not building any. if the
-leave_one_out numbers end up dominated by unreachable queries, the option is to generate
-modern paraphrases of these definitions, which breaks the self match and gives us the colloquial
-set at the same time. that is a proposal, not a plan.
+leave_one_out numbers end up dominated by unreachable queries, the option is to generate modern
+paraphrases of these definitions, which breaks the self match and gives us the colloquial set at
+the same time. that is a proposal, not a plan.
 
 ## features
 
-`src/explore_pos.py`. POS from the headword ending (spaCy on top when en_core_web_sm is
-installed). roles read off the opening of the definition, because he said on 3 Oct he means
+`src/explore_pos.py`. POS comes from the column now, `tag_class()` maps the Webster
+abbreviations to noun / verb / adj / adv / prep / conj / interj / pron. the suffix rule stays as
+the fallback and as the morphology channel. spaCy, when installed, is only a cross check. roles read off the opening of the definition, because he said on 3 Oct he means
 agent/patient, karak, "not the subject-object thing". so no nsubj/dobj parsing. a dictionary
 writes the role in the text: "a person who" is an agent, "that which is used by" is a patient or
 an instrument, "the place where" is a location. he also said other roles are there, so we count
@@ -150,4 +172,5 @@ the scripts are deterministic, same seed same splits same queries same tables.
 - ask: which number is the headline one for the report, in_dictionary or leave_one_out
 - check whether their released model can be used for inference only or whether he expects us to
   retrain their architecture
+- confirm the 0.8% vs 10.2% tie gap is the 3 token query rule, then fix which ceiling we quote
 - he will push reference papers to the repo once the dataset is up. nothing there yet
