@@ -53,6 +53,8 @@ def main():
 
     print("wrote", OUT)
     for k in ("rows_raw", "rows", "rows_dropped_bad_def", "rows_dropped_named",
+              "rows_named_in_word", "rows_named_in_definition", "rows_named_word_exact",
+              "rows_dropped_empty_word",
               "rows_dropped_crossref", "rows_dropped_dupes", "rows_dropped_self_ref",
               "pct_rows_self_ref", "pct_rows_self_ref_exact", "n_words", "n_words_train", "n_words_val",
               "n_words_test", "rows_train", "rows_val", "rows_test",

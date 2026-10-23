@@ -24,8 +24,10 @@ measured on the raw csv, before cleaning:
 - 25,309 words (22.68% of the vocabulary) have more than one definition. `run` has 72, `set` has 59
 - 18,321 rows (10.41%) share their definition string with at least one other word. worst case is one
   string shared by 9 words
-- 101 exact duplicate rows, 206 rows where the definition is literally `#NAME?`, 363 rows with
-  doubled quotes inside the string
+- 101 exact duplicate rows, 363 rows with doubled quotes inside the string
+- 207 lines of the raw file contain `#NAME?` and every one of them has it in the Word and Count
+  columns, none in the Definition column. Those rows are an Excel error value that came in when the
+  source was resaved, the headword is `#NAME?` and the definition is a fragment like "of Baptistry"
 - 1.34% of headwords have characters other than letters. many of them are real entries like
   `bank of a river`, so they stay
 - 5,622 rows (3.19%) start with "see" or "same as". cross references, no meaning in them
@@ -51,22 +53,27 @@ morphology channel.
 
 ## cleaning
 
-`src/rexdict.py:load()` drops four things:
-1. rows whose definition contains `#NAME?`, is empty, or is under 2 characters
-2. rows starting with "see" / "same as" / "same for"
-3. exact duplicate (word, definition) rows
-4. rows whose definition contains the headword it is defining, matched after stripping common
+`src/rexdict.py:load()` drops five things:
+1. rows whose definition is empty or under 2 characters
+2. rows where `#NAME?` appears in the headword or in the definition
+3. rows with no headword at all, 4 of them. A row with an empty word can never be answered
+   correctly, it is only noise in the index, and it breaks the failure report because the empty cell
+   comes back through a csv read as a NaN
+4. rows starting with "see" / "same as" / "same for", and exact duplicate (word, definition) rows
+5. rows whose definition contains the headword it is defining, matched after stripping common
    inflections so `Abolishment` catches `abolishing`
 
-Rule 1 used to be anchored at the start of the string, so only the 5 rows that begin with `#NAME?`
-were dropped while the notes reported 206. Both numbers were right about different things. The
-pattern is unanchored now and the manifest records `rows_dropped_named` so the count is in the
-output instead of in prose.
+On 2, the first version of the rule looked only at the definition column and found nothing there,
+then the fix looked at the start of the string and found 5 rows, and both were the wrong question.
+The damage is in the headword column, which is why the count was invisible to a definition based
+rule. The manifest now prints `rows_named_in_word`, `rows_named_in_definition` and
+`rows_named_word_exact` beside `rows_dropped_named`, so the 206 in the old notes and the 207 from a
+grep of the file are compared from the output rather than from memory.
 
-Rule 4 is the label leakage case. A definition that contains its own word can be scored by string
-copy alone, so it goes out of the corpus and not only out of the query set. `pct_rows_self_ref` and
-`pct_rows_self_ref_exact` in the manifest report how much of the file that is, and they are printed
-on their own in the EDA notebook.
+On 5, this is the label leakage case. A definition that contains its own word can be scored by
+string copy alone, so it goes out of the corpus and not only out of the query set.
+`pct_rows_self_ref` and `pct_rows_self_ref_exact` report how much of the file that is, 19.45% and
+13.33% on this corpus, and the EDA notebook prints them on their own.
 
 One consequence worth knowing: 4,565 headwords exist only as cross references or duplicates, so
 dropping those rows removes those words from the answer space too. 111,597 distinct words raw
@@ -75,6 +82,12 @@ becomes 107,032 after cleaning. That is the vocabulary every Recall number below
 There is deliberately no length filter. A 3 token cut would clear the cross references, along with
 17.83% of the file, because that many definitions are shorter than 3 tokens. Cleaning is by pattern.
 Nor do we collapse a word to one sense, the extra senses are what the polysemy question is about.
+
+What the self reference rule costs has to be said as plainly as what it fixes: 34,050 rows go out,
+and roughly 11,700 headwords with them, because those words are written in this file only in a way
+that names themselves. They are no longer in the answer space at all. The row and word totals are in
+`splits/manifest.json` rather than repeated here, since they move every time a rule changes and this
+file has already been wrong once about a count that the scripts could read out better.
 
 ## query set v2
 

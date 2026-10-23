@@ -21,6 +21,11 @@ MAX_RANK = 1000  # ranks worse than this are capped, following the Sõnajaht pap
 
 CROSSREF = re.compile(r"^(see|same as|same for)\b", re.I)
 BAD_DEF = re.compile(r"^nan$|^$", re.I)
+# the #NAME? damage in this file is in the Word and Count columns, not in the
+# definition. it is an Excel error value left behind when the source was resaved,
+# 207 rows whose headword is literally "#NAME?" and whose definition is a fragment
+# like "of Baptistry". Count is numeric by the time we get here so the check runs
+# on the headword, and on the definition text in case the same damage lands there.
 NAMED = re.compile(r"#NAME", re.I)
 # trailing inflections we strip off the headword before matching it inside its own
 # definition. "Abolishment" has to catch "abolishing", otherwise the leak is
@@ -104,10 +109,19 @@ def load(path=None, clean=True):
                               for a, b in zip(df["word"], df["definition"])])
         meta["pct_rows_self_ref"] = round(float(self_hit.mean()) * 100, 2)
         meta["pct_rows_self_ref_exact"] = round(float(exact_hit.mean()) * 100, 2)
-        named = df["definition"].map(lambda s: bool(NAMED.search(s)))
+        in_word = df["word"].map(lambda s: bool(NAMED.search(s)))
+        in_def = df["definition"].map(lambda s: bool(NAMED.search(s)))
+        named = in_word | in_def
+        # a row with no headword can never be answered correctly, it is only noise in
+        # the index. the csv writes these as an empty quoted cell.
+        empty_word = df["word"].str.len() == 0
+        meta["rows_named_in_word"] = int(in_word.sum())
+        meta["rows_named_in_definition"] = int(in_def.sum())
+        meta["rows_named_word_exact"] = int((df["word"] == "#NAME?").sum())
         meta["rows_dropped_named"] = int(named.sum())
+        meta["rows_dropped_empty_word"] = int(empty_word.sum())
         bad_def = df["definition"].map(lambda s: bool(BAD_DEF.match(s))) | \
-                  (df["definition"].str.len() < 2) | named
+                  (df["definition"].str.len() < 2) | named | empty_word
         n_bad = int(bad_def.sum())
         df = df[~bad_def].copy()
         # "see XYZ" style entries. Pattern based. A length cut would also remove

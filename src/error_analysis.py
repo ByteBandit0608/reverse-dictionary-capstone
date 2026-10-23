@@ -45,6 +45,13 @@ def named_in_query(top1, defn):
     return any(stem(w) in d for w in words_of(top1))
 
 
+def cls_of(w):
+    """class from the headword ending. a failure file can carry a missing word, either
+    an empty cell read back as NaN or the - placeholder for nothing at that rank, so
+    the guard is here and not inside classify."""
+    return classify(w) if isinstance(w, str) and w and w != "-" else "-"
+
+
 def category(row):
     if row["gold_rank"] == -1 and row["n_rows_for_gold"] <= 1:
         return "unreachable"        # the only row for that word was the one we removed
@@ -87,8 +94,8 @@ def main():
     fl["cue"] = df.loc[fl["query_row"].tolist(), "definition"].map(cue_of).fillna("none").values
     qrows = df.loc[fl["query_row"].tolist()]
     fl["gold_pos"] = qrows["pos_raw"].map(tag_class).values
-    fl["gold_cls"] = fl["gold"].map(classify)
-    fl["top1_cls"] = fl["top1"].map(lambda w: classify(w) if w != "-" else "-")
+    fl["gold_cls"] = fl["gold"].map(cls_of)
+    fl["top1_cls"] = fl["top1"].map(cls_of)
     fl["hard_filter_would_drop_gold"] = [would_be_dropped(c, p)
                                          for c, p in zip(fl["cue"], fl["gold_pos"])]
     fl["top1_named_in_definition"] = [named_in_query(a, b)
