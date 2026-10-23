@@ -1,0 +1,95 @@
+{
+ "ceilings": {
+  "ceiling_strict_top1": 0.996,
+  "pct_reachable_when_self_removed": 57.4
+ },
+ "max_seq_length": 64,
+ "meta": {
+  "csv": "/kaggle/input/datasets/kannabiranv/opted-dictionary/OPTED-Dictionary.csv",
+  "max_tie": 9,
+  "mean_ntok": 11.42,
+  "median_ntok": 8,
+  "n_def_strings": 160832,
+  "n_words": 107032,
+  "n_words_multi_sense": 24680,
+  "pct_multi_sense": 23.06,
+  "pct_pos_filled": 97.91,
+  "pct_shared_def": 10.25,
+  "rows": 170140,
+  "rows_dropped_bad_def": 5,
+  "rows_dropped_crossref": 5622,
+  "rows_dropped_dupes": 242,
+  "rows_per_word": 1.59,
+  "rows_raw": 176009
+ },
+ "minilm": {
+  "in_dictionary": {
+   "strict": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.8,
+    "recall@1": 0.998,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   },
+   "tolerant": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "recall@1": 1.0,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   }
+  },
+  "leave_one_out": {
+   "strict": {
+    "median_rank": 1000,
+    "pct_not_in_top1000": 58.0,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.028,
+    "recall@10": 0.132,
+    "recall@100": 0.284
+   },
+   "tolerant": {
+    "median_rank": 1000,
+    "pct_not_in_top1000": 57.4,
+    "recall@1": 0.036,
+    "recall@10": 0.14,
+    "recall@100": 0.29
+   }
+  }
+ },
+ "model": "sentence-transformers/all-MiniLM-L6-v2",
+ "n_failures_leave_one_out": 486,
+ "n_queries": 500,
+ "pct_queries_unreachable_without_self_row": 42.6,
+ "runtime_sec": 66.2,
+ "table": [
+  {
+   "median_rank": 1,
+   "method": "minilm",
+   "pct_not_in_top1000": 0.0,
+   "pct_self_row_at_1": 99.8,
+   "protocol": "in_dictionary",
+   "r100_tol": 1.0,
+   "r10_tol": 1.0,
+   "r1_tol": 1.0,
+   "recall@1": 0.998,
+   "recall@10": 1.0,
+   "recall@100": 1.0
+  },
+  {
+   "median_rank": 1000,
+   "method": "minilm",
+   "pct_not_in_top1000": 58.0,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "leave_one_out",
+   "r100_tol": 0.29,
+   "r10_tol": 0.14,
+   "r1_tol": 0.036,
+   "recall@1": 0.028,
+   "recall@10": 0.132,
+   "recall@100": 0.284
+  }
+ ],
+ "tag": "minilm"
+}
