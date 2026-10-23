@@ -8,17 +8,50 @@ import os
 import re
 import glob
 import json
+from functools import lru_cache
 import numpy as np
 import pandas as pd
 
 SEED = 2026
 N_QUERIES = 500
 MIN_QUERY_TOKENS = 3
+MIN_QUERY_SENSES = 2   # a query word must keep another row, or leave_one_out deletes its answer
 TOPK = (1, 10, 100)
 MAX_RANK = 1000  # ranks worse than this are capped, following the Sõnajaht paper
 
 CROSSREF = re.compile(r"^(see|same as|same for)\b", re.I)
-BAD_DEF = re.compile(r"^#NAME\?$|^nan$|^$", re.I)
+BAD_DEF = re.compile(r"^nan$|^$", re.I)
+NAMED = re.compile(r"#NAME", re.I)
+# trailing inflections we strip off the headword before matching it inside its own
+# definition. "Abolishment" has to catch "abolishing", otherwise the leak is
+# counted as clean when it is only spelled differently.
+INFLECTION = re.compile(r"(ments?|ments|es|ed|ing|s)$")
+TAIL = "(?:s|es|ed|ing|ment|ments)?"
+
+
+def self_ref_pattern(word):
+    w = re.sub(r"[^a-z]", "", str(word).lower())
+    if len(w) < 3:
+        return None
+    core = INFLECTION.sub("", w)
+    if len(core) < 3:
+        core = w
+    return re.compile(r"\b%s%s\b" % (re.escape(core), TAIL))
+
+
+@lru_cache(maxsize=200000)
+def _pattern(word):
+    return self_ref_pattern(word)
+
+
+def contains_headword(word, defn):
+    p = _pattern(word)
+    return p is not None and p.search(str(defn).lower()) is not None
+
+
+def exact_headword(word, defn):
+    w = re.sub(r"[^a-z]", "", str(word).lower())
+    return len(w) >= 3 and re.search(r"\b%s\b" % re.escape(w), str(defn).lower()) is not None
 
 
 def find_csv():
@@ -65,8 +98,16 @@ def load(path=None, clean=True):
 
     meta = {"csv": path, "rows_raw": n_raw}
     if clean:
+        self_hit = np.array([contains_headword(a, b)
+                             for a, b in zip(df["word"], df["definition"])])
+        exact_hit = np.array([exact_headword(a, b)
+                              for a, b in zip(df["word"], df["definition"])])
+        meta["pct_rows_self_ref"] = round(float(self_hit.mean()) * 100, 2)
+        meta["pct_rows_self_ref_exact"] = round(float(exact_hit.mean()) * 100, 2)
+        named = df["definition"].map(lambda s: bool(NAMED.search(s)))
+        meta["rows_dropped_named"] = int(named.sum())
         bad_def = df["definition"].map(lambda s: bool(BAD_DEF.match(s))) | \
-                  (df["definition"].str.len() < 2)
+                  (df["definition"].str.len() < 2) | named
         n_bad = int(bad_def.sum())
         df = df[~bad_def].copy()
         # "see XYZ" style entries. Pattern based. A length cut would also remove
@@ -77,9 +118,17 @@ def load(path=None, clean=True):
         dupes = df.duplicated(["word", "definition"])
         n_dupes = int(dupes.sum())
         df = df[~dupes]
+        # rows where the definition uses the word it is defining. label leakage, a
+        # model can score them by string copy alone, so they come out of the corpus
+        # and not only out of the query set.
+        keep = ~np.array([contains_headword(a, b)
+                          for a, b in zip(df["word"], df["definition"])])
+        n_self = int((~keep).sum())
+        df = df[keep].copy()
         meta.update(rows_dropped_bad_def=n_bad,
                     rows_dropped_crossref=n_cross,
-                    rows_dropped_dupes=n_dupes)
+                    rows_dropped_dupes=n_dupes,
+                    rows_dropped_self_ref=n_self)
 
     df = df.reset_index(drop=True)
     words = np.array(sorted(df["word"].unique()))
@@ -123,10 +172,19 @@ def make_word_split(df, ratios=(0.8, 0.1, 0.1), seed=SEED):
     return w[:a], w[a:b], w[b:]
 
 
-def pick_queries(df, test_wids, n=N_QUERIES, min_toks=MIN_QUERY_TOKENS, seed=SEED):
+def pick_queries(df, test_wids, n=N_QUERIES, min_toks=MIN_QUERY_TOKENS, seed=SEED,
+                 min_senses=MIN_QUERY_SENSES):
     """the fixed 500 queries as row indices into df, sorted, so they can be
-    committed as a text file and everyone scores on the same set."""
+    committed as a text file and everyone scores on the same set.
+    min_senses keeps only words with at least two rows. under leave_one_out a
+    single sense word loses its only row, so the answer is gone and no model can be
+    scored on it at all. that made 42.6% of the earlier query set dead weight."""
     cand = df[df["wid"].isin(set(test_wids.tolist())) & (df["ntok"] >= min_toks)]
+    if min_senses > 1:
+        # counted over the whole cleaned corpus, not over the candidate rows. the
+        # sibling sense only has to be in the index, it does not have to be long
+        sizes = df.groupby("wid").size()
+        cand = cand[cand["wid"].isin(set(sizes[sizes >= min_senses].index))]
     idx = cand.index.to_numpy()
     if len(idx) <= n:
         return idx

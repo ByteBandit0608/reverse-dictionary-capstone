@@ -22,6 +22,9 @@ OUTDIR = os.environ.get("REXDICT_RESULTS", "results")
 IN = os.path.join(OUTDIR, "failures_bm25_leave_one_out.csv")
 
 STEM = re.compile(r"^(.+?)(ations?|ings?|ers?|ors?|ists?|ies|ing|ed|es|s)$")
+LONG = 24     # definitions at or above the corpus p90, the multi clause ones
+RARE_DF = 2   # a term used twice or less in the whole file counts as rare
+RARE_FRAC = 0.5
 
 
 def stem(w):
@@ -54,6 +57,27 @@ def category(row):
     return "outranked"               # retrieved, but past rank 10
 
 
+def phenomenon(row, rare_frac):
+    """which phenomenon the miss is an instance of. five labels, each one computed
+    from fields already in the row, so the count is reproducible and not a judgement
+    call. thresholds are in LONG and RARE_DF."""
+    if row["gold_rank"] == -1 and row["n_rows_for_gold"] <= 1:
+        return "structural, the protocol deleted the only row"
+    if row["n_shared_def"] > 1:
+        return "structural, two words share the exact string"
+    if row["gold_rank"] == -1:
+        if rare_frac >= RARE_FRAC:
+            return "rare or technical wording in the query"
+        if row["ntok"] >= LONG:
+            return "long definition, several ideas at once"
+        return "the dictionary words it up differently"
+    if row["top1_named_in_definition"]:
+        return "returned a synonym the definition itself names"
+    if row["gold_rank"] <= 10:
+        return "right word found, ranked just below"
+    return "right word found, buried past the top 10"
+
+
 def main():
     if not os.path.exists(IN):
         raise SystemExit("missing %s - run python src/run_baselines.py first" % IN)
@@ -69,13 +93,27 @@ def main():
                                          for c, p in zip(fl["cue"], fl["gold_pos"])]
     fl["top1_named_in_definition"] = [named_in_query(a, b)
                                       for a, b in zip(fl["top1"], fl["definition"])]
+    q = df.loc[fl["query_row"].tolist()]
+    fl["ntok"] = q["ntok"].values
+    doc_df = Counter(t for toks in df["definition"].map(R.tokens) for t in set(toks))
+    rare = []
+    for toks in q["definition"].map(R.tokens):
+        keep = [t for t in toks if len(t) > 3]
+        rare.append(sum(1 for t in keep if doc_df.get(t, 0) <= RARE_DF) / len(keep) if keep else 0.0)
+    fl["rare_frac"] = rare
+    fl["phenomenon"] = [phenomenon(r, f) for (_, r), f in zip(fl.iterrows(), fl["rare_frac"])]
 
     counts = Counter(fl["cat"])
     n = len(fl)
     total = n
+    bm_loo = None
     bj = os.path.join(OUTDIR, "baselines.json")
     if os.path.exists(bj):
-        total = int(json.load(open(bj)).get("n_queries", n))
+        b = json.load(open(bj))
+        total = int(b.get("n_queries", n))
+        for r in b.get("table", []):
+            if r["method"] == "bm25" and r["protocol"] == "leave_one_out":
+                bm_loo = r
     named = float(fl["top1_named_in_definition"].mean()) * 100
     dropped = float(fl["hard_filter_would_drop_gold"].mean()) * 100
     deep = fl[(fl["gold_rank"] > 1) & (fl["gold_rank"] <= 100)]
@@ -103,13 +141,44 @@ def main():
                  "dictionary word for the same thing and the strict metric calls it wrong. that "
                  "is the same argument as the tolerant column, just counted on the failures."
                  % named)
+    tail = "" if bm_loo is None else (" and it is why R@100 of %.3f and R@1 of %.3f are not the "
+                                      "same statement." % (bm_loo["recall@100"],
+                                                            bm_loo["recall@1"]))
     lines.append("- %d queries had the gold word inside the top 100 but not at rank 1, median "
-                 "rank %d. that is the pool a dense model or a reranker has to reorder, and it "
-                 "is why R@100 of 0.264 and R@1 of 0.032 are not the same statement."
-                 % (len(deep), med_deep))
+                 "rank %d. that is the pool a dense model or a reranker has to reorder,%s"
+                 % (len(deep), med_deep, tail))
     lines.append("- on the misses the opening cue disagrees with the tag in the file for %.1f%%, "
-                 "which is the same rule pos_roles.md uses, computed there over all 500 queries "
-                 "and here over the failures only." % dropped)
+                 "which is the same rule pos_roles.md uses, computed there over the whole query "
+                 "set and here over the failures only." % dropped)
+    phen = Counter(fl["phenomenon"])
+    lines += ["",
+              "phenomena, counted over the whole failure set instead of listed as examples",
+              "",
+              "| what the model is actually missing | queries | mean tokens | mean rare terms |",
+              "|---|---|---|---|"]
+    for name, c in phen.most_common():
+        g = fl[fl["phenomenon"] == name]
+        lines.append("| %s | %d | %.1f | %.0f%% |"
+                     % (name, c, float(g["ntok"].mean()), float(g["rare_frac"].mean()) * 100))
+    others = [f for f in sorted(os.listdir(OUTDIR))
+              if f.startswith("failures_") and f.endswith("_leave_one_out.csv")
+              and f != os.path.basename(IN)]
+    if others:
+        here = set(fl["query_row"].tolist())
+        lines += ["", "how much the misses overlap with the other methods, same %d queries"
+                  % total, ""]
+        for f in others:
+            tag = f.replace("failures_", "").replace("_leave_one_out.csv", "")
+            try:
+                other = set(pd.read_csv(os.path.join(OUTDIR, f))["query_row"].tolist())
+            except Exception:
+                continue
+            both = len(here & other)
+            lines.append("- %s: %d of its %d misses are also bm25 misses, %.0f%% of the union of "
+                         "the two sets. a high share means both methods go wrong on the same "
+                         "queries and a reranker over the two has little to add. a low one means "
+                         "they are looking at different things."
+                         % (tag, both, len(other), 100.0 * both / max(1, len(here | other))))
     lines += ["",
               "%d failures to read by hand, 5 from each category" % len(take), ""]
     lines.append("| query | gold | rank 1 | rank 2 | category | cue | gold pos | rank of gold | what happened |")
@@ -124,7 +193,10 @@ def main():
                   "pct_misses_where_rank1_is_named_in_the_definition": round(named, 2),
                   "n_gold_in_top100_but_not_first": int(len(deep)),
                   "median_rank_of_those": med_deep,
-                  "pct_misses_where_a_hard_pos_filter_would_drop_gold": round(dropped, 2)},
+                  "pct_misses_where_a_hard_pos_filter_would_drop_gold": round(dropped, 2),
+                  "by_phenomenon": {k: int(v) for k, v in phen.items()},
+                  "mean_ntok_by_phenomenon": {k: round(float(fl[fl["phenomenon"] == k]["ntok"].mean()), 1)
+                                              for k in phen}},
                  os.path.join(OUTDIR, "error_analysis.json"))
     os.makedirs(OUTDIR, exist_ok=True)
     with open(os.path.join(OUTDIR, "error_analysis.md"), "w") as f:

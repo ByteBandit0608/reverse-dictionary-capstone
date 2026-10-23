@@ -18,6 +18,10 @@ def main():
     df, meta = R.load()
     tr, va, te = R.make_word_split(df)
     qidx = R.pick_queries(df, te)
+    if len(qidx) < 25:
+        raise SystemExit("only %d rows survive as queries. the cleaning rules are too "
+                         "aggressive or the corpus is tiny, check rows_dropped_self_ref "
+                         "before trusting anything downstream" % len(qidx))
 
     words = sorted(df["word"].unique())
     os.makedirs(OUT, exist_ok=True)
@@ -42,13 +46,15 @@ def main():
                rows_train=nrows(tr), rows_val=nrows(va), rows_test=nrows(te),
                n_queries=len(qidx),
                min_query_tokens=R.MIN_QUERY_TOKENS,
+               min_senses_per_query_word=R.MIN_QUERY_SENSES,
                max_definition_tie=meta["max_tie"])
     man.update(R.ceilings(df, qidx))
     R.write_json(man, os.path.join(OUT, "manifest.json"))
 
     print("wrote", OUT)
-    for k in ("rows_raw", "rows", "rows_dropped_bad_def", "rows_dropped_crossref",
-              "rows_dropped_dupes", "n_words", "n_words_train", "n_words_val",
+    for k in ("rows_raw", "rows", "rows_dropped_bad_def", "rows_dropped_named",
+              "rows_dropped_crossref", "rows_dropped_dupes", "rows_dropped_self_ref",
+              "pct_rows_self_ref", "pct_rows_self_ref_exact", "n_words", "n_words_train", "n_words_val",
               "n_words_test", "rows_train", "rows_val", "rows_test",
               "n_queries", "pct_multi_sense", "pct_shared_def", "max_tie",
               "ceiling_strict_top1", "pct_reachable_when_self_removed"):
