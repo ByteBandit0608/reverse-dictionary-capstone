@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "n_words": 95286,
+  "rows": 135907,
+  "rows_raw": 176009
+ },
+ "models": [
+  "sentence-transformers/all-mpnet-base-v2"
+ ],
+ "n_queries": 500,
+ "reference": {
+  "bm25": {
+   "in_dictionary": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.0,
+    "recall@1": 0.99,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   },
+   "leave_one_out": {
+    "median_rank": 945,
+    "pct_not_in_top1000": 49.4,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.046,
+    "recall@10": 0.152,
+    "recall@100": 0.322
+   }
+  },
+  "tfidf": {
+   "in_dictionary": {
+    "median_rank": 1,
+    "pct_not_in_top1000": 0.0,
+    "pct_self_row_at_1": 99.2,
+    "recall@1": 0.992,
+    "recall@10": 1.0,
+    "recall@100": 1.0
+   },
+   "leave_one_out": {
+    "median_rank": 884,
+    "pct_not_in_top1000": 49.6,
+    "pct_self_row_at_1": 0.0,
+    "recall@1": 0.048,
+    "recall@10": 0.162,
+    "recall@100": 0.35
+   }
+  }
+ },
+ "rows": [
+  {
+   "dim": 768,
+   "median_rank": 1,
+   "model": "sentence-transformers/all-mpnet-base-v2",
+   "pct_not_in_top1000": 0.0,
+   "pct_self_row_at_1": 99.2,
+   "protocol": "in_dictionary",
+   "recall@1": 0.992,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "recall_at_100_tolerant": 1.0,
+   "recall_at_10_tolerant": 1.0,
+   "recall_at_1_tolerant": 1.0,
+   "secs": 5.1,
+   "short": "all_mpnet_base_v2"
+  },
+  {
+   "dim": 768,
+   "median_rank": 319,
+   "model": "sentence-transformers/all-mpnet-base-v2",
+   "pct_not_in_top1000": 37.0,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "leave_one_out",
+   "recall@1": 0.05,
+   "recall@10": 0.17,
+   "recall@100": 0.394,
+   "recall_at_100_tolerant": 0.4,
+   "recall_at_10_tolerant": 0.18,
+   "recall_at_1_tolerant": 0.06,
+   "secs": 7.4,
+   "short": "all_mpnet_base_v2"
+  }
+ ],
+ "table": [
+  {
+   "median_rank": 1,
+   "method": "all_mpnet_base_v2",
+   "n_queries": 500,
+   "protocol": "in_dictionary",
+   "recall@1": 0.992,
+   "recall@10": 1.0,
+   "recall@100": 1.0
+  },
+  {
+   "median_rank": 319,
+   "method": "all_mpnet_base_v2",
+   "n_queries": 500,
+   "protocol": "leave_one_out",
+   "recall@1": 0.05,
+   "recall@10": 0.17,
+   "recall@100": 0.394
+  }
+ ]
+}

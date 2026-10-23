@@ -1,14 +1,31 @@
 {
  "by_category": {
-  "no lexical overlap": 100,
-  "outranked": 120,
-  "right word, deep": 50,
-  "tied definition": 1,
-  "unreachable": 213
+  "no lexical overlap": 244,
+  "outranked": 176,
+  "right word, deep": 52,
+  "tied definition": 5
  },
- "median_rank_of_those": 13,
- "n_gold_in_top100_but_not_first": 116,
- "n_queries_total": 484,
- "pct_misses_where_a_hard_pos_filter_would_drop_gold": 1.45,
- "pct_misses_where_rank1_is_named_in_the_definition": 14.46
+ "by_phenomenon": {
+  "long definition, several ideas at once": 18,
+  "rare or technical wording in the query": 6,
+  "returned a synonym the definition itself names": 19,
+  "right word found, buried past the top 10": 162,
+  "right word found, ranked just below": 47,
+  "structural, two words share the exact string": 5,
+  "the dictionary words it up differently": 220
+ },
+ "mean_ntok_by_phenomenon": {
+  "long definition, several ideas at once": 30.8,
+  "rare or technical wording in the query": 3.5,
+  "returned a synonym the definition itself names": 14.0,
+  "right word found, buried past the top 10": 12.6,
+  "right word found, ranked just below": 16.1,
+  "structural, two words share the exact string": 4.6,
+  "the dictionary words it up differently": 10.2
+ },
+ "median_rank_of_those": 16,
+ "n_gold_in_top100_but_not_first": 138,
+ "n_queries_total": 477,
+ "pct_misses_where_a_hard_pos_filter_would_drop_gold": 2.52,
+ "pct_misses_where_rank1_is_named_in_the_definition": 6.5
 }

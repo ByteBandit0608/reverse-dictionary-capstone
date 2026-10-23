@@ -1,485 +1,478 @@
 query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
-365,Abler,superl. of Able.,6,2,1,Biggest,Ferrest,Hinderest
-419,Abolishment,The act of abolishing; abolition; destruction.,-1,1,1,Abolition,Annulment,Eversion
-640,Absolute,In a plane  the two imaginary circular points at infinity; in space of three dimensions the imaginary circle at infinity.,-1,10,1,Hyperspace,Circuline,Circumference
-916,Acatalepsy,Incomprehensibility of things; the doctrine held by the ancient Skeptic philosophers  that human knowledge never amounts to certainty but only to probability.,-1,1,1,Preexistence,Euhemerism,Terminism
-1391,Acetabuliform,Shaped like a shallow cup; saucer-shaped; as  an acetabuliform calyx.,-1,1,1,Acetabular,Chaliced,Cup
-2109,Adherent,Congenitally united with an organ of another kind  as calyx with ovary or stamens with petals.,-1,5,1,Inferior,Perigynous,Ectopic
-2110,Adherent,One who adheres; one who adheres; one who follows a leader  party or profession; a follower or partisan; a believer in a particular faith or church.,282,5,1,Platonist,Calvinist,Sidesman
-2336,Admissible,Entitled to be admitted  or worthy of being admitted; that may be allowed or conceded; allowable; as the supposition is hardly admissible.,-1,1,1,Permissible,Allowable,Inadmissible
-3456,Agony,Violent contest or striving.,-1,4,1,Contention,Affectation,Warm
-3658,Air cell,A cavity in the cellular tissue of plants  containing air only.,27,2,1,Emphysema,Sclerema,Dropsy
-3728,Al-,The Arabic definite article answering to the English the; as  Alkoran the Koran or the Book; alchemy the chemistry.,-1,3,1,Definite,Print,Enerlasting
-3768,Alarm,To keep in excitement; to disturb.,-1,8,1,Sturb,Commove,Uncalm
-3821,Albumen,Nourishing matter stored up within the integuments of the seed in many plants  but not incorporated in the embryo. It is the floury part in corn wheat and like grains the oily part in poppy seeds the fleshy part in the cocoanut etc.,-1,2,1,sarcoderma,Grain,Ripple
-4158,Alkalimeter,An instrument to ascertain the strength of alkalies  or the quantity of alkali in a mixture.,-1,1,1,Alkaline,Alkalimetry,Tribometer
-4737,Alum stone,A subsulphate of alumina and potash; alunite.,-1,1,1,Gismondite,Potashes,Gibbsite
-4791,Amanitine,The poisonous principle of some fungi.,-1,1,1,Antiarin,Cicutoxin,Pseudospore
-5201,Amorphous,Without crystallization in the ultimate texture of a solid substance; uncrystallized.,-1,3,1,Crystalline,Imporous,Amorphism
-5527,Anaks,A race of giants living in Palestine.,-1,1,1,Giantry,Asura,Nephilim
-5685,Anatreptic,Overthrowing; defeating; -- applied to Plato's refutative dialogues.,-1,1,1,Deictic,Elenctical,Dialogist
-5966,Anglice,In English; in the English manner; as  Livorno Anglice Leghorn.,-1,1,1,Brogue,L,Anglicize
-6002,Angry,Inflamed and painful  as a sore.,-1,6,1,Seer,Fester,Sore
-6384,Anorthite,A mineral of the feldspar family  commonly occurring in small glassy crystals also a constituent of some igneous rocks. It is a lime feldspar. See Feldspar.,-1,1,1,Albite,Datolite,Leucite
-6997,Antithesis,The second of two clauses forming an antithesis.,-1,3,1,Antitheses,Sixteenth,Latter
-7194,Aphrodisiacal,Exciting venereal desire; provocative to venery.,-1,1,1,Venereous,Venereal,Antiorgastic
-7963,Aptychus,A shelly plate found in the terminal chambers of ammonite shells. Some authors consider them to be jaws; others  opercula.,-1,1,1,Anaptychus,Eozoon,Multispiral
-9737,Assyriology,The science or study of the antiquities  language etc. of ancient Assyria.,-1,1,1,Egyptology,Assyrian,Paleology
-9879,Astrometer,An instrument for comparing the relative amount of the light of stars.,-1,1,1,Photometer,Lactoscope,Strabismometer
-10009,Athletic,Befitting an athlete; strong; muscular; robust; vigorous; as  athletic Celts.,111,2,1,Robust,Stout,Lusty
-11244,Ayegreen,The houseleek (Sempervivum tectorum).,-1,1,1,Sempervivum,Sempervive,Sengreen
-11511,Backhanded,With the hand turned backward; as  a backhanded blow.,5,3,1,Backhander,Reverse,Clout
-11776,Bakery,The place for baking bread; a bakehouse.,-1,2,1,Baking,Pattypan,Bakehouse
-12470,Bark,To abrade or rub off any outer covering from; as to bark one's heel.,30,8,1,Abrade,Cortex,Vest
-12766,Basilican,Of  relating to or resembling a basilica; basilical.,-1,1,1,Basilic,Bureaucratical,Basilicas
-13659,Bedraggle,To draggle; to soil  as garments which in walking are suffered to drag in dust mud etc.,-1,1,1,Bemire,Sag,Mire
-13876,Beglerbeg,The governor of a province of the Ottoman empire  next in dignity to the grand vizier.,-1,1,1,Vizier-azem,Nabob,Archmarshal
-13901,Beguile,To cause the time of to pass without notice; to relieve the tedium or weariness of; to while away; to divert.,-1,3,1,Wile,While,Drive
-14155,Bellwort,A genus of plants (Uvularia) with yellowish bell-shaped flowers.,-1,1,1,Campanula,Dracaena,Cobaea
-14643,Besiegement,The act of besieging  or the state of being besieged.,-1,1,1,Obsession,Investment,Obsession
-14989,Bewilderment,The state of being bewildered.,-1,2,1,Bewilderedness,Wilderment,Maze
-15817,Bistipuled,Having two stipules.,-1,1,1,Exstipulate,Stipular,Ochrea
-15930,Bivalent,Equivalent in combining or displacing power to two atoms of hydrogen; dyad.,-1,1,1,Dyad,Equivalence,Bihydroguret
-16226,Blasphemer,One who blasphemes.,-1,1,1,Conferrer,Cumulatist,Delayer
-16558,Bloatedness,The state of being bloated.,-1,1,1,Bloat,Emphysematous,Indecisiveness
-16831,Blue,Severe or over strict in morals; gloom; as  blue and sour religionists; suiting one who is over strict in morals; inculcating an impracticable severe or gloomy mortality; as blue laws.,13,10,1,Overgloom,Acerbic,Strait-laced
-16974,Bluster,Noisy and violent or threatening talk; noisy and boastful language.,27,5,1,Bravado,Clap,Rattle
-17231,Boil,To heat to the boiling point  or so as to cause ebullition; as to boil water.,3,11,1,Simmer,Boilingly,Boil
-17554,Booby,A dunce; a stupid fellow.,154,4,1,Numskull,Dullard,Dolt
-17656,Boon,The woody portion flax  which is separated from the fiber as refuse matter by retting braking and scutching.,-1,6,1,Scutch,Scutch,Oakum
-17962,Bottlehead,A cetacean allied to the grampus; -- called also bottle-nosed whale.,-1,1,1,Beluga,Blowhole,Grampus
-19192,Briery,Full of briers; thorny.,7,2,1,Spinose,Spiny,Thorny
-19439,Broil,A tumult; a noisy quarrel; a disturbance; a brawl; contention; discord  either between individuals or in the state.,-1,4,1,Row,Brawl,Fracas
-19563,Brookside,The bank of a brook.,-1,1,1,Brooked,Brooking,Beck
-19653,Bruckeled,Wet and dirty; begrimed.,-1,1,1,Grimy,Slashy,Splashy
-19818,Buckboard,A four-wheeled vehicle  having a long elastic board or frame resting on the bolsters or axletrees and a seat or seats placed transversely upon it; -- called also buck wagon.,-1,1,1,Wain,Buggy,Chariot
-19820,Bucker,A broad-headed hammer used in bucking ore.,151,3,1,Platycephalous,Tacket,Headed
-21161,Caisson,A sunk panel of ceilings or soffits.,-1,7,1,Paneled,Panelled,Paneling
-21260,Calcify,To become changed into a stony or calcareous condition  in which lime is a principal ingredient as in the formation of teeth.,2,2,1,Calcification,Calcify,Petrify
-21316,Calculus,Any solid concretion  formed in any part of the body but most frequent in the organs that act as reservoirs and in the passages connected with them; as biliary calculi; urinary calculi etc.,-1,2,1,Lithiasis,Gallstone,Antilithic
-21939,Canny,Alt. of Cannei,-1,1,1,Adamic,Adaptability,Aden-
-22269,Capitular,The head or prominent part.,-1,6,1,Auricle,Poll,Ramus
-22462,Caravaneer,The leader or driver of the camels in caravan.,-1,1,1,Cafileh,Forewit,Tylopoda
-22574,Cardcase,A case for visiting cards.,-1,1,1,Visitant,Carte de visite,Slumming
-22735,Carnassial,Adapted to eating flesh.,-1,2,1,Sarcophagous,Sarcophagy,Anthropophagy
-23534,Cathodic,A term applied to the centrifugal  or efferent course of the nervous influence.,-1,1,1,Efferent,Puncto,Centrifugal
-24133,Cephalotribe,An obstetrical instrument for performing cephalotripsy.,-1,1,1,Laryngotome,Osteoclast,Obstetric
-24144,Cerasin,A white amorphous substance  the insoluble part of cherry gum; -- called also meta-arabinic acid.,134,2,1,Metantimonic,Metachloral,Masticin
-24531,Chalkcutter,A man who digs chalk.,-1,1,1,Ditcher,Delver,Digger
-25118,Chatoyant,Having a changeable  varying luster or color like that of a changeable silk or oa a cat's eye in the dark.,30,2,1,Orichalceous,Versicolored,Sooty
-25792,Chit,A child or babe; as  a forward chit; also a young small or insignificant person or animal.,-1,6,1,Baby,Papoose,Fubs
-26042,Chord,A combination of tones simultaneously performed  producing more or less perfect harmony as the common chord.,-1,7,1,Concord,Music,Anticipation
-26387,Churl,A selfish miser; an illiberal person; a niggard.,20,4,1,Skinflint,Muckerer,Scrimp
-26421,Chyluria,A morbid condition in which the urine contains chyle or fatty matter  giving it a milky appearance.,-1,1,1,Lagophthalmos,Albuminuria,Pyuria
-26758,Circumscriber,One who  or that which circumscribes.,-1,1,1,Portoir,Sweetener,Cheerer
-27814,Cloudy,Overcast or obscured with clouds; clouded; as  a cloudy sky.,40,6,1,Subnuvolar,Cloud,Adnubilated
-28094,Coarticulation,The union or articulation of bones to form a joint.,-1,1,1,Diarthrosis,Symphysis,Enarthrosis
-28164,Cobbing,Haughty; purse-proud. See Cob  n. 2.,13,2,1,Hautein,Orgillous,Fastuous
-28893,Collet,A small metal ring; a small collar fastened on an arbor; as  the collet on the balance arbor of a watch; a small socket on a stem for holding a drill.,19,5,1,Staff,Pendant,Drillstock
-29054,Colored,Of some other color than green.,2,6,1,Chromoplastid,Colored,Chromogen
-29096,Columbary,A dovecote; a pigeon house.,-1,1,1,Columbarium,Culverhouse,Dovecot
-29261,Comfit,A dry sweetmeat; any kind of fruit  root or seed preserved with sugar and dried; a confection.,11,2,1,Conserve,Sweetmeat,Nougat
-29349,Commeasure,To be commensurate with; to equal.,-1,1,1,Commensurately,Compeer,Equalize
-30016,Compose,To dispose in proper form; to reduce to order; to put in proper state or condition; to adjust; to regulate.,329,7,1,Adjust,Set,Policy
-30526,Concubinacy,The practice of concubinage.,-1,1,1,Concubinate,Concubinary,Concubinal
-30946,Confluent,The place of meeting of steams  currents etc.,161,6,1,Conflux,Rip,Trist
-31085,Conglobation,A round body.,-1,2,1,Circlet,Trundle,Circle
-32149,Contradict,To be contrary to; to oppose; to resist.,9,3,1,Adverse,Repugn,Reluctate
-32163,Contradictory,Opposing or opposed; repugnant.,537,4,1,Contrary,Inimical,Contrarious
-32575,Convolution,The act of rolling anything upon itself  or one thing upon another; a winding motion.,2,3,1,Trundle,Convolution,Woolding
-32664,Cooly,Alt. of Coolie,-1,1,1,Coolies,Adamic,Adaptability
-33913,Countermark,An artificial cavity made in the teeth of horses that have outgrown their natural mark  to disguise their age.,148,3,1,Pit,Holostomata,Cave
-34364,Coxalgia,Alt. of Coxalgy,-1,1,1,Aaronic,Abannation,Abassi
-34504,Craft,Cunning  art or skill in a bad sense or applied to bad purposes; artifice; guile; skill or dexterity employed to effect purposes by deceit or shrewd devices.,16,6,1,Guileful,Subtilty,Practice
-34963,Creolian,Pertaining to  or characteristic of the Creoles.,-1,2,1,Creole,Lyencephalous,Cestraciont
-35046,Cretism,A Cretan practice; lying; a falsehood.,-1,1,1,Creticism,Crete,Leasing
-35186,Cringle,A withe for fastening a gate.,-1,2,1,Hank,Withy,Withed
-35711,Crucible,A vessel or melting pot  composed of some very refractory substance as clay graphite platinum and used for melting and calcining substances which require a strong degree of heat as metals ores etc.,-1,3,1,Pot,Capsule,Lool
-35721,Crucifixion,The act of nailing or fastening a person to a cross  for the purpose of putting him to death; the use of the cross as a method of capital punishment.,12,3,1,Crucify,Capital,Vigesimation
-36249,Cumshaw,To give or make a present to.,746,2,1,Presentiate,Recompense,Tip
-36774,Cutthroat,One who cuts throats; a murderer; an assassin.,-1,2,1,Bravo,Bloodshedder,Assassinate
-36821,Cyanotype,A photographic picture obtained by the use of a cyanide.,-1,1,1,Photographical,Carte de visite,Chromotype
-37992,Debruised,Surmounted by an ordinary; as  a lion is debruised when a bend or other ordinary is placed over it as in the cut.,-1,1,1,Rompu,Enarched,Staddle
-38567,Deductive,Of or pertaining to deduction; capable of being deduced from premises; deducible.,-1,1,1,Inferable,Gatherable,Consectary
-39114,Delation,Accusation by an informer.,-1,2,1,Informant,Approver,Delator
-39307,Deliver,To give forth in action or exercise; to discharge; as  to deliver a blow; to deliver a broadside or a ball.,575,9,1,Strike,Exonerate,Propine
-39311,Deliver,To admit; to allow to pass.,-1,9,1,Intromit,Consent,Yield
-39540,Democratism,The principles or spirit of a democracy.,-1,1,1,Dissenterism,Democracies,Democraty
-39912,Departmental,Pertaining to a department or division.,-1,1,1,Kingdom,Periodical,Realm
-40296,Derisive,Expressing  serving for or characterized by derision.,-1,1,1,Atrocious,Concentrative,Aha
-40469,Desert,Of or pertaining to a desert; forsaken; without life or cultivation; unproductive; waste; barren; wild; desolate; solitary; as  they landed on a desert island.,39,7,1,Vast,Inhospitable,Solitary
-40804,Detail,A narrative which relates minute points; an account which dwells on particulars.,647,5,1,Particularize,Narratory,Uncircumstandtial
-41006,Deuteropathy,A sympathetic affection of any part of the body  as headache from an overloaded stomach.,-1,1,1,Warm-hearted,Sick,Body
-41074,Device,Power of devising; invention; contrivance.,18,7,1,Excogitation,Frame,Contrivement
-41724,Die,That which is  or might be determined by a throw of the die; hazard; chance.,807,16,1,Adventure,Lot,Prize
-43612,Disjudication,Judgment; discrimination. See Dijudication.,-1,1,1,Test,Skill,Doom
-43716,Dismission,Rejection; a setting aside as trivial  invalid or unworthy of consideration.,-1,3,1,Defiance,Inconsiderable,Seposition
-43983,Dispone,To make over  or convey legally.,-1,3,1,Grant,Ride,Overarch
-44071,Disproportionate,Not proportioned; unsymmetrical; unsuitable to something else in bulk  form value or extent; out of proportion; inadequate; as in a perfect body none of the limbs are disproportionate; it is wisdom not to undertake a work disproportionate means.,-1,1,1,Disproportionable,Disproportional,Proportionless
-44258,Dissepiment,A separating tissue; a partition; a septum.,-1,3,1,Septum,Elocular,Mesogl/a
-45123,Dock,An artificial basin or an inclosure in connection with a harbor or river  -- used for the reception of vessels and provided with gates for keeping in or shutting out the tide.,-1,10,1,Tide,Bawn,Tank
-45207,Dodge,To follow by dodging  or suddenly shifting from place to place.,6,6,1,Shifting,Veering,Second
-45389,Dolorous,Full of grief; sad; sorrowful; doleful; dismal; as  a dolorous object; dolorous discourses.,126,2,1,Doleful,Dolesome,Grieving
-45546,Doni,A clumsy craft  having one mast with a long sail used for trading purposes on the coasts of Coromandel and Ceylon.,-1,1,1,Trysail,Tartan,Hooker
-45851,Douc,A monkey (Semnopithecus nemaeus)  remarkable for its varied and brilliant colors. It is a native of Cochin China.,-1,1,1,Cestus,Light-horseman,Bee-eater
-46336,Drawbore,To enlarge the bore of a gun barrel by drawing  instead of thrusting a revolving tool through it.,649,3,1,Bore,Couching,Empale
-46445,Dredge,Any instrument used to gather or take by dragging; as: (a) A dragnet for taking up oysters  etc. from their beds. (b) A dredging machine. (c) An iron frame with a fine net attached used in collecting animals living at the bottom of the sea.,6,5,1,Trawl,Nocturnal,Creeper
-46449,Dredge,To catch or gather with a dredge; to deepen with a dredging machine.,17,5,1,Dredger,Hedgehog,Chapelet
-46753,Drony,Like a drone; sluggish; lazy.,-1,1,1,Sluggard,Sleepy,Slug
-46958,Drunkenness,Disorder of the faculties  resembling intoxication by liquors; inflammation; frenzy; rage.,219,2,1,Ebriety,Madness,Intoxicating
-47406,Dusk,Tending to darkness or blackness; moderately dark or black; dusky.,764,5,1,Dusky,Sooty,Swart
-47407,Dusk,Imperfect obscurity; a middle degree between light and darkness; twilight; as  the dusk of the evening.,37,5,1,Gloaming,Fore-night,Night
-47754,Earthnut,The peanut. See Peanut.,-1,3,1,Goober,Pindar,Hypogaeic
-47966,Ecgonine,A colorless  crystalline nitrogenous base obtained by the decomposition of cocaine.,-1,1,1,Dipyridil,Pyrroline,Phillygenin
-48236,Edriophthalma,A group of Crustacea in which the eyes are without stalks; the Arthrostraca.,-1,1,1,Anomoura,Podophthalmia,Ophthalmite
-48548,Eh,An expression of inquiry or slight surprise.,-1,1,1,Lackaday,Ey,Curious
-48685,Elasticity,The quality of being elastic; the inherent property in bodies by which they recover their former figure or dimensions  after the removal of external pressure or altering force; springiness; tendency to rebound; as the elasticity of caoutchouc; the elasticity of the air.,-1,2,1,Elasticness,Pneumatics,Divisibility
-48724,Eld,Old times; former days; antiquity.,50,5,1,Ancientness,Antiquity,Vetust
-48935,Elegant,Very choice  and hence pleasing to good taste; characterized by grace propriety and refinement and the absence of every thing offensive; exciting admiration and approbation by symmetry completeness freedom from blemish and the like; graceful; tasteful and highly attractive; as elegant manners; elegant style of composition; an elegant speaker; an elegant structure.,12,2,1,Elegancy,Elegancy,Debonair
-49313,Embar,To stop; to hinder by prohibition; to block up.,-1,2,1,Forbid,Choke,Prevent
-49473,Embossment,The act of forming bosses or raised figures  or the state of being so formed.,-1,2,1,Embossed,Imposthumation,Bossism
-50182,Endear,To raise the price or cost of; to make costly or expensive.,347,2,1,Dear,Chargeful,Costly
-50970,Enteritis,An inflammation of the intestines.,-1,1,1,Gastroenteritis,Phlegmasia,Nephritis
-51164,Entrant,An applicant for admission.,-1,2,1,Petitor,Suitor,Admissive
-51310,Enwomb,To conceive in the womb.,33,2,1,Brain,Conceit,Think
-51753,Eprouvette,An apparatus for testing or proving the strength of gunpowder.,-1,1,1,Accelerometer,Testing,Proof
-51926,Equivalence,To be equivalent or equal to; to counterbalance.,9,5,1,Weigh,Equiponderate,Compensate
-52099,Erodent,A medicine which eats away extraneous growths; a caustic.,-1,1,1,Pyrotic,Erosive,Escharotic
-52343,Esnecy,A prerogative given to the eldest coparcener to choose first after an inheritance is divided.,-1,1,1,Beestings,Institute,Persistency
-52430,Essene,One of a sect among the Jews in the time of our Savior  remarkable for their strictness and abstinence.,-1,1,1,Sadducee,Raca,Pharisee
-52445,Essentiate,To form or constitute the essence or being of.,25,2,1,Compose,Unessential,Inessential
-53056,Eventration,A wound  of large extent in the abdomen through which the greater part of the intestines protrude.,35,3,1,More,Pass,Colon
-53759,Exesion,The act of eating out or through.,-1,1,1,Exedent,Feed,Geophagism
-54487,Extensiveness,The state of being extensive; wideness; largeness; extent; diffusiveness.,-1,1,1,Amplitude,Wideness,Ampleness
-54584,Extorsive,Serving or tending to extort.,-1,1,1,Distracting,Emasculatory,Intimidatory
-54694,Extravasation,The act of forcing or letting out of its proper vessels or ducts  as a fluid; effusion; as an extravasation of blood after a rupture of the vessels.,-1,1,1,Extravasate,Gore,Effluxion
-54800,Ey,An interj. of wonder or inquiry.,-1,2,1,Good now,Eh,Interrogation
-55391,Falsifier,One who falsifies  or gives to a thing a deceptive appearance; a liar.,-1,1,1,Varnisher,Pseudologist,Mortgagor
-55619,Farce,Ridiculous or empty show; as  a mere farce.,-1,6,1,Braggadocio,Form,Wind
-55951,Fattener,One who  or that which fattens; that which gives fatness or fertility.,-1,1,1,Premonitor,Strengthener,Redress
-56511,Fenestral,Of or pertaining to a fenestra.,254,3,1,Fenestrae,Foramen,Smock
-57549,Firebird,The Baltimore oriole.,-1,1,1,Baltimore bird,Hangbird,Oriole
-57616,Firmly,In a firm manner.,-1,1,1,Firm,Steady,Firm
-57933,Flake,A platform of hurdles  or small sticks made fast or interwoven supported by stanchions for drying codfish and other things.,-1,8,1,Top-armor,Clayes,Basket
-58274,Fleece,Any soft woolly covering resembling a fleece.,4,6,1,Woolly,Carpet,Fledge
-59336,Fomes,Any substance supposed to be capable of absorbing  retaining and transporting contagious or infectious germs; as woolen clothes are said to be active fomites.,-1,1,1,Catching,Hygrometrical,Germicide
-59541,Foray,A sudden or irregular incursion in border warfare; hence  any irregular incursion for war or spoils; a raid.,-1,2,1,Polemy,Manubial,Razzia
-60589,Fozy,Spongy; soft; fat and puffy.,-1,1,1,Spongy,Puffy,Fuffy
-60802,Fray,A fret or chafe  as in cloth; a place injured by rubbing.,5,7,1,Chafe,Frote,Rub
-61066,Fribbling,Frivolous; trining; toolishly captious.,-1,1,1,Cavil,Cavil,Tettish
-61111,Friendship,The state of being friends; friendly relation  or attachment to a person or between persons; affection arising from mutual esteem and good will; friendliness; amity; good will.,-1,2,1,Amity,Amicable,Disaffection
-61566,Fucus,A paint; a dye; also  false show.,-1,2,1,Fucated,Affecting,Illusive
-61702,Full-winged,Beady for flight; eager.,-1,2,1,Beady,Avid,Newfangle
-61985,Furring,The strips thus laid on.,154,5,1,Rendering,Painting,Scumbling
-62112,Futureless,Without prospect of betterment in the future.,-1,1,1,Eternity,Prospect,Apprehension
-62272,Gainage,The profit made by tillage; also  the land itself.,112,2,1,Field,Plougland,Thwaite
-62527,Galvanology,A treatise on galvanism  or a description of its phenomena.,-1,1,1,Galvanologist,Histography,Numismatography
-62610,Gamomorphism,That stage of growth or development in an organism  in which the reproductive elements are generated and matured in preparation for propagating the species.,-1,1,1,Nutriment,Stage,Environment
-62644,Ganglionic,Pertaining to  containing or consisting of ganglia or ganglion cells; as a ganglionic artery; the ganglionic columns of the spinal cord.,-1,1,1,Ganglial,Cellular,Cerebro-spinal
-62678,Gap,To make an opening in; to breach.,5,3,1,Breach,Rent,Schismatize
-62708,Garb,To clothe; array; deck.,-1,6,1,Habit,Address,Betrap
-62751,Gargil,A distemper in geese  affecting the head.,-1,1,1,Stonecray,Gargol,Distemper
-62909,Gastralgia,Pain in the stomach or epigastrium  as in gastric disorders.,-1,1,1,Stomachal,Gastric,Neurotic
-62974,Gatehouse,A house connected or associated with a gate.,-1,1,1,Conjoint,Insociable,Gate
-63630,Georgian,Of or pertaining to Georgia  in Asia or to Georgia one of the United States.,20,3,1,American,Columbian,Kentucky
-64068,Gird,To surround; to encircle  or encompass.,46,10,1,Round,Belt,Circle
-64262,Glandered,Affected with glanders; as  a glandered horse.,-1,1,1,Equinia,Glanderous,Greasy
-64422,Gleg,Quick of perception; alert; sharp.,-1,1,1,Sprack,Snip-snap,Clear-headed
-65143,Gonidium,A special groove or furrow at one or both angles of the mouth of many Anthozoa.,-1,2,1,Score,Sulcus,Gonidial
-65230,Goose,A silly creature; a simpleton.,-1,5,1,Ninnyhammer,Coot,Jack
-66649,Grower,One who grows or produces; as  a grower of corn; also that which grows or increases; as a vine may be a rank or a slow grower.,-1,1,1,Increaser,Augmenter,Multiplier
-67735,Halloween,The evening preceding Allhallows or All Saints' Day.,-1,1,1,Allhallows,Allhallow eve,All Saints
-67960,Handkerchief,A piece of cloth  usually square and often fine and elegant carried for wiping the face or hands.,182,2,1,Diaper,Dossil,Tessera
-68586,Haunt,A place to which one frequently resorts; as  drinking saloons are the haunts of tipplers; a den is the haunt of wild beasts.,625,8,1,Den,Repair,Resort
-68825,Heading,A gallery  drift or adit in a mine; also the end of a drift or gallery; the vein above a drift.,363,7,1,Level,Sill,Stulm
-69442,Hellkite,A kite of infernal breed.,-1,1,1,Elanet,Puttock,Glide
-69595,Hemihedral,Having half of the similar parts of a crystals  instead of all; consisting of half the planes which full symmetry would require as when a cube has planes only on half of its eight solid angles or one plane out of a pair on each of its edges; or as in the case of a tetrahedron which is hemihedral to an octahedron it being contained under four of the planes of an octahedron.,-1,1,1,Holohedral,Bevelled,Octahedron
-69659,Hemp,A plant of the genus Cannabis (C. sativa)  the fibrous skin or bark of which is used for making cloth and cordage. The name is also applied to various other plants yielding fiber.,7,2,1,Jute,Pita,Mahoe
-70482,Highway,A road or way open to the use of the public; a main road or thoroughfare.,-1,1,1,Public,By-turning,Street
-70948,Hogo,High flavor; strong scent.,-1,1,1,Strong,Hautgout,Fragor
-71342,Homotonous,Of the same tenor or tone; equable; without variation.,-1,1,1,Indecinably,Indecinably,Univocal
-71575,Hopeless,Destitute of hope; having no expectation of good; despairing.,22,3,1,Despair,Hopeful,Desperation
-71712,Horoscopist,One versed in horoscopy; an astrologer.,-1,1,1,Astrologian,Astronomer,Astronomian
-72170,Huffish,Disposed to be blustering or arrogant; petulant.,-1,1,1,Blusterous,Assume,Will
-72266,Humanize,To give a human character or expression to.,395,4,1,Passion,Cheep,Emotionalize
-72415,Hungary,A country in Central Europe  now a part of the Austro-Hungarian Empire.,-1,1,1,Bohemia,Haiduck,Turkey
-72563,Husbandry,Care of domestic affairs; economy; domestic management; thrift.,-1,2,1,Economical,Housekeeping,Economics
-73060,Hyperion,The god of the sun; in the later mythology identified with Apollo  and distinguished for his beauty.,-1,1,1,Phoebus,Typhon,Parnassus
-73101,Hyphenated,United by hyphens; hyphened; as  a hyphenated or hyphened word.,-1,1,1,Solid,Parcel,Americanism
-73607,Idle,Not employed; unoccupied with business; inactive; doing nothing; as  idle workmen.,28,7,1,Do-nothing,Faineant,Inactive
-74519,Impend,To hang over; to be suspended above; to threaten frome near at hand; to menace; to be imminent. See Imminent.,-1,2,1,Interminate,Impending,Nearhand
-74895,Impotency,Want of procreative power; inability to copulate  or beget children; also sometimes sterility; barrenness.,9,3,1,Infecundity,Impotent,Incapacity
-75273,Inanimated,Destitute of life; lacking animation; unanimated.,-1,1,1,Desolate,Exanimate,Exanimate
-75397,Incapable,As a term of disgrace  sometimes annexed to a sentence when an officer has been cashiered and rendered incapable of serving his country.,568,6,1,Reformado,Ordinary,Postliminy
-76006,Incredibly,In an incredible manner.,-1,1,1,Uncredible,Untrowable,Incredibility
-77034,Infection,The act or process of infecting.,335,6,1,Disinfection,Attaint,Achromatization
-77185,Inflammable,Capable of being easily set fire; easily enkindled; combustible; as  inflammable oils or spirits.,8,2,1,Accendible,Inflamed,Combustible
-78180,Insheathe,To insert as in a sheath; to sheathe.,-1,1,1,Invaginate,Vaginant,Sheathed
-78281,Insolent,Deviating from that which is customary; novel; strange; unusual.,-1,3,1,Selcouth,Odd,Novelty
-78369,Install,To set in a seat; to give a place to; establish (one) in a place.,-1,2,1,State,Ordain,Foot
-78378,Instance,Occasion; order of occurrence.,-1,7,1,Emergency,Casus,Occasioned
-78386,Instant,Pressing; urgent; importunate; earnest.,73,6,1,Important,Pressing,Entreaty
-78520,Insubordination,The quality of being insubordinate; disobedience to lawful authority.,-1,1,1,Wrong,Rebellion,Rebel
-78595,Insurer,One who  or that which insures; the person or company that contracts to indemnify losses for a premium; an underwriter.,-1,1,1,Assurer,Narrower,Insurancer
-79723,Intriguer,One who intrigues.,-1,1,1,Court-craft,Termer,Backdoor
-80448,Irremissible,Not remissible; unpardonable; as  irremissible crimes.,-1,1,1,Irremittable,Impardonable,Remissibility
-80550,Irritant,A poison that produces inflammation.,104,5,1,Diffractive,Coagulant,Salivant
-80557,Irritate,To make morbidly excitable  or oversensitive; to fret; as the skin is irritated by friction; to irritate a wound by a coarse bandage.,-1,6,1,Vex,Grate,Pique
-80644,Islet,A little island.,-1,1,1,Eyot,Sea holm,Ey
-80962,Jack,A machine for slicking or pebbling leather.,24,33,1,Jigger,Masticator,Creaser
-80967,Jack,A portable machine variously constructed  for exerting great pressure or lifting or moving a heavy body through a small distance. It consists of a lever screw rack and pinion hydraulic press or any simple combination of mechanical powers working in a compact pedestal or support and operated by a lever crank capstan bar etc. The name is often given to a jackscrew which is a kind of jack.,5,33,1,Jackscrew,Fulcrum,Bed screw
-80970,Jack,A young pike; a pickerel.,11,33,1,Esox,Sauger,Pickerel
-80977,Jack,The knave of a suit of playing cards.,-1,33,1,Varlet,Diamond,Tierce
-81555,Job,A sudden thrust or stab; a jab.,29,14,1,Jab,Stoccado,Stoke
-81633,Johnnycake,A kind of bread made of the meal of maize (Indian corn)  mixed with water or milk etc. and baked.,-1,1,1,Indian,White-pot,Charlotte
-81853,Judaism,Conformity to the Jewish rites and ceremonies.,60,2,1,Ceremonially,Uniformity,Judaize
-82104,Jurisprudence,The science of juridical law; the knowledge of the laws  customs and rights of men in a state or community necessary for the due administration of justice.,-1,1,1,Judicature,Circuit,Court
-82259,Khamsin,A hot southwesterly wind in Egypt  coming from the Sahara.,-1,1,1,Southwesterly,Northwest,Northeaster
-82525,Kernelly,Full of kernels; resembling kernels; of the nature of kernels.,-1,1,1,Aciniform,Creamy,Aphthoid
-83039,Knife,An instrument consisting of a thin blade  usually of steel and having a sharp edge for cutting fastened to a handle but of many different forms and names for different uses; as table knife drawing knife putty knife pallet knife pocketknife penknife chopping knife etc..,-1,4,1,Saw,Shave,Edge
-83215,Knuckle,A contrivance  usually of brass or iron and furnished with points worn to protect the hand to add force to a blow and to disfigure the person struck; as brass knuckles; -- called also knuckle duster.,14,8,1,Armed,Clout,Handystroke
-83617,Lactation,A giving suck; the secretion and yielding of milk by the mammary gland.,-1,1,1,Lactant,Milky,Mamma
-83642,Lactometer,An instrument for estimating the purity or richness of milk  as a measuring glass a specific gravity bulb or other apparatus.,-1,1,1,Areometer,Galactometer,Gravimeter
-84589,Latinize,To give Latin terminations or forms to  as to foreign words in writing Latin.,8,5,1,Hispanicize,Macaronic,Illiberal
-85030,Leaky,Permitting water or other fluid to leak in or out; as  a leaky roof or cask.,-1,2,1,Leak,Leak,Drown
-85160,Leaver,One who leaves  or withdraws.,-1,1,1,Withdrawer,Shrinker,Knobstick
-85933,Liability,The state of being liable; as  the liability of an insurer; liability to accidents; liability to the law.,-1,3,1,Liableness,Suability,Quakness
-86117,Licorice,A plant of the genus Glycyrrhiza (G. glabra)  the root of which abounds with a sweet juice and is much used in demulcent compositions.,13,2,1,Glycyrrhiza,Borage,Dibs
-86471,Lilac,A light purplish color like that of the flower of the purplish lilac.,36,2,1,Lavender,Amaranthine,Gold
-86733,Lineolate,Marked with little lines.,3,2,1,Lineated,Cancellated,Lineolate
-86780,Linguiform,Having the form of the tongue; tongue-shaped.,-1,1,1,Mammose,Floriform,Lachrymiform
-87942,Loose,Unbound; untied; unsewed; not attached  fastened fixed or confined; as the loose sheets of a book.,8,17,1,Empight,Unclasp,Cabled
-88252,Love-sick,Languishing with love or amorous desire; as  a love-sick maid.,2,2,1,Fancy-sick,Love-sick,Cupidity
-89420,Maiden,Never having been married; not having had sexual intercourse; virgin; -- said usually of the woman  but sometimes of the man; as a maiden aunt.,3,9,1,Maid,Adulterer,Maiden
-89541,Majestatic,Alt. of Majestatal,-1,1,1,Adaptability,Aden-,Adenalgia
-89644,Malacostomous,Having soft jaws without teeth  as certain fishes.,-1,1,1,Cyclostomi,Myriacanthous,Osteopterygious
-89674,Malaria,Air infected with some noxious substance capable of engendering disease; esp.  an unhealthy exhalation from certain soils as marshy or wet lands producing fevers; miasma.,-1,2,1,Draco,Morbose,Dragon
-89747,Malicious,Indulging or exercising malice; harboring ill will or enmity.,5,3,1,Maltalent,Grudge,Envy
-90390,Mappery,The making  or study of maps.,-1,1,1,Cartography,Cartographer,Chartometer
-91059,Matador,In the game of quadrille or omber  the three principal trumps the ace of spades being the first the ace of clubs the third and the second being the deuce of a black trump or the seven of a red one.,-1,2,1,Spadille,Basto,Low
-91470,Mean,That through which  or by the help of which an end is attained; something tending to an object desired; intermediate agency or measure; necessary condition or coagent; instrument.,130,18,1,Instrumentally,Memorandum,Desire
-91866,Megrim,A fancy; a whim; a freak; a humor; esp.  in the plural lowness of spirits.,-1,4,1,Fad,Braid,Whimwham
-92224,Mensurableness,The quality or state of being mensurable; measurableness.,-1,1,1,Mensurability,Settledness,Absorbability
-92660,Metage,Measurement  especially of coal.,-1,2,1,Underclay,Mismeasurement,Pantometry
-93043,Miamis,A tribe of Indians that formerly occupied the country between the Wabash and Maumee rivers.,-1,1,1,Illinois,Iowas,Sacs
-93137,Microphone,An instrument for intensifying and making audible very feeble sounds. It produces its effects by the changes of intensity in an electric current  occasioned by the variations in the contact resistance of conducting bodies especially of imperfect conductors under the action of acoustic vibrations.,-1,1,1,Thermoelectrometer,Echoscope,Phonometer
-93423,Milliampere,The thousandth part of one ampere.,-1,1,1,Milliweber,Microampere,Micron
-93498,Mimicry,Protective resemblance; the resemblance which certain animals and plants exhibit to other animals and plants or to the natural objects among which they live  -- a characteristic which serves as their chief means of protection against enemies; imitation; mimesis; mimetism.,-1,2,1,Armature,Noctilucin,Group
-93507,Minacity,Disposition to threaten.,-1,1,1,Threat,Ballarag,Interminate
-93894,Miscall,To call by a bad name; to abuse.,2,2,1,Misusage,Miscall,Designate
-94194,Mislive,To live amiss.,-1,1,1,Misconduct,Misconsecrate,Miscopy
-94748,Moderatress,A female moderator.,-1,1,2,Moderatrix,Moderate,Moderatorship
-95142,Moneyed,Supplied with money; having money; wealthy; as  moneyey men.,159,3,1,Pecunious,Rich,Ready
-95212,Monkey,To act or treat as a monkey does; to ape; to act in a grotesque or meddlesome manner.,-1,7,1,Jackanapes,Simian,Grotesquely
-95566,Moon,A crescentlike outwork. See Half-moon.,152,6,1,Half-moon,Semilunar,Half-moon
-95722,Moralize,To render moral; to correct the morals of.,16,5,1,Demoralize,Ethical,Correctify
-95995,Mosasauria,An order of large  extinct marine reptiles found in the Cretaceous rocks especially in America. They were serpentlike in form and in having loosely articulated and dilatable jaws with large recurved tteth but they had paddlelike feet. Some of them were over fifty feet long. They are essentially fossil sea serpents with paddles. Called also Pythonomarpha and Mosasauria.,-1,1,1,Ichthyosauria,Stegocephala,Paleechinoidea
-96605,Multiaxial,Having more than one axis; developing in more than a single line or plain; -- opposed to monoaxial.,-1,1,1,Uniaxial,Monaxial,Peritomous
-96617,Multidigitate,Having many fingers  or fingerlike processes.,-1,1,1,Digitation,Bidigitate,Multidentate
-97262,Myosin,An albuminous body present in dead muscle  being formed in the process of coagulation which takes place in rigor mortis; the clot formed in the coagulation of muscle plasma. See Muscle plasma under Plasma.,-1,1,1,Coagulum,Crassamentum,Coagulation
-97292,Myricyl,A hypothetical radical regarded as the essential residue of myricin; -- called also melissyl.,-1,1,1,Octoyl,Methenyl,Propyl
-97761,Nativistic,Relating to nativism.,-1,1,1,Nativist,Adjective,Anapnoic
-98052,Necrobiosis,The death of a part by molecular disintegration and without loss of continuity  as in the processes of degeneration and atrophy.,-1,1,1,Necrosis,Bereavement,Casualty
-98137,Needless,Having no need.,-1,3,1,Occasion,Sinewless,Acapsular
-98877,Night-faring,Going or traveling in the night.,-1,1,1,Noctivagant,Noctivagation,Going
-99050,Nitrification,A process of oxidation  in which nitrogenous vegetable and animal matter in the presence of air moisture and some basic substances as lime or alkali carbonate is converted into nitrates.,819,3,1,Mineral,Manure,Alkalifiable
-99652,Northeast,Of or pertaining to the northeast; proceeding toward the northeast  or coming from that point; as a northeast course; a northeast wind.,8,3,1,Northeasterly,Southeast,Northeaster
-100140,Numeration,The act or art of reading numbers when expressed by means of numerals. The term is almost exclusively applied to the art of reading numbers written in the scale of tens  by the Arabic method.,98,2,1,Decimal,Roman,Decimally
-100232,Nursery,A place where young trees  shrubs vines etc. are propagated for the purpose of transplanting; a plantation of young trees.,172,7,1,Shrubbery,Orangery,Plant
-100561,Obliquation,The act of becoming oblique; a turning to one side; obliquity; as  the obliquation of the eyes.,-1,2,1,Declination,Splay,Contraversion
-100710,Obsess,To besiege; to beset.,-1,1,2,Siege,Assiege,Leaguer
-101859,Open,Free or cleared of obstruction to progress or to view; accessible; as  an open tract; the open sea.,13,24,1,Unstop,Clear,Clearing
-102892,Osiris,One of the principal divinities of Egypt  the brother and husband of Isis. He was figured as a mummy wearing the royal cap of Upper Egypt and was symbolized by the sacred bull called Apis. Cf. Serapis.,-1,1,1,Zeus,Idolize,Hamadryas
-103085,Otitis,Inflammation of the ear.,-1,1,1,Tympanitis,Pinna,Phlogosis
-103266,Outfield,A field beyond  or separated from the inclosed land about the homestead; an uninclosed or unexplored tract. Also used figuratively.,76,4,1,Tract,Common,Incense
-103301,Outgoing,The extreme limit; the place of ending.,-1,5,1,Descent,But,Utter
-103302,Outgoing,Going out; departing; as  the outgoing administration; an outgoing steamer.,6,5,1,Passing,Outing,Way-going
-103414,Output,That which is thrown out as products of the metabolic activity of the body; the egesta other than the faeces. See Income.,-1,2,1,Metabolic,Outgo,Disbursement
-103553,Outward,Forming the superficial part; external; exterior; -- opposed to inward; as  an outward garment or layer.,13,6,1,Exterior,Outterm,Outside
-104033,Overpass,To go over or beyond; to cross; as  to overpass a river; to overpass limits.,593,4,1,Transcend,Overhip,Extravagation
-104131,Overrun,To exceed in distance or speed of running; to go beyond or pass in running.,18,9,1,Transcend,Outtravel,Outpass
-104547,Oxy-,A compound containing oxygen.,18,3,1,Oxysulphide,Oxygenic,Oxychloride
-104855,Page,Any one of several species of beautiful South American moths of the genus Urania.,-1,10,1,Tamarin,Tinamou,Houtou
-104965,Palace,The residence of a sovereign  including the lodgings of high officers of state and rooms for business as well as halls for ceremony and reception.,294,3,1,Parlor,Court,Company
-105128,Palisade,To surround  inclose or fortify with palisades.,-1,3,1,Mound,Stockade,Inwall
-105706,Papillose,Covered with  or bearing papillae; resembling papillae; papillate; papillar; papillary.,-1,1,1,Papillary,Hairy,Piligerous
-105724,Papuars,The native black race of Papua or New Guinea  and the adjacent islands.,-1,1,1,Bird of paradise,Rossel current,Goura
-106803,Paste,To unite with paste; to fasten or join by means of paste.,-1,7,1,Enjoin,Injoint,Dovetail
-107087,Patronization,The act of patronizing; patronage; support.,-1,1,1,Patrocination,Pap,Patronage
-107534,Pedantize,To play the pedant; to use pedantic expressions.,-1,1,1,Pedantical,Compliment,Double
-107596,Pedigerous,Bearing or having feet or legs.,-1,1,1,Macropodous,Saltigrade,Remiped
-107711,Pehlevi,An ancient Persian dialect in which words were partly represented by their Semitic equivalents. It was in use from the 3d century (and perhaps earlier) to the middle of the 7th century  and later in religious writings.,-1,1,1,Zend-Avesta,Falconet,Moton
-108406,Perfidiousness,The quality of being perfidious; perfidy.,-1,1,1,Treachery,Perfidies,Perfidious
-108457,Perfuse,To suffuse; to fill full or to excess.,-1,1,1,overfill,Overset,Refill
-108815,Perpendicle,Something hanging straight down; a plumb line.,-1,1,1,Plummet,Dependency,Downright
-109763,Phonogram,A record of sounds made by a phonograph.,-1,2,1,Anemogram,Phonographical,Chronogram
-110438,Piercer,An instrument used in forming eyelets; a stiletto.,-1,5,1,Eyeleteer,Stilet,Strickle
-110612,Pill,The peel or skin.,2,7,1,Peel,Pill,Skin
-111111,Piston,A sliding piece which either is moved by  or moves against fluid pressure. It usually consists of a short cylinder fitting within a cylindrical vessel along which it moves back and forth. It is used in steam engines to receive motion from the steam and in pumps to transmit motion to a fluid; also for other purposes.,-1,1,1,Receiver,Truck,Boiler
-111112,Pit,A large cavity or hole in the ground  either natural or artificial; a cavity in the surface of a body; an indentation,27,16,1,Cave,Hollow,Dimple
-111323,Placitum,A public court or assembly in the Middle Ages  over which the sovereign president when a consultation was held upon affairs of state.,108,3,1,Vestry,Mediaevalism,Corset
-111909,Pleasurist,A person devoted to worldly pleasure.,-1,1,1,Sybarite,Earthly-minded,Fleshing
-111935,Plectospondylous,Of or pertaining to the Plectospondyli.,-1,1,1,Acritan,Acrodont,Acromial
-112060,Pleuritical,Suffering from pleurisy.,3,2,1,Pleuritis,Respiration,Pleuritical
-112378,Pluperfect,More than perfect; past perfect; -- said of the tense which denotes that an action or event was completed at or before the time of another past action or event.,263,2,1,Aorist,Preterit,Foreadvise
-112382,Pluralism,The quality or state of being plural  or in the plural number.,-1,2,1,Overmuchness,More,Oneness
-112837,Polemical,Polemic; controversial; disputatious.,-1,1,1,Controversial,Polemic,Controversal
-113246,Polyphyllous,Many-leaved; as  a polyphyllous calyx or perianth.,-1,1,1,Monophyllous,Leaved,Perianthium
-113403,Pomposity,The quality or state of being pompous; pompousness.,-1,1,1,Showiness,Magniloquence,Settledness
-113425,Ponderation,The act of weighing.,-1,1,2,Trutination,Balance,Tronage
-113469,Pontifice,Bridgework; structure or edifice of a bridge.,-1,1,1,Fabric,Ruinous,Panel
-113737,Portage group,A subdivision of the Chemung period in American geology. See Chart of Geology.,-1,1,1,Potsdam group,Miocene,Permian
-113828,Portraiture,Pictures  collectively; painting.,-1,4,1,Rhyparography,Picture,Xylopyrography
-114030,Posthouse,A house for distributing the malls; a post office.,2,2,1,Monitorship,Posthouse,Post
-114361,Pound,A certain specified weight; especially  a legal standard consisting of an established number of ounces.,-1,11,1,Light,As,Hectogram
-114891,Predation,The act of pillaging.,-1,1,1,Pillage,Sackage,Plunder
-115038,Preexist,To exist previously; to exist before something else.,-1,1,1,Premise,Praecognita,Aforementioned
-115104,Prefrontal,Situated in front of the frontal bone  or the frontal region of the skull; ectethmoid as a certain bone in the nasal capsule of many animals and certain scales of reptiles and fishes.,988,2,1,Postfrontal,Postorbital,Septomaxillary
-115658,Presternum,The anterior segment of the sternum; the manubrium.,-1,1,1,Suprasternal,Manubrium,Buckler
-116646,Profanation,The act of violating sacred things  or of treating them with contempt or irreverence; irreverent or too familiar treatment or use of what is sacred; desecration; as the profanation of the Sabbath; the profanation of a sanctuary; the profanation of the name of God.,39,2,1,Profane,Violation,Profaner
-116895,Proliferation,The continuous development of cells in tissue formation; cell formation.,-1,2,1,Cytogenesis,Histogenetic,Vasoformative
-117131,Propagable,Capable of being spread or extended by any means; -- said of tenets  doctrines or principles.,83,2,1,Extensive,Extendible,Circumfusile
-117768,Provand,Alt. of Proant,-1,1,1,Aden-,Adenalgia,Adenoid
-117779,Prove,To take a trial impression of; to take a proof of; as  to prove a page.,68,9,1,Approof,Probacy,Proof
-117911,Proxenet,A negotiator; a factor.,-1,1,1,Negotiant,Loanmonger,Factored
-119177,Pygal,Situated in the region of the rump  or posterior end of the backbone; -- applied especially to the posterior median plates in the carapace of chelonians.,-1,1,1,Nuchal,Opisthocoelous,Postanal
-119694,Quarrel,A square or lozenge-shaped paving tile.,61,16,1,Mascled,Quadrel,Lozenged
-120200,Quininism,Alt. of Quinism,-1,1,1,Adiposeness,Adjacence,Adoor
-120325,Quittance,To repay; to requite.,-1,3,2,Foryelde,Cope,Redub
-120384,Quotable,Capable or worthy of being quoted; as  a quotable writer; a quotable sentence.,-1,1,1,Rememberable,Wishable,Comparable
-120571,Racovian,One of a sect of Socinians or Unitarians in Poland.,-1,1,1,Unitarianism,Cracovian,Socinian
-120772,Ragious,Raging; furious; rageful.,-1,1,1,Furial,Rabid,Madding
-121216,Rape,The act of seizing and carrying away by force; violent seizure; robbery.,968,11,1,Rapine,Reseizure,Taking
-121293,Rarefy,To become less dense; to become thin and porous.,2,2,1,Attenuant,Rarefy,Attenuate
-121480,Rattle,Noisy  rapid talk.,70,14,1,Clatter,Clap,Bluster
-121778,Realism,Fidelity to nature or to real life; representation without idealization  and making no appeal to the imagination; adherence to the actual fact.,-1,3,1,Veritable,Positive,Fanciless
-121788,Realization,The act of realizing  or the state of being realized.,-1,1,1,Realizable,Tangible,Accomplicity
-124493,Repeat,To go over again; to attempt  do make or utter again; to iterate; to recite; as to repeat an effort an order or a poem.,68,6,1,Refar,Renew,Iterate
-124541,Repercuss,To drive or beat back; hence  to reflect; to reverberate.,-1,1,1,Retort,Revert,Rebut
-124571,Repiner,One who repines.,-1,1,1,Inwardly,Conferrer,Cumulatist
-124995,Rescind,To cut off; to abrogate; to annul.,-1,2,1,Forcarve,Forcut,Abscind
-124996,Rescind,Specifically  to vacate or make void as an act by the enacting authority or by superior authority; to repeal; as to rescind a law a resolution or a vote; to rescind a decree or a judgment.,-1,2,1,Repeal,Avoid,Grace
-125055,Resemble,To liken; to compare; to represent as like.,235,4,1,Liken,Assemble,Like
-125057,Resemble,To cause to imitate or be like.,7,4,1,Liken,Twin,Unbe
-125072,Resent,To give forth an odor; to smell; to savor.,854,7,1,Stench,Season,Stench
-125381,Respite,To give or grant a respite to.,-1,8,1,Misgive,Reprieve,Beteem
-125438,Rest,A state of quiet or repose; a cessation from motion or labor; tranquillity; as  rest from mental exertion; rest of body or mind.,17,24,1,Quietude,Peace,Composure
-125604,Resurrection,State of being risen from the dead; future state.,17,4,1,Rise,Futurition,Futurity
-125630,Retailment,The act of retailing.,-1,1,1,Retail,Peddler,Conformation
-125825,Retraxit,The withdrawing  or open renunciation of a suit in court by the plaintiff by which he forever lost his right of action.,-1,1,1,Cause,Nonsuit,Libel
-127533,Rogue,A worthless plant occuring among seedlings of some choice variety.,-1,8,1,Catchpenny,Selenite,Ambrosia
-128482,Rucervine,Of  like or pertaining to a deer of the genus Rucervus which includes the swamp deer of India.,-1,1,1,Rusine,Thamyn,Mulliod
-128605,Rufflement,The act of ruffling.,-1,1,1,Heading,Crimper,Conformation
-128981,Russ,A Russian  or the Russians.,2,3,1,Russianize,Russ,Russ
-129300,Sacrificer,One who sacrifices.,-1,1,1,Laborious,Laver,Martyr
-129481,Sail,Anything resembling a sail  or regarded as a sail.,97,14,1,Island,Worm,Heel
-129491,Sail,To set sail; to begin a voyage.,41,14,1,Loose,Onset,Voyage
-129611,Salient,Moving by leaps or springs; leaping; bounding; jumping.,78,6,1,Subsultory,Saltation,Saltant
-130064,Santonate,A salt of santonic acid.,-1,1,1,Supersalt,Arsenate,Bromate
-130640,Scabbard,The case in which the blade of a sword  dagger etc. is kept; a sheath.,-1,2,1,Steel,Grain,Creese
-131441,Sconce,Hence  the circular tube with a brim in a candlestick into which the candle is inserted.,2,12,1,Socket,Sconce,Wheel-shaped
-131471,Scope,Length; extent; sweep; as  scope of cable.,99,5,1,Latitude,Area,Purview
-131789,Screw,Specifically  a kind of nail with a spiral thread and a head with a nick to receive the end of the screw-driver. Screws are much used to hold together pieces of wood or to fasten something; -- called also wood screws and screw nails. See also Screw bolt below.,14,17,1,Bolt,Button,Nail
-132838,Security,An evidence of debt or of property  as a bond a certificate of stock etc.; as government securities.,611,8,1,Debenture,Fund,Undue
-133325,Self-propagating,Propagating by one's self or by itself.,-1,1,1,Self-regulated,Self-suspended,Self-consuming
-133569,Semnifical,Forming or producing seed  or the male generative product of animals or of plants.,-1,1,1,Generant,Prolific,Semen
-133583,Semiorbicular,Having the shape of a half orb or sphere.,-1,1,1,Orbicle,Semispherical,Circle
-134635,Sewen,A British trout usually regarded as a variety (var. Cambricus) of the salmon trout.,-1,1,1,Bull trout,Bluepoll,Namaycush
-134930,Shallow-waisted,Having a flush deck  or with only a moderate depression amidships; -- said of a vessel.,-1,1,1,Shallow-bodied,Undecked,Camber
-135427,Shelving,Material for shelves; shelves  collectively.,79,5,1,Slating,Studding,Belting
-135534,Shifting,Adapted or used for shifting anything.,9,3,1,Measuring,Veering,Stridulatory
-135544,Shill,To put under cover; to sheal.,-1,2,1,Sheal,Succeed,Depose
-135672,Shipwright,One whose occupation is to construct ships; a builder of ships or other vessels.,-1,1,1,Shipbuilder,Potter,Mariner
-135804,Shogun,A title originally conferred by the Mikado on the military governor of the eastern provinces of Japan. By gradual usurpation of power the Shoguns (known to foreigners as Tycoons) became finally the virtual rulers of Japan. The title was abolished in 1867.,-1,1,1,Tycoon,Pasha,Waywode
-136161,Shrink,To express fear  horror or pain by contracting the body or part of it; to shudder; to quake.,7,6,1,Tremble,Agrise,Ugh
-137395,Sitting,A brooding over eggs for hatching  as by fowls.,820,8,1,Eccaleobion,Incubation,Incubate
-138073,Sledge,A large  heavy hammer usually wielded with both hands; -- called also sledge hammer.,9,6,1,Uphand,Club,Hammer
-138203,Slicker,A curved tool for smoothing the surfaces of a mold after the withdrawal of the pattern.,-1,4,1,Trowel,Rabbler,Grozing iron
-138578,Slumber,To sleep; especially  to sleep lightly; to doze.,5,5,1,Drowse,Nap,Nap
-141241,Spelt,To split; to break; to spalt.,-1,5,1,Spalt,Diffind,Resplit
-141332,Spetches,Parings and refuse of hides  skins etc. from which glue is made.,-1,1,1,Skinner,Taurocolla,Rape
-141517,Spikenard,A fragrant essential oil  as that from the Nardostachys Jatamansi.,9,2,1,Attar,Nard,Aspalathus
-141675,Spiranthy,The occasional twisted growth of the parts of a flower.,-1,1,1,Occasionality,Contorted,Symmetry
-141853,Splay,To spay; to castrate.,-1,6,1,Lib,Spayed,Spaying
-141944,Splinter,A thin piece split or rent off lengthwise  as from wood bone or other solid substance; a thin piece; a sliver; as splinters of a ship's mast rent off by a shot.,5,4,1,Split,Splint,Splint
-142032,Spoliator,One who spoliates; a spoiler.,-1,1,1,Depredator,Ravager,Monopolist
-142206,Spot,A variety of the common domestic pigeon  so called from a spot on its head just above its beak.,744,12,1,Turbit,Fantail,Laugher
-142619,Squamduck,The American eider duck.,-1,1,1,Wamp,Dunbird,Troopfowl
-142940,Staff,A series of verses so disposed that  when it is concluded the same order begins again; a stanza; a stave.,88,11,1,Verse,Circle,Bower
-143465,Starry,Shining like stars; sparkling; as  starry eyes.,4,4,1,Twinkling,Stellary,Sparkling
-144031,Step,To walk; to go on foot; esp.  to walk a little distance; as to step to one of the neighbors.,19,20,1,Tread,Tread,Tiptoe
-144036,Step,An advance or movement made by one removal of the foot; a pace.,13,20,1,Replacement,Walk,Pace
-144053,Stepchild,A son or daughter of one's wife or husband by a former marriage.,-1,2,1,Stepdaughter,Stepson,Stepsister
-144131,Stereotypic,Of or pertaining to stereotype  or stereotype plates.,-1,1,1,Stereotype,Stereotypery,Stereotyped
-144500,Stinginess,The quality or state of being stingy.,-1,1,1,Settledness,Absorbability,Affectibility
-144753,Stoma,The minute breathing pores of leaves or other organs opening into the intercellular spaces  and usually bordered by two contractile cells.,38,4,1,Water pore,Intercellular,Pistillody
-144918,Stop,Some part of the articulating organs  as the lips or the tongue and palate closed (a) so as to cut off the passage of breath or voice through the mouth and the nose (distinguished as a lip-stop or a front-stop etc. as in p t d etc.) or (b) so as to obstruct but not entirely cut off,9,20,1,Shut,Stopped,Mute
-145016,Story-teller,One who tells stories; a narrator of anecdotes incidents or fictitious tales; as an amusing story-teller.,-1,3,1,Teller,Tattler,Gestour
-145262,Strap,The flat part of the corolla in ligulate florets  as those of the white circle in the daisy.,-1,12,1,Semiflosculous,Radiate,Strap-shaped
-146147,Stycerin,A triacid alcohol  related to glycerin and obtained from certain styryl derivatives as a yellow gummy amorphous substance; -- called also phenyl glycerin.,-1,1,1,Glycide,Laccin,Naphthalenic
-146190,Stylomaxillary,Of or pertaining to the styloid process and the maxilla.,-1,1,1,Styloglossal,Styloid,Stylohyoid
-147323,Suffumigation,The operation of suffumigating.,-1,1,1,Vindemiation,Uvulatomy,Inactuation
-147346,Sugariness,The quality or state of being sugary  or sweet.,-1,1,1,Sugary,Settledness,Sweetness
-147743,Superb,Rich; elegant; as  superb furniture or decorations.,2,3,1,Parament,Superb,Superb
-148062,Supplement,That which fills up  completes or makes an addition to something already organized arranged or set apart; specifically a part added to or issued as a continuation of a book or paper to make good its deficiencies or correct its errors.,18,4,1,Complement,Glut,Appendix
-148118,Support,To assume and carry successfully  as the part of an actor; to represent or act; to sustain; as to support the character of King Lear.,13,13,1,Play,Impersonate,Act
-148460,Surquedous,Alt. of Surquedrous,-1,1,1,Aden-,Adenalgia,Adenoid
-149777,Syntactical,Of or pertaining to syntax; according to the rules of syntax  or construction.,-1,1,1,Contrapuntal,Prosodical,Arithmetical
-149798,Synthetize,To combine; to unite in regular structure.,-1,1,1,Co-une,Piece,Synthesize
-149877,Systemless,Being without system.,292,3,1,Lampless,Lungless,Reproachless
-151862,Terminal,Either of the ends of the conducting circuit of an electrical apparatus  as an inductorium dynamo or electric motor usually provided with binding screws for the attachment of wires by which a current may be conveyed into or from the machine; a pole.,949,4,1,Brush,Dynamo,Rheomotor
-152519,Theme,That by means of which a thing is done; means; instrument.,-1,6,1,Lift,Grader,Shaker
-152556,Theogonic,Of or relating to theogony.,-1,1,1,Theogonism,Theogonist,Alchemical
-152594,Theopneusty,Divine inspiration; the supernatural influence of the Divine Spirit in qualifying men to receive and communicate revealed truth.,-1,1,1,Inspiration,Inspire,Afflatus
-152936,Thirdings,The third part of the corn or grain growing on the ground at the tenant's death  due to the lord for a heriot as within the manor of Turfat in Herefordshire.,-1,1,1,Seignior,Shack,Grist
-153202,Three-piled,Fig.: Extravagant; exaggerated; high-flown.,425,3,1,High-flown,Highfaluting,Euphuism
-154342,Toadstool,A name given to many umbrella-shaped fungi  mostly of the genus Agaricus. The species are almost numberless. They grow on decaying organic matter.,-1,1,1,Agaric,Mushroom,Mould
-154388,Tod,An old weight used in weighing wool  being usually twenty-eight pounds.,-1,4,1,Clove,Score,Stand
-154894,Top-timbers,The highest timbers on the side of a vessel  being those above the futtocks.,-1,1,1,Suprascalpulary,Midships,Poppet
-155397,Traceries,of Tracer/y,-1,1,1,Y's,Ys,Ypsiloid
-155902,Transfugitive,One who flees from one side to another; hence  a deserter; a turncoat; an apostate.,-1,1,1,Fugitive,Fleer,Renegade
-156274,Traverse,Lying across; being in a direction across something else; as  paths cut with traverse trenches.,4,23,1,Homotropous,Superincumbent,Transverse
-156285,Traverse,The turning of a gun so as to make it point in any desired direction.,4,23,1,Quaquaversal,Swivel,Lay
-156981,Trimethylene,A gaseous hydrocarbon  C3H6 isomeric with propylene and obtained from it indirectly. It is the base of a series of compounds analogous to the aromatic hydrocarbons.,-1,1,1,Cinnoline,Phenanthridine,Thiophthene
-157483,Trousering,Cloth or material for making trousers.,-1,1,1,Bagging,Shirting,Quilting
-157517,Trubu,An East India herring (Clupea toli) which is extensively caught for the sake of its roe and for its flesh.,-1,1,1,Syle,Matie,Blueback
-157819,Tube,The narrow  hollow part of a gamopetalous corolla.,331,9,1,Calcar,Inflated,Barrel
-159030,Umber,Of or pertaining to umber; resembling umber; olive-brown; dark brown; dark; dusky.,16,5,1,Dingy,Sooty,Fuliginous
-159031,Umber,To color with umber; to shade or darken; as  to umber over one's face.,19,5,1,Overshadow,Inumbrate,Obumbrate
-159091,Umpire,A third person  who is to decide a controversy or question submitted to arbitrators in case of their disagreement.,16,5,1,Award,Arbitrate,Difference
-159285,Unbenign,Not benign; malignant.,-1,1,1,Infelonious,Nonmalignant,Affable
-159980,Undertake,To take upon one's self  or assume any business duty or province.,9,10,1,Impropriate,Assume,Profess
-160373,Ungulate,Shaped like a hoof.,-1,3,1,Dentoid,Nuciform,Aciform
-160501,Unifromness,The quality or state of being uniform; uniformity.,-1,1,1,Invariability,Uniformity,Equability
-160914,Unpaved,Not paved; not furnished with a pavement.,-1,2,1,Unrevenued,Pament,Paving
-161152,Unsatiability,Quality of being unsatiable; insatiability.,-1,1,1,Insatiableness,Alimentariness,Alibility
-161257,Unskillful,Lacking discernment; injudicious; ignorant.,-1,2,1,Weak,Injudiciously,Discernance
-161431,Untraded,Not traded in or bartered; hence  not hackneyed; unusual; not common.,437,3,1,Uncommon,Strange,Hack
-161575,Up,In a higher place or position  literally or figuratively; in the state of having arisen; in an upright or nearly upright position; standing; mounted on a horse; in a condition of elevation prominence advance proficiency excitement insurrection or the like; -- used with verbs of rest situation condition,4,11,1,Down,Whereness,Blindness
-162019,Use,The premium paid for the possession and employment of borrowed money; interest; usury.,577,15,1,Usance,Usury,Fenerate
-162300,Vagrant,Wandering from place to place without any settled habitation; as  a vagrant beggar.,2,3,1,Vagabond,Vagrant,Gangrel
-162767,Vasum,A genus including several species of large marine gastropods having massive pyriform shells  with conspicuous folds on the columella.,-1,1,1,Turbinella,Yet,Pyrula
-163026,Veneficial,Alt. of Veneficious,-1,1,1,Aden-,Adenalgia,Adenoid
-163285,Vergency,The reciprocal of the focal distance of a lens  used as measure of the divergence or convergence of a pencil of rays.,-1,2,1,Divergent,Condenser,Diacaustic
-163932,Villain,To debase; to degrade.,-1,5,1,Disbase,Vilify,Villanize
-164069,Violate,To commit rape on; to ravish; to outrage.,-1,4,1,Rape,Violation,Outrage
-164993,Wage,To put upon wages; to hire; to employ; to pay wages to.,4,9,1,Stipend,Retain,Hireling
-165007,Wagering,Hazarding; pertaining to the act of one who wagers.,-1,2,1,Wagerer,Gaming,Badgering
-165249,Waltz,A dance performed by two persons in circular figures with a whirling motion; also  a piece of music composed in triple measure for this kind of dance.,466,2,1,Courant,Entr'acte,Trenchmore
-165281,Wanderment,The act of wandering  or roaming.,-1,1,1,Roam,Stray,Rove
-165598,Wart,An excrescence or protuberance more or less resembling a true wart; specifically (Bot.)  a glandular excrescence or hardened protuberance on plants.,-1,2,1,Chit,Skeleton,Excrescential
-166226,Weak,Lacking in elements of political strength; not wielding or having authority or energy; deficient in the resources that are essential to a ruler or nation; as  a weak monarch; a weak government or state.,35,23,1,Monarchy,Feeble,Deficient
-166442,Wedge,To cleave or separate with a wedge or wedges  or as with a wedge; to rive.,2,11,1,Enrive,Wedge,Dispart
-166451,Wedge-shaped,Broad and truncate at the summit  and tapering down to the base; as a wedge-shaped leaf.,146,2,1,Cuneated,Lanceolated,Fron'tated
-167243,Whipperin,Hence  one who enforces the discipline of a party and urges the attendance and support of the members on all necessary occasions.,108,2,1,Enforcer,Whip,Urger
-167511,Whity-brown,Of a color between white and brown.,-1,1,1,Drab,Ashen,Thenardite
-167680,Wieldless,Not to be wielded; unmanageable; unwieldy.,-1,1,1,Unweldy,Unwieldy,Wieldy
-168125,Wiredraw,To pass  or to draw off (as steam) through narrow ports or the like thus reducing its pressure or force by friction.,183,4,1,Grind,Squeeze,Push
-168190,Wistful,Longing; wishful; desirous.,-1,2,1,Wishful,Yearnful,Fond
-168384,Woe,A curse; a malediction.,-1,3,1,Malison,Anathema,Cursed
-168868,Wounder,One who  or that which wounds.,-1,1,1,Portoir,Sweetener,Cheerer
-169411,Yawl-rigged,Having two masts with fore-and-aft sails  but differing from a schooner in that the after mast is very small and stepped as far aft as possible. See Illustration in Appendix.,-1,1,1,Catboat,Lugger,Schooner
-169419,Yawn,The act of opening wide  or of gaping.,86,7,1,Dehiscence,Hiation,Oscitancy
-169563,Yester-morning,The morning of yesterday.,-1,1,1,A-mornings,Yester-evening,Yesternoon
-169668,Yoke-toed,Having two toes in front and two behind  as the trogons and woodpeckers.,-1,1,1,Heterodactylous,Zygodactylous,Orohippus
-170069,Zope,A European fresh-water bream (Abramis ballerus).,-1,1,1,Zarthe,Bream,Pinfish
+187,Aberrant,Deviating from the ordinary or natural type; exceptional; abnormal.,-1,2,1,Heteroclite,Heteroclitical,Abnormity
+285,Ablactation,The process of grafting now called inarching  or grafting by approach.,-1,2,1,Emplastration,Imping,Dewret
+346,Abode,Place of continuance  or where one dwells; abiding place; residence; a dwelling; a habitation.,21,8,1,Commorancy,Inn,Inhabitation
+824,Accessory,That which belongs to something else deemed the principal; something additional and subordinate.,-1,2,1,Appertinent,Dependency,Dependence
+1220,Acinus,One of the small grains or drupelets which make up some kinds of fruit  as the blackberry raspberry etc.,-1,3,1,Drupelet,Rubus,Bramble
+1430,Actinometer,An instrument for measuring the direct heating power of the sun's rays.,2,2,1,Pyrheliometer,Actinometer,Dynactinometer
+1431,Actinometer,An instrument for measuring the actinic effect of rays of light.,3,2,1,Actinograph,Pyrheliometer,Actinometer
+1908,Adnate,Growing with one side adherent to a stem; -- a term applied to the lateral zooids of corals and other compound animals.,-1,3,1,Culminate,One-sided,Zoanthodeme
+2889,Aiguille,A needle-shaped peak.,-1,2,1,Aciform,Acerate,Aciculiform
+3097,Alchemy,Miraculous power of transmuting something common into something precious.,-1,3,1,Preciosity,Supernatural,Dearworth
+3126,Alcove,A recessed portion of a room  or a small room opening into a larger one; especially a recess to contain a bed; a lateral recess in a library.,-1,2,1,Bedsite,Bedroom,Overture
+3279,Alienate,To withdraw  as the affections; to make indifferent of averse where love or friendship before subsisted; to estrange; to wean; -- with from.,-1,4,1,Abalienate,Heart-whole,Ablactate
+3423,Allemande,A dance in moderate twofold time  invented by the French in the reign of Louis XIV.; -- now mostly found in suites of pieces like those of Bach and Handel.,-1,2,1,Bourree,Dragonnade,Gailliarde
+3748,Alteration,The state of being altered; a change made in the form or nature of a thing; changed condition.,-1,2,1,Inalterable,Conversion,Transformation
+4228,Amorphous,Without crystallization in the ultimate texture of a solid substance; uncrystallized.,-1,3,1,Crystalline,Imporous,Ultimated
+4526,Analogical,Founded on  or of the nature of analogy; expressing or implying analogy.,11,2,1,Requisitive,Fatalistic,Analogies
+4584,Anaplerotic,Filling up; promoting granulation of wounds or ulcers.,25,2,1,Incarnation,Penicil,Sanies
+5208,Anon,Soon; in a little while.,-1,3,1,Presently,Erewhiles,Whilere
+5536,Antichthon,A hypothetical earth counter to ours  or on the opposite side of the sun.,517,2,1,Antecedent,Antipodal,Contraversion
+5537,Antichthon,Inhabitants of opposite hemispheres.,166,2,1,Inhabitation,Antiscii,Adverse
+6541,Apt,Fit or fitted; suited; suitable; appropriate.,241,4,1,Fitting,Idoneous,Becoming
+6608,Arabian,A native of Arabia; an Arab.,25,2,1,Wastrel,Araby,Sheik
+7163,Arms,The ensigns armorial of a family  consisting of figures and colors borne in shields banners etc. as marks of dignity and distinction and descending from father to son.,-1,5,1,Armory,On,Modalist
+8593,Audacious,Daring; spirited; adventurous.,50,3,1,Emprising,Dareful,Foolhardy
+8673,Augustinian,A member of one of the religious orders called after St. Augustine; an Austin friar.,12,3,1,Jeronymite,Barnabite,Carthusian
+8707,Aurated,Combined with auric acid.,-1,3,1,Acetated,Carbonated,Muriated
+9755,Balk,One of the beams connecting the successive supports of a trestle bridge or bateau bridge.,-1,10,1,Bateaux,Tressel,Binding
+9759,Balk,To leave heaped up; to heap up in piles.,970,10,1,Acervative,Sozzle,Acervate
+9935,Bandy,A club bent at the lower part for striking a ball at play; a hockey stick.,259,5,1,Doddart,Catstick,Shinty
+10866,Beamy,Having horns  or antlers.,-1,3,1,Plenicorn,High-palmed,Cavicorn
+10921,Bearer,A palanquin carrier; also  a house servant.,-1,4,1,Palkee,Maty,Potman
+10925,Bearing,Patient endurance; suffering without complaint.,-1,9,1,Perpession,Plaintless,Sufferance
+10927,Bearing,Purport; meaning; intended significance; aspect.,-1,9,1,Importance,Sentence,Purportless
+10932,Bearing,The widest part of a vessel below the plank-sheer.,419,9,1,Berthing,Sny,Driftpiece
+11019,Beaver,That piece of armor which protected the lower part of the face  whether forming a part of the helmet or fixed to the breastplate. It was so constructed (with joints or otherwise) that the wearer could raise or lower it to eat and drink.,-1,2,1,Gorget,Umbriere,Sconce
+11312,Begin,To have or commence an independent or first existence; to take rise; to commence.,5,5,1,Autonomous,Commencement,Originate
+11478,Belgic,Of or pertaining to the Belgae  a German tribe who anciently possessed the country between the Rhine the Seine and the ocean.,-1,2,1,Rudesheimer,Miamis,Sean
+11659,Bencher,A member of a court or council.,330,4,1,Councilor,Councilman,Senator
+11668,Bend,To jut over; to overhang.,-1,14,1,Beetle,Overhang,Overhang
+12239,Bezzle,To plunder; to waste in riot.,-1,2,1,Harry,Rioter,Depredate
+12787,Birr,A whirring sound  as of a spinning wheel.,4,3,1,Tourn,Fly,Whur
+12788,Birr,A rush or impetus; force.,-1,3,1,Bent,Reak,Seave
+13084,Blackstrap,Bad port wine; any common wine of the Mediterranean; -- so called by sailors.,-1,2,1,Porpoise,Shorthead,Calcavella
+13453,Blockade,Hence  to shut in so as to prevent egress.,9,3,1,Preventingly,Hedge,Hinder
+13454,Blockade,To obstruct entrance to or egress from.,3,3,1,Intervent,Egression,Blockade
+13558,Blot,To obscure; to eclipse; to shadow.,209,11,1,Extinguish,Overshadow,Eclipsed
+13561,Blot,An obliteration of something written or printed; an erasure.,-1,11,1,Rasure,Scrap,Book
+13562,Blot,A spot on reputation; a stain; a disgrace; a reproach; a blemish.,21,11,1,Taint,Spot,Tache
+13579,Blow,To flower; to blossom; to bloom.,9,18,1,Floriage,Bloom,Canker bloom
+13864,Bode,Bid or bidden.,7,8,1,Unbidden,Bade,Bad
+14017,Bolt,A shaft or missile intended to be shot from a crossbow or catapult  esp. a short stout blunt-headed arrow; a quarrel; an arrow or that which resembles an arrow; a dart.,-1,16,1,Dart,Cock,Birdbolt
+14024,Bolt,To shoot; to discharge or drive forth.,233,16,1,Expel,Project,Fusillade
+14160,Bonnet,A roofing over the cage of a mine  to protect its occupants from objects falling down the shaft.,-1,10,1,Lum,Downcast,Indicator
+14544,Bought,The part of a sling that contains the stone.,-1,4,1,Subscription,Slung,Slang
+14553,Bouillon,An excrescence on a horse's frush or frog.,-1,2,1,Frush,Chit,Excrement
+14811,Bracelet,An ornamental band or ring  for the wrist or the arm; in modern times an ornament encircling the wrist worn by women or girls.,118,2,1,Bangle,Stomacher,Manilla
+15298,Breeding,Descent; pedigree; extraction.,-1,4,1,Extract,Genealogy,Extreat
+15440,Bridge-ward,A bridge keeper; a warden or a guard for a bridge.,-1,2,1,Alcayde,Warder,Portreeve
+15695,Broken-backed,Having a broken back; as  a broken-backed chair.,-1,2,1,Razor-backed,Saddled,Chined
+16040,Budge,Austere or stiff  like scholastics.,-1,4,1,Coriaceous,Pokerish,Corny
+16067,Buffet,To deaden the sound of (bells) by muffling the clapper.,-1,8,1,Chime,Chime,Jangle
+16207,Bullion,Base or uncurrent coin.,-1,4,1,Mitre,Batta,Jane
+16364,Bureaucracy,A system of carrying on the business of government by means of departments or bureaus  each under the control of a chief in contradiction to a system in which the officers of government have an associated authority and responsibility; also government conducted on this system.,-1,2,1,Over,Governance,Monarchy
+17168,Caledonian,Of or pertaining to Caledonia or Scotland; Scottish; Scotch.,2,2,1,Scotch,Caledonian,Scotticize
+18086,Caravel,A Portuguese vessel of 100 or 150 tons burden.,-1,4,1,Ketch,Tonnage,Portingal
+18087,Caravel,A small fishing boat used on the French coast.,-1,4,1,Hooker,Cog,Coggle
+18457,Carter,Any species of Phalangium; -- also called harvestman,-1,4,1,Daddy longlegs,Harvestmen,Pigfish
+18485,Cartouch,A tablet for ornament  or for receiving an inscription formed like a sheet of paper with the edges rolled up; hence any tablet of ornamental form.,155,8,1,Guard,Cachepot,Stud
+18513,Carve,To exercise the trade of a sculptor or carver; to engrave or cut figures.,8,8,1,Grave,Kerver,Graver
+18521,Carver,A large knife for carving.,53,3,1,Jackknife,Gully,Flesher
+18652,Cast,A motion or turn  as of the eye; direction; look; glance; squint.,48,32,1,Oeillade,Eyebeam,Eyeglance
+18660,Castaway,One who is ruined; one who has made moral shipwreck; a reprobate.,497,3,1,Miasmatist,Comer,Reprobated
+18781,Catalytic,Relating to  or causing catalysis.,49,2,1,Erythematous,Catalyse,Erythematic
+18782,Catalytic,An agent employed in catalysis  as platinum black aluminium chloride etc.,13,2,1,Nitrifier,Chloralum,Platinotype
+18862,Catechise,To question or interrogate; to examine or try by questions; -- sometimes with a view to reproof  by eliciting from a person answers which condemn his own conduct.,38,2,1,Pose,Appose,Query
+19804,Challenge,To call to a contest of any kind; to call to answer; to defy.,6,13,1,Fight,Maugre,Defied
+20118,Charity,Whatever is bestowed gratuitously on the needy or suffering for their relief; alms; any act of kindness.,576,5,1,Respiration,Confessorship,Expiation
+20122,Chark,To burn to a coal; to char.,-1,2,1,Coal,Charred,Charring
+20184,Chase,That which is pursued or hunted.,-1,12,1,Trancscendent,Birth,Dispensation
+21536,Circumcision,The Jews  as a circumcised people.,-1,3,1,Uncircumcision,Unforeskinned,Gentile
+21841,Clamp,A mass of bricks heaped up to be burned; or of ore for roasting  or of coal for coking.,-1,10,1,Acervative,Hudge,Win
+21934,Class,A number of students in a school or college  of the same standing or pursuing the same studies.,-1,4,1,Classmate,Schoolfellow,Alumna
+21935,Class,A comprehensive division of animate or inanimate objects  grouped together on account of their common characteristics in any classification in natural science and subdivided into orders families tribes genera etc.,70,4,1,Appetency,Onomatology,Cohort
+21937,Class,To grouped or classed.,14,4,1,Classible,Fasciculated,Cluster
+22130,Clepe,To make appeal; to cry out.,-1,2,1,Howp,Voice,Sing
+22149,Clerk,A parish officer  being a layman who leads in reading the responses of the Episcopal church service and otherwise assists in it.,-1,4,1,Harvest-home,Chorister,Episcopalian
+22320,Clod,To throw violently; to hurl.,-1,6,1,Skew,Sling,Thrill
+22407,Clot,To concrete  coagulate or thicken as soft or fluid matter by evaporation; to become a cot or clod.,335,3,1,Inspissate,Colliquable,Curd
+23683,Commandery,A district or a manor with lands and tenements appertaining thereto  under the control of a member of an order of knights who was called a commander; -- called also a preceptory.,3,4,1,Barton,Preceptor,Commandery
+23975,Companion,A fellow; -- in contempt.,-1,3,1,Cur,Dandiprat,Bloat
+24834,Conduction,The act of training up.,553,3,1,Nurture,Exacervation,Piling
+24985,Confiner,One who  or that which limits or restrains.,-1,2,1,Precisian,Restrainer,Trammeler
+24986,Confiner,One who lives on confines  or near the border of a country; a borderer; a near neighbor.,-1,2,1,Borderer,Amnicolist,Commark
+25063,Confound,To destroy; to ruin; to waste.,-1,4,1,Fordo,Havoc,Waste
+25090,Confuse,To perplex; to disconcert; to abash; to cause to lose self-possession.,-1,2,1,Bash,Unheart,Overbalance
+25701,Constitution,The act or process of constituting; the action of enacting  establishing or appointing; enactment; establishment; formation.,-1,4,1,Destination,Creation,Granulation
+25712,Constitutive,Having power to enact  establish or create; instituting; determining.,-1,2,1,Enactive,Constitute,Institutive
+25817,Contact,A close union or junction of bodies; a touching or meeting.,312,3,1,Concourse,Contingency,Marriage
+25899,Content,Power of containing; capacity; extent; size.,-1,4,1,Ample,Latitude,Amplitude
+26282,Conversation,Commerce; intercourse; traffic.,64,4,1,Mercature,Chaffery,Mart
+27641,Course,To run as in a race  or in hunting; to pursue the sport of coursing; as the sportsmen coursed over the flats of Lancashire.,2,12,1,Career,Course,Overflow
+27855,Coxcomb,The cap itself.,51,5,1,Mobcap,Capped,Capping
+27856,Coxcomb,The top of the head  or the head itself,37,5,1,Shode,Noule,Cob
+28346,Crepitation,A crepitant rale.,-1,3,1,Plat,Herald,Imp
+28892,Crown,The dome of a furnace.,731,24,1,Cockle,Domed,Brachydome
+28895,Crown,A size of writing paper. See under Paper.,-1,24,1,Post,Copy,Pott
+28897,Crown,To form the topmost or finishing part of; to complete; to consummate; to perfect.,6,24,1,Circular,Replenish,Complete
+29288,Cully,A person easily deceived  tricked or imposed on; a mean dupe; a gull.,-1,2,1,Bubble,Kid,Greenhorn
+29289,Cully,To trick  cheat or impose on; to deceive.,-1,2,1,Trump,Fob,Cony-catch
+29373,Cumshaw,To give or make a present to.,803,2,1,Presentiate,Entrance,Render
+29419,Cup,That which is to be received or indured; that which is allotted to one; a portion.,-1,5,1,Reversionary,Receptary,Stent
+29588,Curry,A kind of sauce much used in India  containing garlic pepper ginger and other strong spices.,-1,4,1,Usquebaugh,Shandygaff,Fricace
+30094,Dag,The unbranched antler of a young deer.,-1,7,1,Bosset,Hartshorn,Horn
+30156,Dais,A platform slightly raised above the floor of a hall or large room  giving distinction to the table and seats placed upon it for the chief guests.,5,3,1,Hautpas,Pace,Loft
+30324,Dangerous,In a condition of danger  as from illness; threatened with death.,81,5,1,Viaticum,Jeopardy,Run
+30649,Deal,To divide; to separate in portions; hence  to give in portions; to distribute; to bestow successively; -- sometimes with out.,27,6,1,Parcel,Share,Shiff
+31356,Defecation,The act of separating from impurities  as lees or dregs; purification.,587,2,1,Defecate,Addle,Grout
+31525,Defoul,To tread down.,-1,2,1,Fortread,Trail,Waddle
+31828,Deliver,To discover; to show.,773,7,1,Discoure,Indicate,Prediscover
+32061,Demonize,To convert into a demon; to infuse the principles or fury of a demon into.,59,2,1,Nominalize,Lignify,Adipocerate
+32422,Deplete,To reduce by destroying or consuming the vital powers of; to exhaust  as a country of its strength or resources a treasury of money etc.,946,2,1,Adynamic,Famish,Adynamia
+32588,Deprivation,The state of being deprived; privation; loss; want; bereavement.,-1,3,1,Orbation,Viduation,Miss
+32602,Depthless,Having no depth; shallow.,140,2,1,Shallow,Sinewless,Acapsular
+33530,Diagonal,A right line drawn from one angle to another not adjacent  of a figure of four or more sides and dividing it into two parts.,2,3,1,Bipartient,Diagonal,Kathetal
+34056,Dignity,Elevated rank; honorable station; high office  political or ecclesiastical; degree of excellence; preferment; exaltation.,36,6,1,Quality,High-toned,Eminence
+34068,Digression,The act of digressing or deviating  esp. from the main subject of a discourse; hence a part of a discourse deviating from its main design or subject.,-1,3,1,Introduction,Exordium,Digressive
+34225,Diminution,The act of lessening dignity or consideration  or the state of being deprived of dignity; a lowering in estimation; degradation; abasement.,-1,4,1,Abjection,Abjectness,Demission
+34501,Dirempt,To separate by force; to tear apart.,-1,2,1,Pull,Rend,Segregate
+34587,Disagreement,Difference of opinion or sentiment.,31,3,1,Apprehension,Notion,Misunderstanding
+34894,Discontinuance,The termination of an action in practice by the voluntary act of the plaintiff; an entry on the record that the plaintiff discontinues his action.,65,3,1,Nolle prosequi,Continuance,Demandant
+35695,Disposition,Conscious inclination; propension or propensity.,-1,3,1,Proclivity,Disposedness,Semiconscious
+35696,Disposition,Natural or prevailing spirit  or temperament of mind especially as shown in intercourse with one's fellow-men; temper of mind.,-1,3,1,Succubus,Animus,Cue
+35743,Dispunct,Wanting in punctilious respect; discourteous.,-1,2,1,Impolite,Punctual,Villainy
+35861,Dissent,To differ; to be of a contrary nature.,5,5,1,Counternatural,Antiphysical,Cataphysical
+36118,Distortion,An unnatural deviation of shape or position of any part of the body producing visible deformity.,41,3,1,Congested,Monster,Mollities
+36350,Diversely,In different ways; differently; variously.,13,2,1,Manywise,Sundrily,Otherwise
+36564,Dock,The solid part of an animal's tail  as distinguished from the hair; the stump of a tail; the part of a tail left after clipping or cutting.,776,5,1,Clipper,Posteriors,Mantissa
+36808,Domain,The territory over which dominion or authority is exerted; the possessions of a sovereign or commonwealth  or the like. Also used figuratively.,3,4,1,Suzerainty,Kingdom,Domain
+36998,Dorr,To deafen with noise.,-1,3,1,Deave,Deaf,Clamor
+37448,Drama,Dramatic composition and the literature pertaining to or illustrating it; dramatic literature.,69,3,1,Dramaturgy,Monologue,Lego-literary
+37522,Draw,To cause to come out for one's use or benefit; to extract; to educe; to bring forth; as: (a) To bring or take out  or to let out from some receptacle as a stick or post from a hole water from a cask or well etc.,101,25,1,Protrude,Disentrail,Ultimate
+37525,Draw,To obtain from some cause or origin; to infer from evidence or reasons; to deduce from premises; to derive.,57,25,1,Deduce,Collect,Take
+37534,Draw,To exert an attractive force; to act as an inducement or enticement.,123,25,1,Allurement,Press,Ticement
+37736,Drift,A tool used in driving down compactly the composition contained in a rocket  or like firework.,93,19,1,Mallet,Detrusion,Trowel
+37743,Drift,The difference between the size of a bolt and the hole into which it is driven  or between the circumference of a hoop and that of the mast on which it is to be driven.,8,19,1,Topmast,Drawbore,Dowel
+38310,Dumpy,Short and thick; of low stature and disproportionately stout.,-1,2,1,Thickset,Chunky,Squabby
+38428,Dust,A single particle of earth or other matter.,509,7,1,Sand,Atom,Atom
+38431,Dust,Figuratively  a worthless thing.,38,7,1,Spangle,Straw,Torril
+38589,Eagerness,The state or quality of being eager; ardent desire.,-1,2,1,Wishful,Fierce,Anxiety
+38635,Earmark,A mark for identification; a distinguishing mark.,171,3,1,Dignotion,Designation,Chevron
+39014,Edentate,Belonging to the Edentata.,2,2,1,Edental,Edentate,Acephalan
+39360,Either,One of two; the one or the other; -- properly used of two things  but sometimes of a larger number for any one.,3,3,1,Toluylene,Habergeon,Either
+39368,Ejaculation,The uttering of a short  sudden exclamation or prayer or the exclamation or prayer uttered.,220,3,1,Flaw,Open,Fright
+39638,Electrum,An alloy of gold and silver  of an amber color used by the ancients.,50,3,1,Electron,Occamy,Electrine
+39849,Elvan,Pertaining to elves; elvish.,-1,2,1,Elfin,Elf,Elvishly
+40269,Emphatical,Uttered with emphasis; made prominent and impressive by a peculiar stress of voice; laying stress; deserving of stress or emphasis; forcible; impressive; strong; as  to remonstrate in am emphatic manner; an emphatic word; an emphatic tone; emphatic reasoning.,9,2,1,Emphaticalness,Imrigh,Ictus
+40270,Emphatical,Striking the sense; attracting special attention; impressive; forcible.,23,2,1,Arresting,Grandiose,Garish
+40777,Enfeoff,To give a feud  or right in land to; to invest with a fief or fee; to invest (any one) with a freehold estate by the process of feoffment.,570,2,1,Feoff,Vassal,Feoffment
+40828,Engage,To put under pledge; to pledge; to place under obligations to do or forbear doing something  as by a pledge oath or promise; to bind by contract or promise.,44,7,1,Oblige,Depose,Obligation
+41998,Equity,A system of jurisprudence  supplemental to law properly so called and complemental of it.,-1,2,1,Jurisprudent,Jurisprudent,Nomocracy
+42189,Erroneous,Misleading; misled; mistaking.,-1,2,1,Misguiding,Imposing,Undirected
+42596,Ethiopic,The language of ancient Ethiopia; the language of the ancient Abyssinian empire (in Ethiopia)  now used only in the Abyssinian church. It is of Semitic origin and is also called Geez.,84,2,1,Semitism,Abuna,Voice
+42649,Etrurian,Of or relating to ancient Etruria  in Italy.,3,2,1,Etruscan,Latian,Etrurian
+42850,Evacuate,To let blood,-1,4,1,Bloodlet,Phlebotomize,Bleed
+43038,Evoke,To call away; to remove from one tribunal to another.,193,2,1,Avocate,Flit,Translate
+43399,Excuse,To free from accusation  or the imputation of fault or blame; to clear from guilt; to release from a charge; to justify by extenuating a fault; to exculpate; to absolve; to acquit.,351,4,1,Disculpate,Quit,Clear
+43439,Executor,The person appointed by a testator to execute his will  or to see its provisions carried into effect after his decease.,-1,2,1,Testament,Devisor,Functionate
+43661,Exorcist,A conjurer who can raise spirits.,5,2,1,Pythonist,Sorcerer,Powpow
+44321,Eyeglass,Eyepiece of a telescope  microscope etc.,-1,4,1,Ocular,Erector,Tube
+44806,Fancy,The faculty by which the mind forms an image or a representation of anything perceived before; the power of combining and modifying such objects into new pictures or images; the power of readily and happily creating and recalling such objects for the purpose of amusement  wit or embellishment; imagination.,3,10,1,Idol,Conception,Fancy
+45316,Febrifacient,That which causes fever.,-1,2,1,Coagulator,Horrification,Mirth
+45439,Felicity,That which promotes happiness; a successful or gratifying event; prosperity; blessing.,-1,2,1,Blessing,Benefit,Wel-begone
+45446,Fell,A barren or rocky hill.,-1,13,1,Tor,Rupellary,Overbarren
+45447,Fell,A wild field; a moor.,-1,13,1,Bent,Morian,Mulada
+45562,Fender,Anything serving as a cushion to lessen the shock when a vessel comes in contact with another vessel or a wharf.,-1,5,1,Break,Breastfast,Stage
+45627,Ferial,Belonging to any week day  esp. to a day that is neither a festival nor a fast.,-1,2,1,Feria,Octave,Nother
+45873,Fiat,A warrant of a judge for certain processes.,160,3,1,Vadimony,Assize,Circuit
+45955,Fiddler,The common European sandpiper (Tringoides hypoleucus); -- so called because it continually oscillates its body.,-1,3,1,Shadbird,Weet-weet,Dorhawk
+46164,Fillet,The thread of a screw.,-1,12,2,Worm,Chase,Pitch
+46323,Finish,Completion; -- opposed to start  or beginning.,69,6,1,Commence,Commencement,Outstart
+47774,Foot,A measure of length equivalent to twelve inches; one third of a yard. See Yard.,420,9,1,Arshine,Nail,Decimetre
+47884,Forbear,To refrain from proceeding; to pause; to delay.,265,6,1,Breathing,Abide,Suspend
+47887,Forbear,To treat with consideration or indulgence.,-1,6,1,Bescorn,Buffoon,Courtesy
+48573,Fother,To stop (a leak in a ship at sea) by drawing under its bottom a thrummed sail  so that the pressure of the water may force it into the crack.,-1,2,1,Hydrobarometer,Salvor,Trip
+49432,Frump,A contemptuous speech or piece of conduct; a gibe or flout.,39,3,1,Outfling,Scomm,Mockery
+49506,Fuero,A declaration by a magistrate.,-1,5,1,Affirm,Affidavit,Beak
+49914,Futile,Of no importance; answering no useful end; useless; vain; worthless.,-1,2,1,Naught,Frustraneous,Frustrate
+50075,Gait,Manner of walking or stepping; bearing or carriage while moving.,-1,2,1,Tardigrade,Mien,Ambulant
+50120,Galenical,Relating to Galen or to his principles and method of treating diseases.,-1,2,1,Methodios,Chiropody,Principiant
+50798,Gelatinize,To convert into gelatin or jelly. Same as Gelatinate  v. t.,110,2,1,Gelatinate,Gelatinate,Gelatination
+50862,Gemmule,A little leaf bud  as the plumule between the cotyledons.,64,6,1,Gemma,Budlet,Oculus
+50863,Gemmule,One of the buds of mosses.,388,6,1,Gemmate,Pyxidium,Veil
+51294,Getting,The act of obtaining or acquiring; acquisition.,-1,3,1,Assecution,Gain,Conquest
+51383,Giddy,To make dizzy or unsteady.,977,5,1,Totty,Dizz,Dizzied
+51620,Glaciation,That which is formed by freezing; ice.,17,3,1,Refrigeratory,Congealment,Encrustment
+51653,Gladly,Preferably; by choice.,-1,2,1,Rather,Preferably,Electively
+52706,Gowk,A simpleton; a gawk or gawky.,14,3,1,Gawk,Gawk,Cony
+53007,Grasp,To seize and hold by clasping or embracing with the fingers or arms; to catch to take possession of.,31,6,1,Apprehend,Capture,Attach
+53011,Grasp,Wide-reaching power of intellect to comprehend subjects and hold them under survey.,7,6,1,Surview,Comprehensive,Intellective
+53048,Grating,A harsh sound caused by attrition.,-1,3,1,Grate,Cavernous,Clangor
+53571,Groundsel,An annual composite plant (Senecio vulgaris)  one of the most common and widely distributed weeds on the globe.,-1,2,1,Butterweed,Pigweed,Ragwort
+53819,Guidon,One who carries a flag.,-1,2,1,Flagman,Cadger,Claviger
+54355,Haggler,One who forestalls a market; a middleman between producer and dealer in London vegetable markets.,944,2,1,Forestaller,Middleman,Preventer
+54743,Hang,To be undetermined or uncertain; to be in suspense; to linger; to be delayed.,158,11,1,Suspensive,Poise,Suspensely
+54769,Hank,A parcel consisting of two or more skeins of yarn or thread tied together.,-1,5,1,Skein,Darn,Clue
+54866,Hardhead,The gray whale.,-1,6,1,Devilfish,Grayback,Leviathan
+55024,Harrower,One who harries.,412,2,2,Harrier,Conferrer,Cumulatist
+55195,Hautboy,A sort of strawberry (Fragaria elatior).,-1,2,1,Oxlip,Randall grass,Sarmentaceous
+55249,Hawk,A small board  with a handle on the under side to hold mortar.,-1,3,1,Tinker,Hod,Royal
+56184,Herd,To associate; to ally one's self with  or place one's self among a group or company.,-1,4,1,Accompany,Consort,Connect
+56431,Heteronomy,Subordination or subjection to the law of another; political subjection of a community or state; -- opposed to autonomy.,-1,2,1,Autocracy,Liberty,Passion
+56941,Hitherto,To this place; to a prescribed limit.,160,2,1,Hereabouts,Hence,Hitherward
+56945,Hive,A place swarming with busy occupants; a crowd.,-1,3,1,Displace,Busied,Busily
+57027,Hock,Alt. of Hough,-1,2,1,Hockle,Hamstring,Adunc
+57030,Hough,The popliteal space; the ham.,-1,5,1,Ham,Poplitic,Haitic
+57069,Hog,A rough  flat scrubbing broom for scrubbing a ship's bottom under water.,-1,5,1,Graving,Greave,Broomy
+57906,Hough,To cut with a hoe.,6,5,1,Prong-hoe,Sarcle,Scuffle
+58001,Howadji,A merchant; -- so called in the East because merchants were formerly the chief travelers.,-1,2,1,Syringa,Carpetbag,Ostmen
+58270,Hundreder,A person competent to serve on a jury  in an action for land in the hundred to which he belongs.,104,3,1,Admission,Specialty,Mascotte
+58271,Hundreder,One who has the jurisdiction of a hundred; and sometimes  a bailiff of a hundred.,276,3,1,Bailiwick,Admiralty,Comer
+58708,Hymen,A fabulous deity; according to some  the son of Apollo and Urania according to others of Bacchus and Venus. He was the god of marriage and presided over nuptial solemnities.,256,3,1,Water god,Demigod,Wedding
+58709,Hymen,Marriage; union as if by marriage.,-1,3,1,Match,Wed,Matrimony
+59424,Illapse,A gliding in; an immisson or entrance of one thing into another; also  a sudden descent or attack.,-1,2,1,Draught,Alert,Illiquation
+59563,Illustration,A picture designed to decorate a volume or elucidate a literary work.,-1,3,1,Illustrative,Dilucidate,Literature
+60478,Improper,Not peculiar or appropriate to individuals; general; common.,16,3,1,Mandarinic,Particular,Impair
+60480,Improper,To appropriate; to limit.,43,3,1,Appropre,Limitarian,Prefine
+60581,Impurity,Want of ceremonial purity; defilement.,73,3,1,Clean,Purify,Coinquination
+60787,Incarceration,Formerly  strangulation as in hernia.,27,3,1,Merocele,Rupture,Cystocele
+60956,Inclemency,Physical severity or harshness (commonly in respect to the elements or weather); roughness; storminess; rigor; severe cold  wind rain or snow.,705,2,1,Asperity,Rigidity,Distemper
+61560,Indicate,To point out; to discover; to direct to a knowledge of; to show; to make known.,-1,2,1,Demonstrate,Deliver,Impart
+63449,Intenerate,To make tender or sensitive; to soften.,29,2,1,Moisten,Entender,Tend
+63709,Interlocutory,Consisting of  or having the nature of dialogue; conversational.,14,3,1,Dialogistical,Dialogically,Chitinous
+63870,Interpolated,Inserted in  or added to the original; introduced; foisted in; changed by the insertion of new or spurious matter.,-1,2,1,Interpolation,Interpolate,Inset
+63894,Interpretation,The power or explaining.,-1,3,1,Antitypical,Explication,Photology
+64081,Intolerant,Not tolerating difference of opinion or sentiment  especially in religious matters; refusing to allow others the enjoyment of their opinions rights or worship; unjustly impatient of the opinion of those disagree with us; not tolerant; unforbearing; bigoted.,-1,2,1,Disagreement,Differ,Toleration
+64150,Intrenchment,Any defensive work consisting of at least a trench or ditch and a parapet made from the earth thrown up in making such a ditch.,-1,3,1,Breastwork,Envelop,Furrow
+64151,Intrenchment,Any defense or protection.,-1,3,1,Shield,Security,Bulwark
+64527,Inward,Being or placed within; inner; interior; -- opposed to outward.,-1,5,1,Ben,Intramundane,Present
+65018,Issue,Progeny; a child or children; offspring. In law  sometimes in a general sense all persons descended from a common ancestor; all lineal descendants.,19,9,1,Imp,Increase,Progeny
+65739,Jolly,Expressing mirth  or inspiring it; exciting mirth and gayety.,49,3,1,Cheer,Exhilarant,Merriment
+66044,Jural,Pertaining to natural or positive right.,381,2,1,Zincous,Orthographical,Dexter
+66939,Knurl,A contorted knot in wood; a crossgrained protuberance; a nodule; a boss or projection.,17,3,1,Knag,Umbonated,Gnarl
+67231,Lack,To be without or destitute of; to want; to need.,5,6,1,Needful,Necessity,Penurious
+67234,Lack,Exclamation of regret or surprise.,-1,6,1,Law,Oho,Good now
+67438,Lair,A pasture; sometimes  food.,-1,3,1,Herbage,Leasow,Feeding
+68104,Laugh,Fig.: To be or appear gay  cheerful pleasant mirthful lively or brilliant; to sparkle; to sport.,-1,4,1,Cheerry,Jocund,Cheerly
+68459,Lecture,A discourse on any subject; especially  a formal or methodical discourse intended for instruction; sometimes a familiar discourse in contrast with a sermon.,347,4,1,Preach,Theme,Homily
+69048,Li,A Chinese measure of distance  being a little more than one third of a mile.,201,2,1,Centilitre,Outmeasure,Milliary
+69606,Line,Course of conduct  thought occupation or policy; method of argument; department of industry trade or intellectual activity.,-1,25,1,Mister,Way,Conversation
+69611,Line,A circle of latitude or of longitude  as represented on a map.,-1,25,1,Place,Latitudinal,Mapped
+69663,Linger,To protract; to draw out.,-1,2,1,Overspin,Outdraw,Eductive
+69853,List,A narrow strip of wood  esp. sapwood cut from the edge of a plank or board.,196,16,1,Listing,Shred,Plough
+69860,Listen,To give close attention with the purpose of hearing; to give ear; to hearken; to attend.,22,3,1,List,Audience,Hoa
+69892,Literate,One educated  but not having taken a university degree; especially such a person who is prepared to take holy orders.,-1,3,1,Compounder,Commence,Poll
+70041,Livable,Such as can be lived.,260,2,1,Balanceable,Breathable,Learnable
+70315,Lodge,A den or cave.,-1,12,1,Delve,Mouth,Shroud
+70322,Lodge,To come to a rest; to stop and remain; as  the bullet lodged in the bark of a tree.,4,12,1,Wait,Sit,Anchor
+70327,Lodge,To lay down; to prostrate.,186,12,1,Decumbent,Depone,Forelay
+70463,Lonely,Having a feeling of depression or sadness resulting from the consciousness of being alone; lonesome.,108,2,1,Loneliness,Onliness,Hungry
+70752,Loud,With loudness; loudly.,-1,2,1,Fortissimo,Calando,Clamor
+70791,Love,Affection; kind feeling; friendship; strong liking or desire; fondness; good will; -- opposed to hate; often with of and an object.,11,8,1,Affectation,Relish,Dotage
+70792,Love,Due gratitude and reverence to God.,-1,8,1,Undeify,Godless,Worship
+70839,Lowbell,A bell to be hung on the neck of a sheep.,455,2,1,Bellwether,Yoke,Belfry
+71418,Macerate,To make lean; to cause to waste away.,-1,2,1,Emaciate,Drill,Moulder
+71604,Maenad,A frantic or frenzied woman.,-1,2,1,Frenetical,Frenzical,Frenzy
+71668,Magma,The glassy base of an eruptive rock.,52,5,1,Sheet,Andesite,Sanidine
+71837,Main,A stake played for at dice.,7,12,1,Hazard,Tray-trip,Dicer
+71841,Main,The great sea  as distinguished from an arm bay etc. ; the high sea; the ocean.,9,12,1,Loch,Brine,Arm-gret
+71845,Main,Unqualified; absolute; entire; sheer.,-1,12,1,Mere,Stark,Stark
+71879,Maintenance,That which maintains or supports; means of sustenance; supply of necessaries and conveniences.,65,3,1,Competency,Aliment,Muniment
+72071,Malign,To treat with malice; to show hatred toward; to abuse; to wrong; to injure.,26,4,1,Maltreat,Mistreat,Misuse
+72188,Mammillated,Having small nipples  or small protuberances like nipples or mammae.,-1,2,1,Bimastism,Mammiform,Knappy
+72267,Mandate,A rescript of the pope  commanding an ordinary collator to put the person therein named in possession of the first vacant benefice in his collation.,-1,3,1,Provision,Inherit,Collate
+73108,Mat,Any similar fabric for various uses  as for covering plant houses putting beneath dishes or lamps on a table securing rigging from friction and the like.,9,4,1,Tablecloth,Uncover,Blanket
+73299,Maudlin,Drunk  or somewhat drunk; fuddled; given to drunkenness.,-1,3,1,Slewed,Drunkship,Intoxication
+73492,Measurable,Capable of being measured; susceptible of mensuration or computation.,-1,2,1,Mensurable,Impressible,Investigable
+73497,Measure,Determined extent  not to be exceeded; limit; allotted share as of action influence ability or the like; due proportion.,684,12,1,Stint,Stint,Reach
+73937,Member,A part of a discourse or of a period or sentence; a clause; a part of a verse.,728,7,1,Phrase,Syllable,Periodical
+73938,Member,Either of the two parts of an algebraic equation  connected by the sign of equality.,-1,7,1,Monomial,Binomial,Algebraically
+73940,Member,Any part of a building  whether constructional as a pier column lintel or the like or decorative as a molding or group of moldings.,230,7,1,Bague,Chevron,Mould
+74163,Mercurify,To obtain mercury from  as mercuric minerals which may be done by any application of intense heat that expels the mercury in fumes which are afterward condensed.,467,2,1,Mercurification,Forthwith,Prize
+74180,Mere,To divide  limit or bound.,-1,5,1,Stint,But,Brow
+74247,Merovingian,One of the kings of this dynasty.,11,2,1,Dynastic,Dynasties,Napoleonist
+74462,Metal,The rails of a railroad.,-1,7,1,Car,Derail,Derailment
+74513,Metamorphic,Causing a change of structure.,200,2,1,Metamorphosis,Neurosis,Metabole
+74905,Middest,Situated most nearly in the middle; middlemost; midmost.,93,2,1,Midmost,Middlemost,Midward
+74949,Midshipman,In the United States navy  the lowest grade of officers in line of promotion being graduates of the Naval Academy awaiting promotion to the rank of ensign.,6,4,1,Ensign,Court-martial,Siege
+76013,Misunderstanding,Mistake of the meaning; error; misconception.,-1,2,1,Misprision,Misapprehension,Miss
+76194,Modenese,A native or inhabitant of Modena; the people of Modena.,146,2,1,Havanese,Maltese,Navarrese
+76774,Monopode,One of a fabulous tribe or race of Ethiopians having but one leg and foot.,-1,2,1,Eponymy,Pygmy,Amazon
+76867,Monstrous,Extraordinary on account of ugliness  viciousness or wickedness; hateful; horrible; dreadful.,-1,4,1,Ghastly,Dire,Monster
+76868,Monstrous,Abounding in monsters.,-1,4,1,Teratogeny,Cobwebbed,Cressy
+77025,Mora,A game of guessing the number of fingers extended in a quick movement of the hand  -- much played by Italians of the lower classes.,-1,3,1,Drawgloves,Doddart,Proletariate
+77044,Morality,The doctrines or rules of moral duties  or the duties of men in their social character; ethics.,235,4,1,Work,Morally,Eminence
+77199,Morse,A clasp for fastening garments in front.,-1,2,1,Broach,Staylace,Cringle
+77296,Most,Consisting of the greatest number or quantity; greater in number or quantity than all the rest; nearly all.,16,3,1,Almost,Infinity,Utility
+78328,Myrmidon,One of a fierce tribe or troop who accompained Achilles  their king to the Trojan war.,-1,2,1,Laocoon,Dardanian,Saltigrade
+78911,Necessity,That which is necessary; a necessary; a requisite; something indispensable; -- often in the plural.,21,5,1,Requisite,Needful,Condition
+78912,Necessity,That which makes an act or an event unavoidable; irresistible force; overruling power; compulsion  physical or moral; fate; fatality.,378,5,1,Conquest,Arrest,Strong
+78913,Necessity,The negation of freedom in voluntary action; the subjection of all phenomena  whether material or spiritual to inevitable causation; necessitarianism.,-1,5,1,Phenomenalism,Slavery,Pneumatology
+79294,Nervure,One of the chitinous supports  or veins in the wings of incests.,-1,2,1,Nerve,Pneumoskeleton,Venule
+79751,Nitency,Endeavor; rffort; tendency.,-1,2,1,Affair,Tendence,Diligency
+80037,Nonability,An exception taken against a plaintiff in a cause  when he is unable legally to commence a suit.,-1,2,1,Non prosequitur,Crossbill,Defendant
+81312,Occur,To meet; to clash.,31,3,1,Hurtle,Hit,Check
+81606,Officious,Pertaining to  or being in accordance with duty.,-1,3,1,Ritualistic,Astronomical,TRUE
+81742,Oligist,Hematite or specular iron ore; -- prob. so called in allusion to its feeble magnetism  as compared with magnetite.,-1,2,1,Polychrome,Bubbling Jock,Bloodstone
+81919,One,Single in kind; the same; a common.,90,7,1,Doublet,Thimbleberry,Akin
+83554,Ovenbird,In the United States  Seiurus aurocapillus; -- called also golden-crowned thrush.,-1,3,1,Aphtha,Veery,Tetard
+83555,Ovenbird,In England  sometimes applied to the willow warbler and to the long-tailed titmouse.,-1,3,1,Prinpriddle,Ragamuffin,Pokebag
+83567,Overalls,A kind of loose trousers worn over others to protect them from soiling.,-1,2,1,Skilts,Duster,Steinkirk
+84868,Palmer,A wandering religious votary; especially  one who bore a branch of palm as a token that he had visited the Holy Land and its sacred places.,-1,3,1,Monothelite,Hadji,Hieromnemon
+84877,Palmin,A white waxy or fatty substance obtained from castor oil.,-1,2,1,Ricinelaidin,Ricinoleic,Castorin
+85139,Pant,To beat with unnatural violence or rapidity; to palpitate  or throb; -- said of the heart.,209,8,1,Throb,Stroke,Pulsate
+85144,Pant,A violent palpitation of the heart.,239,8,1,Throb,Obduration,Pantingly
+85671,Parget,To paint; to cover over.,15,6,1,Bepaint,Obduct,Bespread
+85675,Parget,Plaster  as for lining the interior of flues or for stuccowork.,12,6,1,Plasterwork,Ceiling,Steening
+85861,Partaker,One who partakes; a sharer; a participator.,-1,2,1,Sharer,Dieter,Participant
+86020,Pass,To go by without noticing; to omit attention to; to take no note of; to disregard.,186,26,1,Pretermit,Overpass,Respective
+86028,Pass,A thrust or push; an attempt to stab or strike an adversary.,128,26,1,Jab,Potch,Foiningly
+86116,Paste,Specifically  in cookery a dough prepared for the crust of pies and the like; pastry dough.,230,6,1,Coffin,Spud,Pasteboard
+86147,Pastoral,A poem describing the life and manners of shepherds; a poem in which the speakers assume the character of shepherds; an idyl; a bucolic.,152,3,1,Eclogue,Ogrism,Undertake
+86211,Patella,The kneepan; the cap of the knee.,-1,3,1,Kneecap,Kneecap,Rotula
+86266,Patience,The act or power of calmly or contentedly waiting for something due or hoped for; forbearance.,-1,6,1,Sperate,Tendance,Abode
+86269,Patience,A kind of dock (Rumex Patientia)  less common in America than in Europe; monk's rhubarb.,-1,6,1,Parelle,Undersized,Thimbleberry
+86494,Pea,The sliding weight on a steelyard.,-1,3,1,Scalebeam,Rider,Trones
+86624,Pectinated,Resembling the teeth of a comb.,-1,2,1,Pectinal,Pectinal,Pecten
+86781,Peduncle,A sort of stem by which certain shells and barnacles are attached to other objects. See Illust. of Barnacle.,-1,2,1,Hydrorhiza,Footstalk,Pedicel
+87897,Personate,To celebrate loudly; to extol; to praise.,-1,5,1,Laud,Kudos,Carol
+88104,Petal,One of the expanded ambulacra which form a rosette on the black of certain Echini.,-1,2,1,Ambulacriform,Miliary,Bivium
+89229,Pigment,Any one of the colored substances found in animal and vegetable tissues and fluids  as bilirubin urobilin chlorophyll etc.,-1,3,1,Hydrobilirubin,Manure,Physiologist
+89495,Pinion,To bind or confine the wings of; to confine by binding the wings.,2,9,1,Astrict,Pinion,Shackle
+89752,Pitch,The distance between the centers of holes  as of rivet holes in boiler plates.,-1,14,1,Intercentral,Space,Doublethreaded
+90104,Plastography,The art of forming figures in any plastic material.,-1,2,1,Fictor,Modeler,Arithmetic
+90270,Pleasance,A secluded part of a garden.,-1,2,1,Busket,Herber,Herbary
+90963,Poisonable,Capable of poisoning; poisonous.,217,2,1,Empoisonment,Vennation,Stibialism
+91083,Political,Politic; wise; also  artful.,-1,2,1,Politician,Quaint,Overwise
+91361,Polyphonist,A master of polyphony; a contrapuntist.,-1,2,1,Polyphonism,Undermaster,Maister
+91856,Posed,Firm; determined; fixed.,-1,2,1,Flat-footed,Pight,Resolute
+91900,Possibility,That which is possible; a contingency; a thing or event that may not happen; a contingent interest  as in real or personal estate.,-1,2,1,Contingent,Contingency,Contingency
+92073,Posy,A brief poetical sentiment; hence  any brief sentiment motto or legend; especially one inscribed on a ring.,-1,2,1,Escroll,Poesy,Watchword
+92586,Preclude,To put a barrier before; hence  to shut out; to hinder; to stop; to impede.,47,2,1,Sufflaminate,Impeach,Let
+93508,Priggism,The quality or state of being priggish; the manners of a prig.,-1,2,1,Truculency,Starchedness,Rusticity
+93522,Prim,To dress or act smartly.,-1,3,1,Knap,Chuck,Trounce
+93564,Primeness,The quality or state of being prime  or excellent.,221,2,1,Primy,Premier,Settledness
+93621,Princess,A female prince; a woman having sovereign power  or the rank of a prince.,18,2,1,Gynecocracy,Empress,Maharajah
+93786,Probate,The right or jurisdiction of proving wills.,-1,3,1,Judicature,Willer,Substantiation
+94214,Prolocutor,One who speaks for another.,-1,2,2,Spokesman,Speaker,Polyglot
+94718,Protection,A writing that protects or secures from molestation or arrest; a pass; a safe-conduct; a passport.,8,3,1,Safeguard,Passe partout,Security
+95044,Prussian,A native or inhabitant of Prussia.,133,2,1,Belgian,Biscayan,Californian
+95441,Pull,To draw  or attempt to draw toward one; to draw forcibly.,106,4,1,Snuff,Suck,Endeavorer
+95564,Puncheon,A short  upright piece of timber in framing; a short post; an intermediate stud.,-1,3,1,Quarter,Mullion,Standard
+96251,Quad,Alt. of Quade,-1,3,1,Adunc,Adversifoliate,Advertence
+96500,Quarter,The fourth of a hundred-weight  being 25 or 28 pounds according as the hundredweight is reckoned at 100 or 112 pounds.,616,14,1,Cental,Quintal,Candy
+96695,Questionary,Inquiring; asking questions; testing.,-1,2,1,Inquiry,Inquisitor,Interrogative
+96727,Quick,Characterized by life or liveliness; animated; sprightly; agile; brisk; ready.,-1,6,1,Lifesome,Alive,Pert
+97555,Ranger,One of a body of mounted troops  formerly armed with short muskets who range over the country and often fight on foot.,-1,5,1,Dragoon,Lancer,Halberdier
+97556,Ranger,The keeper of a public park or forest; formerly  a sworn officer of a forest appointed by the king's letters patent whose business was to walk through the forest recover beasts that had strayed beyond its limits watch the deer present trespasses to the next court held for the forest etc.,-1,5,1,Woodman,Walker,Rangership
+97762,Rathe,Coming before others  or before the usual time; early.,118,2,1,Rareripe,Soon,Prevent
+97867,Ravel,To fall into perplexity and confusion.,78,5,1,Club,Disembroil,Maze
+97954,Reach,To sail on the wind  as from one point of tacking to another or with the wind nearly abeam.,-1,17,1,Full-blown,Edge,Luff
+98773,Redelivery,A second or new delivery or liberation.,-1,2,1,Resurvey,Revaluation,Reapportionment
+99138,Reformado,An officer who  in disgrace is deprived of his command but retains his rank and sometimes his pay.,-1,2,1,Designator,Brevet,Bankrupt
+99304,Regent,One who rules or reigns; a governor; a ruler.,-1,5,1,Ruler,Rector,Reigner
+99387,Regress,To go back; to return to a former place or state.,736,2,1,Relapsing,Remigrate,Reduce
+100251,Reply,To make a return in words or writing; to respond; to answer.,3,4,1,Return,Reanswer,Reply
+100283,Repose,A rest; a pause.,9,8,1,Respite,Paused,Pausing
+100360,Reprise,A ship recaptured from an enemy or from a pirate.,-1,5,1,Retreat,Sea rat,Sea thief
+100362,Reprise,To recompense; to pay.,-1,5,1,Recompensive,Gratify,Recompensation
+100442,Repudiate,To divorce  put away or discard as a wife or a woman one has promised to marry.,651,3,1,Wive,Wive,Reject
+100797,Respect,To take notice of; to regard with special attention; to regard as worthy of special consideration; hence  to care for; to heed.,13,9,1,Heed,Commend,Mark
+101036,Retainer,Hence  a servant not a domestic but occasionally attending and wearing his master's livery.,-1,7,1,Liveried,Tiger,Footman
+102092,Rime,A step or round of a ladder; a rung.,-1,6,1,Rundle,Range,Reng
+102230,Rise,To retire; to give up a siege.,877,24,1,Forlend,Assiege,Devow
+102235,Rise,To increase in power or fury; -- said of wind or a storm  and hence of passion.,3,24,1,Equinox,Stormwind,Rise
+102237,Rise,To become larger; to swell; -- said of a boil  tumor and the like.,4,24,1,Tumefy,Estuate,Amplify
+102245,Rise,To come; to offer itself.,68,24,1,Defer,Infer,Subinduce
+102740,Rosedrop,A kind of earring.,-1,3,1,Earlet,Florentine,Pastorale
+102741,Rosedrop,A ruddy eruption upon the nose caused by drinking ardent spirits; a grog blossom.,-1,3,1,Strong-water,Rumbo,Lenticula
+103408,Rump,The end of the backbone of an animal  with the parts adjacent; the buttock or buttocks.,167,3,1,Chine,Chine,Arse
+103839,Sadden,To render heavy or cohesive.,883,5,1,Dull,Spice,Defer
+104286,Sanctification,the act of God's grace by which the affections of men are purified  or alienated from sin and the world and exalted to a supreme love to God; also the state of being thus purified or sanctified.,10,3,1,Sublimated,Alienation,Nonalienation
+104438,Sap,To subvert by digging or wearing away; to mine; to undermine; to destroy the foundation of.,301,6,1,Raze,Overturn,Outwear
+104629,Sate,imp. of Sit.,4,3,2,Sat,Seten,Sat
+105419,Scion,A piece of a slender branch or twig cut for grafting.,-1,2,1,Withe,Yard,Ris
+105424,Sciot,A native or inhabitant of Scio.,138,2,1,Belgian,Biscayan,Californian
+105486,Sclerotic,Pertaining to  or designating an acid obtained from ergot or the sclerotium of a fungus growing on rye.,-1,3,1,Ulmic,Noropianic,Ergotism
+106730,Seedy,Abounding with seeds; bearing seeds; having run to seeds.,-1,2,1,Mity,Stelliferous,Graniferous
+107685,Sepulture,The act of depositing the dead body of a human being in the grave; burial; interment.,15,2,1,Interment,Coffin,Tomb
+108513,Sharp,To a point or edge; piercingly; eagerly; sharply.,16,11,1,Ord,Dull,Dull
+108983,Shock,A sudden depression of the vital forces of the entire body  or of a port of it marking some profound impression produced upon the nervous system as by severe injury overpowering emotion or the like.,4,7,1,Collapse,Blastment,Biodynamics
+109118,Shortcoming,Neglect of  or failure in performance of duty.,90,3,1,Impunctuality,Noncommunion,Delinquent
+109537,Sifter,One who  or that which sifts.,-1,2,1,Searcer,Discusser,Bolter
+109846,Simply,In a simple manner or state; considered in or by itself; without addition; along; merely; solely; barely.,-1,3,1,But,Only,Nakedly
+109847,Simply,Plainly; without art or subtlety.,-1,3,1,Openly,Plumply,Sotilte
+110459,Skirl,To utter in a shrill tone; to scream.,39,2,1,Squawk,Screech,Drawl
+110814,Sley,A weaver's reed.,38,3,1,Slaie,Trivet,Water poa
+111013,Slop,Ready-made clothes; also  among seamen clothing bedding and other furnishings.,-1,9,1,Ready-made,Slopwork,Slopshop
+111172,Slut,A female dog; a bitch.,-1,3,1,Spay,Brach,Bitch
+111177,Sly,Dexterous in performing an action  so as to escape notice; nimble; skillful; cautious; shrewd; knowing; -- in a good sense.,-1,4,1,Cunning,Gnostic,Scient
+111303,Smirk,To smile in an affected or conceited manner; to smile with affected complaisance; to simper.,2,3,1,Simper,Smirk,Affectioned
+111625,Snipefish,A long  slender deep-sea fish (Nemichthys scolopaceus) with a slender beak.,410,2,1,Scolopendra,Longbeak,Suspire
+111899,Sodality,Specifically  a lay association for devotion or for charitable purposes.,-1,2,1,Guild,Collection,Consortable
+112231,Sometimes,At times; at intervals; now and then;occasionally.,-1,3,1,Interspiration,Frequently,Erstwhile
+112406,Soprano,A singer  commonly a woman with a treble voice.,31,2,1,Sopranist,Descant,Triple
+112736,Spadix,A special organ of the nautilus  due to a modification of the posterior tentacles.,-1,2,1,Nautiloid,Nautili,Nautilite
+113392,Spicule,A minute  slender granule or point.,-1,2,1,Tenuous,Mucro,Chloroplastid
+113664,Spitted,Shot out long; -- said of antlers.,-1,4,1,Shotten,High-palmed,Attire
+114366,Squawk,The American night heron. See under Night.,-1,2,2,Qua-bird,Wapacut,Aigrette
+114877,Stark,Mere; sheer; gross; entire; downright.,37,6,1,Main,Plat,Solemn
+115643,Stillatory,A laboratory; a place or room in which distillation is performed.,142,2,1,Surgery,Laundry,Stillhouse
+115744,Stipes,The second joint of a maxilla of an insect or a crustacean.,-1,2,1,Coxa,Dactyl,Trochantine
+115792,Stirrup,A rope secured to a yard  with a thimble in its lower end for supporting a footrope.,-1,2,1,Lift,Amain,Sling
+116427,Stretcher,A piece of timber used in building.,-1,10,1,Sprag,Board,Skid
+116745,Stub,A pen with a short  blunt nib.,-1,4,1,Neb,Nib,Nebbed
+117081,Subcorneous,Situated under a horny part or layer.,38,2,1,Submucous,Subserous,Suburethral
+117939,Suit,The act of suing; the process by which one endeavors to gain an end or an object; an attempt to attain a certain result; pursuit; endeavor.,58,10,1,Assay,Stage,Try
+117949,Suitor,One who sues  petitions or entreats; a petitioner; an applicant.,7,4,1,Suppliant,Beggar,Suer
+118795,Surround,To inclose  as a body of troops between hostile forces so as to cut off means of communication or retreat; to invest as a city.,556,2,1,Intercept,Amputate,Prune
+119097,Swatch,A piece  pattern or sample generally of cloth.,-1,2,1,Scantling,Calico,Clout
+119175,Sweet,Home-made wines  cordials metheglin etc.,354,5,1,Mead,Barraclade,Black-jack
+119176,Sweet,One who is dear to another; a darling; -- a term of endearment.,-1,5,1,Life,Hinny,Deary
+119287,Swimming,The act of one who swims.,-1,2,1,Swimmer,Floater,Skimming
+119567,Sympathize,To experience together.,805,5,1,Expert,Try,Experiment
+119700,Syndrome,A group of symptoms occurring together that are characteristic and indicative of some underlying cause  such as a disease.,-1,2,1,Asystolism,Diagnosticate,Metabole
+119839,System,One of the stellate or irregular clusters of intimately united zooids which are imbedded in  or scattered over the surface of the common tissue of many compound ascidians.,-1,3,1,Coenoecium,Coenenchyma,Coenosarc
+119843,Systematical,Pertaining to the system of the world; cosmical.,97,4,1,Cosmic,Ultramundane,Pseudhaemal
+119974,Tabouret,An embroidery frame.,-1,2,1,Broidery,Browdyng,Embroideries
+120197,Tales,Persons added to a jury  commonly from those in or about the courthouse to make up any deficiency in the number of jurors regularly summoned being like or such as the latter.,3,2,1,Talesman,Panel,Tales
+120280,Tame,To broach or enter upon; to taste  as a liquor; to divide; to distribute; to deal out.,-1,2,1,Dele,Shiff,Distribute
+120281,Tame,Crushed; subdued; depressed; spiritless.,-1,2,1,Amort,Undaunted,Broken-hearted
+121223,Tent,A roll of lint or linen  or a conical or cylindrical piece of sponge or other absorbent used chiefly to dilate a natural canal to keep open the orifice of a wound or to absorb discharges.,432,6,1,Dossil,Pledget,Coarctation
+121224,Tent,A probe for searching a wound.,341,6,1,Guide,Probed,Probing
+121352,Tergum,One of the dorsal plates of the operculum of a cirriped.,32,3,1,Chiton,Opercula,Scutum
+121601,Tete-a-tete,Face to face; privately or confidentially; familiarly.,-1,4,1,Clancularly,Closely,Hobnob
+122165,Thickset,Having a short  thick body; stout.,91,3,1,Dumpy,Stump-tailed,Chunky
+122308,Thoracic,One of a group of fishes having the ventral fins placed beneath the thorax or beneath the pectorial fins.,65,2,1,Subbrachiales,Jugular,Acanthopteri
+122565,Throttle,The windpipe  or trachea; the weasand.,-1,6,1,Artery,Tracheitis,Wizen
+122884,Tiff,To deck out; to dress.,-1,4,1,Dizen,Prink,Array
+122930,Tile,A stiff hat.,-1,6,1,Derby,Hatted,Hatbox
+123241,Tit,A morsel; a bit.,-1,5,1,Morceau,Trip,Sucket
+123390,Toddy,A juice drawn from various kinds of palms in the East Indies; or  a spirituous liquor procured from it by fermentation.,-1,2,1,Phlegm,Nephalism,Strunt
+124302,Tradition,The act of delivering into the hands of another; delivery.,-1,5,1,Redelivery,Consignation,Importation
+125110,Trespass,Any injury or offence done to another.,9,6,1,Spoliation,Damage,Offense
+125531,Tripe,The entrails; hence  humorously or in contempt the belly; -- generally used in the plural.,-1,2,1,Prune,Spindleshanks,Tun
+125992,Truncated,Lacking the apex; -- said of certain spiral shells in which the apex naturally drops off.,-1,3,1,Turbinated,Volute,Decollated
+126264,Tumor,A morbid swelling  prominence or growth on any part of the body; especially a growth produced by deposition of new tissue; a neoplasm.,-1,2,1,Inflammation,Neoplasm,Emphysema
+126513,Turnspit,A small breed of dogs having a long body and short crooked legs. These dogs were formerly much used for turning a spit on which meat was roasting.,-1,2,1,Dachshund,Basset hound,Tumbler
+126530,Turret,The elevated central portion of the roof of a passenger car. Its sides are pierced for light and ventilation.,-1,3,1,Deck,Flat,Coach
+126554,Tussah silk,A silk cloth made from the cocoons of a caterpillar other than the common silkworm  much used in Bengal and China.,410,2,1,Pongee,Filature,Filature
+126749,Twister,One who twists; specifically  the person whose occupation is to twist or join the threads of one warp to those of another in weaving.,135,4,1,Weaver,Shaver,Varnisher
+126842,Tyne,To become lost; to perish.,-1,4,1,Die,Rot,Perisse
+126847,Type,The mark or impression of something; stamp; impressed sign; emblem.,41,10,1,Pressure,Signature,Print
+126855,Type,Such letters or characters  in general or the whole quantity of them used in printing spoken of collectively; any number or mass of such letters or characters however disposed.,150,10,1,Trigrammatic,Aggregately,Notation
+127831,Undertake,To take upon one's self; to engage in; to enter upon; to take in hand; to begin to perform; to set about; to attempt.,3,10,1,Enterprise,Commence,Undertake
+127838,Undertake,To take upon one's self  or assume any business duty or province.,9,10,1,Impropriate,Assume,Absquatulate
+128828,Unsecret,Not secret; not close; not trusty; indiscreet.,-1,2,1,Stanch,Untrustful,Undisclose
+128995,Untented,Not tended; not dressed. See 4th Tent.,60,2,1,Unready,Stere,Brown bill
+130025,Variolitic,Thickly marked with small  round specks; spotted.,-1,2,1,Punctulated,Floccose,Dappled
+130236,Velum,The circular membrane that partially incloses the space beneath the umbrella of hydroid medusae.,134,5,1,Craspedota,Velarium,Pericardium
+130324,Venosity,The quality or state of being venous.,-1,2,1,Settledness,Absorbability,Affectibility
+130914,View,The act of seeing or beholding; sight; look; survey; examination by the eye; inspection.,34,4,1,Conspectuity,Surveyance,Reconnaissance
+131611,Voluptuous,Given to the enjoyments of luxury and pleasure; indulging to excess in sensual gratifications.,9,2,1,Sensualize,Intemperate,Outrage
+131668,Vouch,To warrant; to maintain by affirmations; to attest; to affirm; to avouch.,14,8,1,Verify,Maintain,Misaffirm
+131670,Vouch,To call into court to warrant and defend  or to make good a warranty of title.,55,8,1,Vouchee,Demand,Warrantee
+131868,Waif,A wanderer; a castaway; a stray; a homeless child.,-1,3,1,Waive,Estray,Roamer
+131932,Waken,To wake; to cease to sleep; to be awakened.,5,3,1,Wake,Watch,Awake
+132488,Water gauge,A wall or bank to hold water back.,-1,2,1,Bay,Dam,Chemise
+132546,Water mole,The shrew mole. See under Shrew.,3,2,1,Sondeli,Platypus,Water mole
+132960,Weed,A garment; clothing; especially  an upper or outer garment.,-1,10,1,Coat,Over-garment,Overslop
+132964,Weed,Fig.: Something unprofitable or troublesome; anything useless.,393,10,1,Inutile,Frustraneous,Bootless
+132995,Weeper,The capuchin. See Capuchin  3 (a).,-1,3,1,Tomcod,Dart,Lentisk
+133432,Wherry,A long  narrow light boat sharp at both ends for fast rowing or sailing; esp. a racing boat rowed by one person with sculls.,-1,2,1,Whaleboat,Sculler,Clipper
+133504,Whimper,To utter in alow  whining tone.,8,2,1,Drawl,Whiningly,Cant
+133591,Whir,To hurry a long with a whizzing sound.,2,2,1,Whizzingly,Whir,Haste
+133757,Whiting,Chalk prepared in an impalpable powder by pulverizing and repeated washing  used as a pigment as an ingredient in putty for cleaning silver etc.,-1,4,1,Alcohol,Frankfort black,Dentifrice
+135007,Writhe,To twist; to turn; now  usually to twist or turn so as to distort; to wring.,16,3,1,Contort,Hurl,Wrest
+135596,Zantewood,Satinwood (Chloroxylon Swietenia).,-1,2,1,Mahogany,Yellowwood,Satinwood
