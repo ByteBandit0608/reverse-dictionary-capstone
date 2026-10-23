@@ -133,13 +133,23 @@ def main():
              "goes with results/baselines.md. %d of %d queries miss at rank 1 here." % (n, total),
              "",
              "categories, from the script:", ""]
+    CATS = ["unreachable", "no lexical overlap", "outranked", "right word, deep",
+            "tied definition"]
+    # every category is printed, including the empty ones. a zero in the unreachable row is
+    # the evidence that the query rule worked, and it is only evidence if it is on the page.
+    for cat in CATS:
+        lines.append("- %s: %d" % (cat, int(counts.get(cat, 0))))
     for cat, c in counts.most_common():
-        lines.append("- %s: %d" % (cat, c))
+        if cat not in CATS:
+            lines.append("- %s: %d" % (cat, c))
+    n_unreach = int(counts.get("unreachable", 0))
+    n_tie = int(counts.get("tied definition", 0))
     lines += ["",
-              "two of these are not the model failing. unreachable means the word had one row "
-              "and that row is the query, so removing it deletes the answer. tied definition "
-              "means two words share the string, so rank 1 is a coin flip no matter what the "
-              "ranker is. both are properties of the file.",
+              "two of these are properties of the file and not of the model. unreachable counts "
+              "a query whose word had only the one row the protocol removes, it is %d here, and "
+              "the reason it is %d is the rule that a query word keeps at least two rows. tied "
+              "definition counts answers sharing their string with another word, %d here, where "
+              "rank 1 is a coin flip whatever the ranker is." % (n_unreach, n_unreach, n_tie),
               "",
               "three things the categories do not say on their own",
               ""]

@@ -70,6 +70,12 @@ rule. The manifest now prints `rows_named_in_word`, `rows_named_in_definition` a
 `rows_named_word_exact` beside `rows_dropped_named`, so the 206 in the old notes and the 207 from a
 grep of the file are compared from the output rather than from memory.
 
+On 1 and 3, `rows_dropped_bad_def` is the union of the short definitions, the `#NAME?` rows
+and the rows with no headword, so it reads 215 and not 5 plus 207 plus 4. The drops add back to the
+total exactly, 176,009 minus 215 minus 5,616 minus 232 minus 34,039 is 135,907, which is `rows` in
+the manifest, and the vocabulary loses only two headwords because all 207 named rows share the one
+fake entry `#NAME?`.
+
 On 5, this is the label leakage case. A definition that contains its own word can be scored by
 string copy alone, so it goes out of the corpus and not only out of the query set.
 `pct_rows_self_ref` and `pct_rows_self_ref_exact` report how much of the file that is, 19.45% and
@@ -83,7 +89,7 @@ There is deliberately no length filter. A 3 token cut would clear the cross refe
 17.83% of the file, because that many definitions are shorter than 3 tokens. Cleaning is by pattern.
 Nor do we collapse a word to one sense, the extra senses are what the polysemy question is about.
 
-What the self reference rule costs has to be said as plainly as what it fixes: 34,050 rows go out,
+What the self reference rule costs has to be said as plainly as what it fixes: 34,039 rows go out,
 and roughly 11,700 headwords with them, because those words are written in this file only in a way
 that names themselves. They are no longer in the answer space at all. The row and word totals are in
 `splits/manifest.json` rather than repeated here, since they move every time a rule changes and this
@@ -97,16 +103,17 @@ Two rules on top of the v1 rule set, both in `src/make_splits.py` and `src/rexdi
 
 The first one matters more than it looks. On v1, 42.6% of the queries were words with exactly one
 row, and under leave_one_out removing that row removes the answer, so no method could ever be
-scored on them. Their ceiling is 1.0 now: `pct_reachable_when_self_removed` should read 100.0 in
-`splits/manifest.json`, and if it does not, the rule did not apply.
+scored on them. Their ceiling is 1.0 now and the v2 manifest reads `pct_reachable_when_self_removed
+100.0`, which is the same fact as `unreachable: 0` in the failure categories, seen from the other
+end.
 
 Side effect to expect: some words lose their second sense to the self reference rule and leave the
 query set entirely. That is why cleaning runs before the query pick, never after.
 
-n_queries will come out at 500 if the eligible pool is big enough, and it is, the pool is every
-test split row that clears both rules, on the order of a few thousand. If it ever is not,
-`pick_queries` returns the whole pool instead of padding it and the manifest prints the real count,
-so a short query set is visible in the output rather than hidden.
+The pool stayed deep enough. `n_queries` is 500 under both rules, so the brief's number still
+holds and nobody had to pad anything. If the pool ever is smaller, `pick_queries` returns the whole
+of it rather than padding, and the manifest prints the real count, so a short query set shows up in
+the output instead of being smoothed over.
 
 ## split and metrics
 
@@ -143,7 +150,52 @@ over as a string and a lexical method can approach 1.0 at rank 1 without underst
 That column is a check that the index is wired up, not a result. How often rank 1 is literally the
 query row is printed next to every number, and it should be about 0% under leave_one_out.
 
-## baselines, v1 queries, run of 17 Oct
+The two manifest numbers that bound the table are `pct_reachable_when_self_removed` and
+`ceiling_strict_top1`. The first is 100.0 on v2 and was 57.4 on v1. The second is 0.995 on v2
+against 0.996 on v1, and it is not an off by one either time: 1.0% of the v2 queries share their
+definition string with another word, so rank 1 is a coin flip on those. Tie rate by definition
+length, measured on the cleaned file, is 56.4% among rows under 3 tokens and 1.1% among rows of 3
+tokens or more, which is why a query set that asks for 3 tokens or more is nearly tie free while the
+corpus is not. Quote 0.995 for the metric table and not the whole file number, they have different
+denominators.
+
+## baselines and the dense model, v2 queries, run of 23 Oct
+
+This run is over 135,907 cleaned rows, 95,286 headwords and the 500 v2 queries, written by
+`src/run_all.py` and `src/run_dense.py` into `results/baselines.md` and `results/embeddings.md`.
+
+| method | protocol | R@1 | R@10 | R@100 | medrank | self@1 |
+|---|---|---|---|---|---|---|
+| bm25 | in_dictionary | 0.990 | 1.000 | 1.000 | 1 | 99.0% |
+| tfidf | in_dictionary | 0.992 | 1.000 | 1.000 | 1 | 99.2% |
+| mpnet | in_dictionary | 0.992 | 1.000 | 1.000 | 1 | 99.2% |
+| bm25 | leave_one_out | 0.046 | 0.152 | 0.322 | 945 | 0.0% |
+| tfidf | leave_one_out | 0.048 | 0.162 | 0.350 | 884 | 0.0% |
+| mpnet | leave_one_out | 0.050 | 0.170 | 0.394 | 319 | 0.0% |
+| random | in_dictionary | 0.000 | 0.002 | 0.004 | 1000 | 0.0% |
+| word_freq | in_dictionary | 0.000 | 0.000 | 0.000 | 1000 | 0.0% |
+
+`mpnet` is `sentence-transformers/all-mpnet-base-v2`, 768 dim, no fine tuning, `max_seq_length` 64,
+and it encoded 135,907 definitions in 164 s on a Kaggle T4. The tolerant columns are in the two
+result files and are not copied here.
+
+How to read the leave_one_out block:
+
+- all three are near the floor, and the dense model is the best of them at every cutoff, 0.050
+  against 0.046 at 1, 0.170 against 0.152 at 10, 0.394 against 0.322 at 100
+- the distance grows with k and median rank falls from 945 to 319, so the dense model is putting the
+  right word in the list far more often without getting it to the front. That is a ranking problem
+  sitting on top of a retrieval problem, and it is the argument for fine tuning and a reranker
+- bm25 and tfidf change places between the two runs and by two or three queries at a time. Neither
+  ordering is a finding about the scoring functions
+- in the in_dictionary block all three sit at 0.99 or 0.992 against a 0.995 ceiling, which is that
+  column measuring the index rather than the method
+
+The v1 table below is kept so the effect of the query rule is visible, but a method looking better in
+the v2 column has not necessarily improved, it is answering a different set of 500 questions where
+every question can actually be answered.
+
+## baselines, v1 queries, run of 17 Oct, superseded
 
 | method | protocol | R@1 | R@10 | R@100 | medrank | self@1 |
 |---|---|---|---|---|---|---|
@@ -169,26 +221,45 @@ checked against each other: 16 at rank 1, plus 50 more by rank 10, plus 66 more 
 368 unretrieved, and 368 is 213 unreachable plus 100 with no lexical overlap plus 55 outranked past
 100.
 
-## failure phenomena, v1 queries
+## failure phenomena, v2 queries
 
-`src/error_analysis.py` labels every miss with what the method was missing, from fields already in
-the row, and counts them. The labels are vague or context dependent wording, long definitions with
-several ideas, rare or technical wording, the dictionary wording it differently, plus the
-structural ones. The point is a count per phenomenon over all 484 misses rather than a list of
-examples.
+`src/error_analysis.py` labels every miss from fields already in the row, so the count is
+reproducible and not a judgement call. All five categories are printed in a fixed order including the
+empty ones, which is how the page shows `unreachable: 0` where it said 213 on v1. The bm25 misses are
+477 of 500, and the buckets are 244 with no lexical overlap, 176 outranked, 52 right word deep and 5
+tied definitions, which is 477.
 
-Two numbers from `results/failures_annotated.csv` that change how 0.032 reads:
-- 14.5% of the 484 misses returned, at rank 1, a word that the query definition itself lists as a
-  synonym. `Abolishment` came back as `Abolition`, `Admissible` as `Permissible`, `Amorphous` as
-  `Crystalline`. The retriever is usually not lost, it hands back a different dictionary word for the
-  same idea and the strict metric calls that wrong.
-- 116 queries had the gold word inside the top 100 but not at rank 1, median rank 13, 90th percentile
-  68. A dense model does not have to find those, only rank them higher. That is why R@100 of 0.264
-  next to R@1 of 0.032 is not a contradiction, and it is where a reranker would go.
+| what the model is actually missing | queries | mean tokens | mean rare terms |
+|---|---|---|---|
+| the dictionary words it up differently | 220 | 10.2 | 3% |
+| right word found, buried past the top 10 | 162 | 12.6 | 2% |
+| right word found, ranked just below | 47 | 16.1 | 2% |
+| returned a synonym the definition itself names | 19 | 14.0 | 5% |
+| long definition, several ideas at once | 18 | 30.8 | 4% |
+| rare or technical wording in the query | 6 | 3.5 | 75% |
+| structural, two words share the exact string | 5 | 4.6 | 20% |
 
-The script takes 5 per category for the hand read, preferring cases where rank 1 is a word the
-definition names, and writes the table with an empty last column. That column is the judgement, it
-gets filled by reading the query and not by the script.
+Those add to 477 as well, so no query is counted twice and none is lost.
+
+The largest bucket is the dictionary simply using other words, 220 of them, and those queries are
+short, 10.2 tokens with almost no rare terms. It is not that the query is hard to read, it is that a
+1913 definition of `Bolt` is a crossbow bolt and the index answers `Dart`. The two right word found
+rows together are 209 queries where the answer was in the list, 162 of them past rank 10, which is
+the same fact the 0.046 against 0.322 gap states. Rare or technical wording is only 6 queries and
+they are the shortest and strangest rows in the set, mean 3.5 tokens with 75% of their terms used
+twice or less in the whole file.
+
+Two numbers beside that table:
+
+- 6.5% of the misses had a rank 1 that the query definition itself names as a synonym, `Acinus`
+  answered with `Drupelet`, `Prolocutor` with `Spokesman`. The v1 figure was 14.5% and the two are
+  not a comparison, the v1 set had hundreds of queries whose answer the protocol had deleted
+- 138 queries had the gold word inside the top 100 and not first, median rank 16. That is 138 of 477
+  misses, and a median of 16 is one reorder away, which is where a cross encoder reranker would go
+
+The script writes a 20 row table, 5 from each category that has them, preferring the cases where rank
+1 is a word the definition names, with the last column left empty. That column is the human read and
+it is the part of this task that is not a script.
 
 ## POS and role features
 
@@ -203,17 +274,20 @@ karak style roles, agent and patient and instrument, and a dictionary writes tho
 "a person who" is an agent, "that which is used by" is an instrument, "the place where" is a
 location.
 
-What came back, v1 queries:
-- 9.86% of headwords have senses with more than one POS, so the tag is per sense. That is why it goes
-  in beside the model and not as a filter over the whole word
-- 31.6% of queries open with a cue that states the answer type, and the cue names the gold POS 95.6%
-  of the time, yet a hard filter would still drop the gold answer for 4.43% of them
-- of the 17 "person who" queries, 100% of the gold answers are nouns. `astronomy` is a noun too, so
-  POS cannot separate them. The ending can: 88.2% of those gold words are agentive against 17.0% of
-  all nouns in the file, about a 5x lift the tag cannot see. The sample is 17 and it should be quoted
-  as such
-- 24.18% of the corpus opens with a role phrase. agent appears on 5,017 rows and patient on 38, so
-  OPTED almost never writes a patient style definition and that feature will be sparse
+What came back, the v2 run of 23 Oct:
+- 7.09% of headwords have senses with more than one POS, so the tag is per sense. That is why it
+  goes in beside the model and not as a filter over the whole word
+- 34.8% of queries open with a cue that states the answer type and the cue names the gold POS 90.8%
+  of the time, yet a hard filter would still drop the gold answer for 6.9% of them. On v1 that loss
+  was 4.4%, so the number depends on which queries are in the set and should be quoted with the set
+- on the `astronomer` style question there are 16 "person who" queries. 87.5% of their gold answers
+  are nouns, so not all of them, and `astronomy` is a noun too, which is the point, the tag cannot
+  separate the two. The ending can: 81.2% of those gold words are agentive against 16.9% of all
+  nouns in the file, about a 5x lift. The sample is 16 and it should be said out loud as 16
+- 22.66% of the corpus opens with a role phrase. agent appears on 4,739 rows and patient on 26, so
+  OPTED almost never writes a patient style definition and that feature will be sparse. The 248
+  distinct tag strings, the 40.0% of headwords whose ending names a class and the 55.8% spaCy
+  agreement are all in `results/pos_roles.md`
 - 0.6% of the answers are multi word entries which no POS filter can handle. They stay in the index
   and are reported as a limitation
 
@@ -242,9 +316,15 @@ The comparison is a comparison, not a win condition. These are modern English en
 1913 definitions, so a zero shot dense model landing near the lexical baselines is the expected
 result and is the case for fine tuning next week rather than a failure of the run.
 
-The MiniLM numbers committed in `results/minilm.md` were scored on v1 queries. Read beside them,
-MiniLM leave_one_out is R@1 0.028, R@10 0.132, R@100 0.284 against bm25's 0.032, 0.132, 0.264, which
-is worse at 1, level at 10 and two queries better at 100.
+Three things about what is in this table and what is not. MiniLM was run on the v1 query set and
+its numbers are in `results/minilm.md` from that run, 0.028, 0.132, 0.284 on leave_one_out against
+that split's bm25 of 0.032, 0.132, 0.264. So the third row of the comparison he asked for is on
+different queries than the other two, and it has to be said that way rather than put in one table as
+if it were matched. Rerunning MiniLM through `run_dense.py` is three minutes on the same GPU and it
+is the thing that makes the three model rows comparable. Second, a dense model beating two lexical
+methods by two to seven points at 100 while losing at 1 is not a win to lead with, the honest lead is
+median rank 945 to 319. Third, the corpus, index and query ids for every row here are in
+`splits/manifest.json`, so any of these numbers can be recomputed and argued with.
 
 ## WantWords
 
@@ -287,11 +367,11 @@ The scripts are deterministic. Same seed, same split, same queries, same tables.
 
 ## not done yet
 
-- the v2 tables. `results/` still holds the 17 Oct run on v1 queries, and `notes.md` above quotes
-  them as such until the rerun lands
+- MiniLM on the current query set, through `src/run_dense.py`, so that all three model rows are on
+  the same 500 queries. Until then the model comparison is two rows on v2 and one on v1
+- the third model id and its row
 - the judgement column in the 20 row failure table, which is a read of each query and not a script
   output
-- the third model id and its row
 - the tolerant metric moved from shared definition strings to WordNet synsets, which would need
   about 100 queries checked by hand
-- the README is being left to last, once the numbers in it are the ones we will keep
+- the README, left to last so the numbers in it are the ones we keep
