@@ -1,5 +1,6 @@
 numpy
 pandas
 scikit-learn
-# optional. only explore_pos.py uses it, and the script runs without it
+sentence-transformers
+# needed only for the spaCy cross check in src/explore_pos.py
 spacy
