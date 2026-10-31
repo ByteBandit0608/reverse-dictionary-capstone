@@ -17,7 +17,19 @@ OUT = os.environ.get("REXDICT_SPLITS", "splits")
 def main():
     df, meta = R.load()
     tr, va, te = R.make_word_split(df)
-    qidx = R.pick_queries(df, te)
+    prev = os.path.join(OUT, "test_query_ids.txt")
+    old = set()
+    if os.path.exists(prev):
+        old = {int(x) for x in open(prev).read().split()}
+    # Recreate the seeded proposal only to verify the frozen IDs. Do not replace an
+    # existing file with a new draw if anything has changed underneath it.
+    qidx = R.pick_queries(df, te, force_draw=True)
+    if old:
+        proposed = set(int(x) for x in qidx.tolist())
+        if old != proposed:
+            raise SystemExit("frozen query IDs differ from the current corpus draw. "
+                             "Stop here; do not overwrite the 500.")
+        qidx = pd.Series(sorted(old), dtype="int64").to_numpy()
     if len(qidx) < 25:
         raise SystemExit("only %d rows survive as queries. the cleaning rules are too "
                          "aggressive or the corpus is tiny, check rows_dropped_self_ref "
@@ -53,6 +65,7 @@ def main():
 
     print("wrote", OUT)
     for k in ("rows_raw", "rows", "rows_dropped_bad_def", "rows_dropped_named",
+              "rows_pointer_stub", "rows_pointer_stub_in_index",
               "rows_named_in_word", "rows_named_in_definition", "rows_named_word_exact",
               "rows_dropped_empty_word",
               "rows_dropped_crossref", "rows_dropped_dupes", "rows_dropped_self_ref",
@@ -67,6 +80,20 @@ def main():
           "definition string." % shared)
     print("Strict Recall@1 cannot pass %.3f on this set without breaking those ties."
           % man["ceiling_strict_top1"])
+
+    # the freeze check: this set has to differ from the committed one only in the slots
+    # that were pointer stubs. anything else here means the draw moved and the 500 is
+    # no longer the one everyone scored on.
+    if old:
+        new = set(int(x) for x in qidx.tolist())
+        print("\nquery set against the committed splits file: %d kept, %d out, %d in"
+              % (len(old & new), len(old - new), len(new - old)))
+        for i in sorted(old - new):
+            print("  out  %-16s %s" % (df.at[i, "word"], df.at[i, "definition"]))
+        for i in sorted(new - old):
+            print("  in   %-16s %s" % (df.at[i, "word"], df.at[i, "definition"]))
+        if len(old & new) + len(new - old) != len(new):
+            print("  MISMATCH, the sizes do not add up")
 
 
 if __name__ == "__main__":

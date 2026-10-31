@@ -27,6 +27,59 @@ BAD_DEF = re.compile(r"^nan$|^$", re.I)
 # like "of Baptistry". Count is numeric by the time we get here so the check runs
 # on the headword, and on the definition text in case the same damage lands there.
 NAMED = re.compile(r"#NAME", re.I)
+# cross-reference stubs. a row that only sends you to another entry has nothing to match
+# against, so it is useless as a query. the anchored CROSSREF above catches the ones that
+# start with "See", and these three are the ones it does not: the headword can be
+# repeated in front of the pointer, and the inflection pointers write the pointer as a
+# dotted abbreviation followed by "of". the rule runs on the query side only, the index
+# keeps every row, so the vocabulary counts and the earlier results stay comparable.
+ECHO = re.compile(r"""^['"]?([A-Za-z][A-Za-z' -]{1,30}?)['"]?[.,;:]\s+(.*)$""", re.S)
+POINTER = re.compile(r"^(see|same as|same for|compare|compare with|altered form of|"
+                     r"alternate form of|alternative form of)\b", re.I)
+# an inflection or alternate-spelling pointer written with dotted abbreviations in front:
+# "imp. of Sit.", "Alt. of Hough", "a. & n. from Smoke.". the dots are what separate these
+# from a real definition that happens to contain "of", so that is what the pattern keys on.
+OF_POINTER = re.compile(r"^(?:[a-z]{1,6}\.\s*(?:&\s*)?){1,3}(?:of|from)\s+[^.]{1,40}\.?\s*$",
+                        re.I)
+# the same pointer words without the anchor, for the case where a fragment sits in front
+POINTER_FREE = re.compile(r"\b(see also|see|same as|same for|compare with)\b", re.I)
+
+
+def without_echo(word, defn):
+    """'Rime. See Rhyme.' -> 'See Rhyme.'. only strips it when the front piece really is
+    the headword, so an ordinary definition that starts with a short word is untouched."""
+    d = str(defn).strip()
+    w = re.sub(r"[^a-z]", "", str(word).lower())
+    if not w:
+        return d
+    m = ECHO.match(d)
+    if m and re.sub(r"[^a-z]", "", m.group(1).lower()) == w:
+        return m.group(2).strip()
+    return d
+
+
+STOP = {"a", "an", "the", "of", "to", "in", "on", "for", "and", "or", "this", "that",
+        "same", "as", "at", "with", "be", "is", "it", "its", "see", "also", "use"}
+
+
+def is_pointer_stub(word, defn):
+    """true when the definition carries no description of its own, only a direction to
+    look somewhere else. three shapes show up in this file: a bare pointer at the start
+    ("see Plummet"), an inflection pointer written as a dotted abbreviation
+    ("imp. of Sit."), and a pointer with a fragment in front of it ("Rhyme. See Rhyme."
+    and "The capuchin. See Capuchin  3 (a)."). the third one is the careful case, so the
+    piece in front is only allowed one content word, otherwise a real definition that
+    happens to end with "see also" gets taken for a stub."""
+    d = without_echo(word, defn)
+    if POINTER.match(d) or OF_POINTER.match(d):
+        return True
+    m = POINTER_FREE.search(d)
+    if not m:
+        return False
+    pre = [t for t in tokens(d[:m.start()]) if t not in STOP]
+    post = tokens(re.sub(r"\(.*?\)|\d+", " ", d[m.start():]))
+    return len(pre) <= 1 and len(post) <= 6
+
 # trailing inflections we strip off the headword before matching it inside its own
 # definition. "Abolishment" has to catch "abolishing", otherwise the leak is
 # counted as clean when it is only spelled differently.
@@ -102,6 +155,11 @@ def load(path=None, clean=True):
         df["count"] = 0.0
 
     meta = {"csv": path, "rows_raw": n_raw}
+    # how many rows in the file are a bare pointer to another entry. CROSSREF above only
+    # looks at the start of the definition, so this counts a wider pattern than the one
+    # that is applied. the gap between the two numbers is what the anchored rule misses.
+    stub_all = np.array([is_pointer_stub(a, b) for a, b in zip(df["word"], df["definition"])])
+    meta["rows_pointer_stub"] = int(stub_all.sum())
     if clean:
         self_hit = np.array([contains_headword(a, b)
                              for a, b in zip(df["word"], df["definition"])])
@@ -139,10 +197,17 @@ def load(path=None, clean=True):
                           for a, b in zip(df["word"], df["definition"])])
         n_self = int((~keep).sum())
         df = df[keep].copy()
+        # pointers still sitting in the index. CROSSREF only matches at the start of a
+        # definition, so this is the part of the file that the anchored rule leaves in.
+        # they stay, an index entry does no harm and the query rule above is what matters,
+        # but the number is reported so the difference is visible instead of assumed.
+        n_stub = int(sum(is_pointer_stub(a, b)
+                         for a, b in zip(df["word"], df["definition"])))
         meta.update(rows_dropped_bad_def=n_bad,
                     rows_dropped_crossref=n_cross,
                     rows_dropped_dupes=n_dupes,
-                    rows_dropped_self_ref=n_self)
+                    rows_dropped_self_ref=n_self,
+                    rows_pointer_stub_in_index=n_stub)
 
     df = df.reset_index(drop=True)
     words = np.array(sorted(df["word"].unique()))
@@ -186,24 +251,84 @@ def make_word_split(df, ratios=(0.8, 0.1, 0.1), seed=SEED):
     return w[:a], w[a:b], w[b:]
 
 
-def pick_queries(df, test_wids, n=N_QUERIES, min_toks=MIN_QUERY_TOKENS, seed=SEED,
-                 min_senses=MIN_QUERY_SENSES):
-    """the fixed 500 queries as row indices into df, sorted, so they can be
-    committed as a text file and everyone scores on the same set.
-    min_senses keeps only words with at least two rows. under leave_one_out a
-    single sense word loses its only row, so the answer is gone and no model can be
-    scored on it at all. that made 42.6% of the earlier query set dead weight."""
+def query_pool(df, test_wids, min_toks=MIN_QUERY_TOKENS, min_senses=MIN_QUERY_SENSES):
+    """every row that is allowed to be a query, as row indices. pick_queries draws from
+    this. the rules here are unchanged from the run that produced the committed 500, so
+    that draw reproduces exactly. pointer stubs are handled after the draw and not here,
+    because shrinking the pool would re-roll all 500 instead of the few bad slots."""
     cand = df[df["wid"].isin(set(test_wids.tolist())) & (df["ntok"] >= min_toks)]
     if min_senses > 1:
         # counted over the whole cleaned corpus, not over the candidate rows. the
         # sibling sense only has to be in the index, it does not have to be long
         sizes = df.groupby("wid").size()
         cand = cand[cand["wid"].isin(set(sizes[sizes >= min_senses].index))]
-    idx = cand.index.to_numpy()
+    return cand.index.to_numpy()
+
+
+def is_stub(df, row):
+    """the query side test. word and definition come from the frame so every caller
+    uses the same judgement as the counts in the manifest."""
+    return is_pointer_stub(df.at[int(row), "word"], df.at[int(row), "definition"])
+
+
+def pick_queries(df, test_wids, n=N_QUERIES, min_toks=MIN_QUERY_TOKENS, seed=SEED,
+                 min_senses=MIN_QUERY_SENSES, force_draw=False):
+    """the fixed 500 queries as row indices into df, sorted, so they can be
+    committed as a text file and everyone scores on the same set.
+    min_senses keeps only words with at least two rows. under leave_one_out a
+    single sense word loses its only row, so the answer is gone and no model can be
+    scored on it at all. that made 42.6% of the earlier query set dead weight.
+
+    only the three rows named in the task are replaced. the rest of the original draw is
+    left alone, even if the wider detector recognizes another pointer-shaped entry. the
+    replacement rows come from the same candidate pool, using the next draw from the
+    same seeded random stream and skipping other detected stubs. once the query ID file
+    exists, normal model runs use it instead of drawing again. force_draw is for the split
+    script to check that the frozen file still matches this version of the corpus."""
+    split_dir = os.environ.get("REXDICT_SPLITS", "splits")
+    frozen_path = os.path.join(split_dir, "test_query_ids.txt")
+    fixed_rules = (len(df) > N_QUERIES and n == N_QUERIES and
+                   min_toks == MIN_QUERY_TOKENS and min_senses == MIN_QUERY_SENSES and
+                   seed == SEED)
+    if fixed_rules and not force_draw and os.path.isfile(frozen_path):
+        try:
+            frozen = np.array([int(x) for x in open(frozen_path).read().split()], dtype=np.int64)
+        except ValueError as e:
+            raise SystemExit("bad query ID in %s: %s" % (frozen_path, e))
+        if len(frozen) != n or len(np.unique(frozen)) != n:
+            raise SystemExit("%s must contain exactly %d distinct row IDs" % (frozen_path, n))
+        pool = set(query_pool(df, test_wids, min_toks, min_senses).tolist())
+        if not set(frozen.tolist()).issubset(pool):
+            raise SystemExit("frozen query IDs do not match the current query pool; "
+                             "do not redraw the 500 silently")
+        named_bad = {"sate", "rime", "weeper"}
+        if any(str(df.at[int(i), "word"]).strip().lower() in named_bad and is_stub(df, i)
+               for i in frozen):
+            raise SystemExit("frozen file still contains one of the three named bad queries")
+        print("using frozen query IDs from %s" % frozen_path)
+        return np.sort(frozen)
+
+    idx = query_pool(df, test_wids, min_toks, min_senses)
     if len(idx) <= n:
         return idx
     rng = np.random.default_rng(seed)
-    return np.sort(rng.choice(idx, size=n, replace=False))
+    drawn = rng.choice(idx, size=n, replace=False)
+    named_bad = {"sate", "rime", "weeper"}
+    bad = [int(i) for i in drawn
+           if str(df.at[int(i), "word"]).strip().lower() in named_bad and is_stub(df, i)]
+    if not bad:
+        return np.sort(drawn)
+    used = set(int(i) for i in drawn)
+    pool = np.array([int(i) for i in idx
+                     if int(i) not in used and not is_stub(df, i)], dtype=np.int64)
+    extra = rng.choice(pool, size=len(bad), replace=False)
+    names = ", ".join(str(df.at[i, "word"]) for i in bad)
+    print("query set: %d named bad rows of %d (%s), swapped for %d rows from the same "
+          "seeded pool, %d queries unchanged"
+          % (len(bad), n, names, len(extra), n - len(bad)))
+    return np.sort(np.array(sorted((used - set(bad)) | set(int(i) for i in extra))))
+
+
 
 
 def evaluate(ranked, df, qidx, mode="strict"):

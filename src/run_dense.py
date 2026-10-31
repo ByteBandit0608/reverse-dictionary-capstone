@@ -1,18 +1,20 @@
-"""pretrained embedding models, no fine tuning. python src/run_dense.py
-writes results/embeddings.md and .json
-one row per model, same two protocols as run_baselines.py so the tables sit next to
-each other. three pretrained models compared as they are, nothing trained and no
-reranker on top, this is the comparison step before any fine tuning.
+"""pretrained embedding models, nothing fine tuned. python src/run_dense.py
+writes results/embeddings.md and .json, one row per model.
 
-or the default pair in model_list(). to add a model put its sentence-transformers
-id on a line of models.txt in the repo root and rerun, the script picks it up and
-appends a row instead of overwriting the file.
-in models.txt and rerun, the script will pick it up.
+the two protocols are the ones in run_baselines.py so the tables sit next to each
+other. in_dictionary keeps the query's own row in the index, leave_one_out removes it.
+the models are compared as they come, no training and no reranker, because this is the
+step before deciding whether either is worth doing.
 
-on kaggle set the accelerator to GPU and turn internet on, sentence-transformers
-downloads the weights the first time. encoding 170k definitions is about 3 minutes on a
-P100 for MiniLM and 10 for MPNet. the vectors are cached in results as .npy, which is
-gitignored, so a rerun does not re-encode.
+models come from models.txt in the repo root, one sentence-transformers id per line, or
+from the default pair if that file is missing. a run appends to results/embeddings.json
+instead of replacing it, so the person who runs the second model does not erase the row
+the first one wrote.
+
+on kaggle set the accelerator to GPU and turn internet on, the weights download the
+first time. the vectors are cached as .npy in results, which is gitignored, so a rerun
+does not encode again. encoding 135,907 definitions on a T4 took 66s for MiniLM and
+164s for MPNet.
 """
 import os
 import re
@@ -47,14 +49,22 @@ def tag(name):
 
 
 def failures_csv(model_tag, df, qidx, ranked, gold):
-    """same columns as the baselines failure file, so error_analysis.py can compare which
-    queries each method misses without having to know anything about this one."""
+    """same columns and same rank rule as the bm25 file in run_baselines.py, so
+    error_analysis.py can read either one without knowing which is which.
+
+    ranked holds row numbers and gold holds word numbers. those are different id spaces
+    because a word can have more than one row, so they are only comparable after
+    rows_to_words, which is the map the metrics use. comparing them directly found no
+    hit for any query and wrote all 500 rows as misses.
+    """
     import pandas as pd
     n_rows = df.groupby("wid").size()
+    words = rows_to_words(df, ranked)
+    gold = np.asarray(gold)
     out = []
     for i, qi in enumerate(qidx):
-        hit = np.where(ranked[i] == gold[i])[0]
-        rank = int(hit[0]) + 1 if len(hit) else -1
+        hit = words[i] == gold[i]
+        rank = int(np.where(hit)[0][0]) + 1 if hit.any() else -1
         if rank == 1:
             continue
         tops = [df.at[int(ranked[i, j]), "word"] if ranked[i, j] >= 0 else "-"
@@ -68,6 +78,12 @@ def failures_csv(model_tag, df, qidx, ranked, gold):
                         top1=tops[0], top2=tops[1], top3=tops[2]))
     pd.DataFrame(out).to_csv(os.path.join(OUTDIR, "failures_%s_leave_one_out.csv" % model_tag),
                              index=False)
+    # the check from next_week_goals.md, done here so the file cannot disagree with the
+    # table again: a query is missing from this file exactly when it was a hit at 1.
+    at1 = int((words[:, 0] == gold).sum())
+    ok = "ok" if len(out) + at1 == len(qidx) else "MISMATCH"
+    print("      failures written: %d of %d queries, %d hit at rank 1, %d + %d = %d  %s"
+          % (len(out), len(qidx), at1, len(out), at1, len(qidx), ok))
     return len(out)
 
 
