@@ -4,6 +4,8 @@ from src/run_dense.py. 500 fixed queries, cleaned corpus of 135,907 rows over 95
 
 | model | dim | protocol | R@1 | R@10 | R@100 | medrank | R@1 tol | own row at rank 1 |
 |---|---|---|---|---|---|---|---|---|
+| all_minilm_l6_v2 | 384 | in_dictionary | 0.996 | 1.000 | 1.000 | 1 | 1.000 | 99.6% |
+| all_minilm_l6_v2 | 384 | leave_one_out | 0.044 | 0.164 | 0.380 | 290 | 0.052 | 0.0% |
 | all_mpnet_base_v2 | 768 | in_dictionary | 0.992 | 1.000 | 1.000 | 1 | 1.000 | 99.2% |
 | all_mpnet_base_v2 | 768 | leave_one_out | 0.050 | 0.170 | 0.394 | 319 | 0.060 | 0.0% |
 

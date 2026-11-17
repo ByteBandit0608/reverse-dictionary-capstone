@@ -5,6 +5,7 @@
   "rows_raw": 176009
  },
  "models": [
+  "sentence-transformers/all-MiniLM-L6-v2",
   "sentence-transformers/all-mpnet-base-v2"
  ],
  "n_queries": 500,
@@ -48,6 +49,38 @@
  },
  "rows": [
   {
+   "dim": 384,
+   "median_rank": 1,
+   "model": "sentence-transformers/all-MiniLM-L6-v2",
+   "pct_not_in_top1000": 0.0,
+   "pct_self_row_at_1": 99.6,
+   "protocol": "in_dictionary",
+   "recall@1": 0.996,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "recall_at_100_tolerant": 1.0,
+   "recall_at_10_tolerant": 1.0,
+   "recall_at_1_tolerant": 1.0,
+   "secs": 340.6,
+   "short": "all_minilm_l6_v2"
+  },
+  {
+   "dim": 384,
+   "median_rank": 290,
+   "model": "sentence-transformers/all-MiniLM-L6-v2",
+   "pct_not_in_top1000": 39.0,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "leave_one_out",
+   "recall@1": 0.044,
+   "recall@10": 0.164,
+   "recall@100": 0.38,
+   "recall_at_100_tolerant": 0.388,
+   "recall_at_10_tolerant": 0.172,
+   "recall_at_1_tolerant": 0.052,
+   "secs": 341.9,
+   "short": "all_minilm_l6_v2"
+  },
+  {
    "dim": 768,
    "median_rank": 1,
    "model": "sentence-transformers/all-mpnet-base-v2",
@@ -81,6 +114,24 @@
   }
  ],
  "table": [
+  {
+   "median_rank": 1,
+   "method": "all_minilm_l6_v2",
+   "n_queries": 500,
+   "protocol": "in_dictionary",
+   "recall@1": 0.996,
+   "recall@10": 1.0,
+   "recall@100": 1.0
+  },
+  {
+   "median_rank": 290,
+   "method": "all_minilm_l6_v2",
+   "n_queries": 500,
+   "protocol": "leave_one_out",
+   "recall@1": 0.044,
+   "recall@10": 0.164,
+   "recall@100": 0.38
+  },
   {
    "median_rank": 1,
    "method": "all_mpnet_base_v2",
