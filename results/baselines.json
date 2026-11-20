@@ -4,15 +4,15 @@
    "strict": {
     "median_rank": 1,
     "pct_not_in_top1000": 0.0,
-    "pct_self_row_at_1": 99.0,
-    "recall@1": 0.99,
+    "pct_self_row_at_1": 99.2,
+    "recall@1": 0.992,
     "recall@10": 1.0,
     "recall@100": 1.0
    },
    "tolerant": {
     "median_rank": 1,
     "pct_not_in_top1000": 0.0,
-    "pct_self_row_at_1": 99.0,
+    "pct_self_row_at_1": 99.2,
     "recall@1": 0.996,
     "recall@10": 1.0,
     "recall@100": 1.0
@@ -23,21 +23,21 @@
     "median_rank": 945,
     "pct_not_in_top1000": 49.4,
     "pct_self_row_at_1": 0.0,
-    "recall@1": 0.046,
-    "recall@10": 0.152,
-    "recall@100": 0.322
+    "recall@1": 0.044,
+    "recall@10": 0.148,
+    "recall@100": 0.32
    },
    "tolerant": {
-    "median_rank": 841,
+    "median_rank": 855,
     "pct_not_in_top1000": 48.8,
     "pct_self_row_at_1": 0.0,
-    "recall@1": 0.056,
-    "recall@10": 0.16,
-    "recall@100": 0.33
+    "recall@1": 0.052,
+    "recall@10": 0.156,
+    "recall@100": 0.328
    }
   }
  },
- "ceiling_strict_top1": 0.995,
+ "ceiling_strict_top1": 0.996,
  "meta": {
   "csv": "data/OPTED-Dictionary.csv",
   "max_tie": 9,
@@ -62,12 +62,14 @@
   "rows_named_in_word": 207,
   "rows_named_word_exact": 207,
   "rows_per_word": 1.426,
+  "rows_pointer_stub": 10368,
+  "rows_pointer_stub_in_index": 4478,
   "rows_raw": 176009
  },
- "n_failures": 477,
+ "n_failures": 478,
  "n_queries": 500,
  "pct_queries_unreachable_without_self_row": 0.0,
- "pct_queries_with_tie": 1.0,
+ "pct_queries_with_tie": 0.8,
  "pct_rows_tied_3_tokens_or_more": 1.2,
  "pct_rows_tied_under_3_tokens": 42.9,
  "random": {
@@ -90,15 +92,15 @@
    }
   }
  },
- "runtime_sec": 30.8,
+ "runtime_sec": 68.4,
  "table": [
   {
    "median_rank": 1,
    "method": "bm25",
    "pct_not_in_top1000": 0.0,
-   "pct_self_row_at_1": 99.0,
+   "pct_self_row_at_1": 99.2,
    "protocol": "in_dictionary",
-   "recall@1": 0.99,
+   "recall@1": 0.992,
    "recall@10": 1.0,
    "recall@100": 1.0,
    "recall_at_100_tolerant": 1.0,
@@ -111,20 +113,20 @@
    "pct_not_in_top1000": 49.4,
    "pct_self_row_at_1": 0.0,
    "protocol": "leave_one_out",
-   "recall@1": 0.046,
-   "recall@10": 0.152,
-   "recall@100": 0.322,
-   "recall_at_100_tolerant": 0.33,
-   "recall_at_10_tolerant": 0.16,
-   "recall_at_1_tolerant": 0.056
+   "recall@1": 0.044,
+   "recall@10": 0.148,
+   "recall@100": 0.32,
+   "recall_at_100_tolerant": 0.328,
+   "recall_at_10_tolerant": 0.156,
+   "recall_at_1_tolerant": 0.052
   },
   {
    "median_rank": 1,
    "method": "tfidf",
    "pct_not_in_top1000": 0.0,
-   "pct_self_row_at_1": 99.2,
+   "pct_self_row_at_1": 99.4,
    "protocol": "in_dictionary",
-   "recall@1": 0.992,
+   "recall@1": 0.994,
    "recall@10": 1.0,
    "recall@100": 1.0,
    "recall_at_100_tolerant": 1.0,
@@ -132,17 +134,17 @@
    "recall_at_1_tolerant": 0.998
   },
   {
-   "median_rank": 884,
+   "median_rank": 964,
    "method": "tfidf",
-   "pct_not_in_top1000": 49.6,
+   "pct_not_in_top1000": 50.0,
    "pct_self_row_at_1": 0.0,
    "protocol": "leave_one_out",
-   "recall@1": 0.048,
-   "recall@10": 0.162,
-   "recall@100": 0.35,
-   "recall_at_100_tolerant": 0.358,
-   "recall_at_10_tolerant": 0.17,
-   "recall_at_1_tolerant": 0.058
+   "recall@1": 0.046,
+   "recall@10": 0.158,
+   "recall@100": 0.348,
+   "recall_at_100_tolerant": 0.356,
+   "recall_at_10_tolerant": 0.166,
+   "recall_at_1_tolerant": 0.054
   },
   {
    "median_rank": 1000,
@@ -176,15 +178,15 @@
    "strict": {
     "median_rank": 1,
     "pct_not_in_top1000": 0.0,
-    "pct_self_row_at_1": 99.2,
-    "recall@1": 0.992,
+    "pct_self_row_at_1": 99.4,
+    "recall@1": 0.994,
     "recall@10": 1.0,
     "recall@100": 1.0
    },
    "tolerant": {
     "median_rank": 1,
     "pct_not_in_top1000": 0.0,
-    "pct_self_row_at_1": 99.2,
+    "pct_self_row_at_1": 99.4,
     "recall@1": 0.998,
     "recall@10": 1.0,
     "recall@100": 1.0
@@ -192,20 +194,20 @@
   },
   "leave_one_out": {
    "strict": {
-    "median_rank": 884,
-    "pct_not_in_top1000": 49.6,
+    "median_rank": 964,
+    "pct_not_in_top1000": 50.0,
     "pct_self_row_at_1": 0.0,
-    "recall@1": 0.048,
-    "recall@10": 0.162,
-    "recall@100": 0.35
+    "recall@1": 0.046,
+    "recall@10": 0.158,
+    "recall@100": 0.348
    },
    "tolerant": {
-    "median_rank": 758,
-    "pct_not_in_top1000": 49.0,
+    "median_rank": 824,
+    "pct_not_in_top1000": 49.2,
     "pct_self_row_at_1": 0.0,
-    "recall@1": 0.058,
-    "recall@10": 0.17,
-    "recall@100": 0.358
+    "recall@1": 0.054,
+    "recall@10": 0.166,
+    "recall@100": 0.356
    }
   }
  },

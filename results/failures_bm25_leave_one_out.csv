@@ -78,6 +78,7 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 20118,Charity,Whatever is bestowed gratuitously on the needy or suffering for their relief; alms; any act of kindness.,576,5,1,Respiration,Confessorship,Expiation
 20122,Chark,To burn to a coal; to char.,-1,2,1,Coal,Charred,Charring
 20184,Chase,That which is pursued or hunted.,-1,12,1,Trancscendent,Birth,Dispensation
+20186,Chase,A division of the floor of a gallery  marked by a figure or otherwise; the spot where a ball falls and between which and the dedans the adversary must drive his ball in order to gain a point.,-1,12,1,Sill,Antanagoge,Bandy
 21536,Circumcision,The Jews  as a circumcised people.,-1,3,1,Uncircumcision,Unforeskinned,Gentile
 21841,Clamp,A mass of bricks heaped up to be burned; or of ore for roasting  or of coal for coking.,-1,10,1,Acervative,Hudge,Win
 21934,Class,A number of students in a school or college  of the same standing or pursuing the same studies.,-1,4,1,Classmate,Schoolfellow,Alumna
@@ -117,7 +118,7 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 30649,Deal,To divide; to separate in portions; hence  to give in portions; to distribute; to bestow successively; -- sometimes with out.,27,6,1,Parcel,Share,Shiff
 31356,Defecation,The act of separating from impurities  as lees or dregs; purification.,587,2,1,Defecate,Addle,Grout
 31525,Defoul,To tread down.,-1,2,1,Fortread,Trail,Waddle
-31828,Deliver,To discover; to show.,773,7,1,Discoure,Indicate,Prediscover
+31828,Deliver,To discover; to show.,778,7,1,Discoure,Indicate,Prediscover
 32061,Demonize,To convert into a demon; to infuse the principles or fury of a demon into.,59,2,1,Nominalize,Lignify,Adipocerate
 32422,Deplete,To reduce by destroying or consuming the vital powers of; to exhaust  as a country of its strength or resources a treasury of money etc.,946,2,1,Adynamic,Famish,Adynamia
 32588,Deprivation,The state of being deprived; privation; loss; want; bereavement.,-1,3,1,Orbation,Viduation,Miss
@@ -212,13 +213,14 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 56431,Heteronomy,Subordination or subjection to the law of another; political subjection of a community or state; -- opposed to autonomy.,-1,2,1,Autocracy,Liberty,Passion
 56941,Hitherto,To this place; to a prescribed limit.,160,2,1,Hereabouts,Hence,Hitherward
 56945,Hive,A place swarming with busy occupants; a crowd.,-1,3,1,Displace,Busied,Busily
-57027,Hock,Alt. of Hough,-1,2,1,Hockle,Hamstring,Adunc
+57027,Hock,Alt. of Hough,-1,2,1,Hockle,Hamstring,Abannation
 57030,Hough,The popliteal space; the ham.,-1,5,1,Ham,Poplitic,Haitic
 57069,Hog,A rough  flat scrubbing broom for scrubbing a ship's bottom under water.,-1,5,1,Graving,Greave,Broomy
 57906,Hough,To cut with a hoe.,6,5,1,Prong-hoe,Sarcle,Scuffle
 58001,Howadji,A merchant; -- so called in the East because merchants were formerly the chief travelers.,-1,2,1,Syringa,Carpetbag,Ostmen
 58270,Hundreder,A person competent to serve on a jury  in an action for land in the hundred to which he belongs.,104,3,1,Admission,Specialty,Mascotte
 58271,Hundreder,One who has the jurisdiction of a hundred; and sometimes  a bailiff of a hundred.,276,3,1,Bailiwick,Admiralty,Comer
+58707,Hymen,A fold of muscous membrane often found at the orifice of the vagina; the vaginal membrane.,-1,3,1,Supravaginal,Duplicature,Pessary
 58708,Hymen,A fabulous deity; according to some  the son of Apollo and Urania according to others of Bacchus and Venus. He was the god of marriage and presided over nuptial solemnities.,256,3,1,Water god,Demigod,Wedding
 58709,Hymen,Marriage; union as if by marriage.,-1,3,1,Match,Wed,Matrimony
 59424,Illapse,A gliding in; an immisson or entrance of one thing into another; also  a sudden descent or attack.,-1,2,1,Draught,Alert,Illiquation
@@ -326,7 +328,7 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 86494,Pea,The sliding weight on a steelyard.,-1,3,1,Scalebeam,Rider,Trones
 86624,Pectinated,Resembling the teeth of a comb.,-1,2,1,Pectinal,Pectinal,Pecten
 86781,Peduncle,A sort of stem by which certain shells and barnacles are attached to other objects. See Illust. of Barnacle.,-1,2,1,Hydrorhiza,Footstalk,Pedicel
-87897,Personate,To celebrate loudly; to extol; to praise.,-1,5,1,Laud,Kudos,Carol
+87897,Personate,To celebrate loudly; to extol; to praise.,834,5,1,Laud,Kudos,Carol
 88104,Petal,One of the expanded ambulacra which form a rosette on the black of certain Echini.,-1,2,1,Ambulacriform,Miliary,Bivium
 89229,Pigment,Any one of the colored substances found in animal and vegetable tissues and fluids  as bilirubin urobilin chlorophyll etc.,-1,3,1,Hydrobilirubin,Manure,Physiologist
 89495,Pinion,To bind or confine the wings of; to confine by binding the wings.,2,9,1,Astrict,Pinion,Shackle
@@ -350,7 +352,7 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 95044,Prussian,A native or inhabitant of Prussia.,133,2,1,Belgian,Biscayan,Californian
 95441,Pull,To draw  or attempt to draw toward one; to draw forcibly.,106,4,1,Snuff,Suck,Endeavorer
 95564,Puncheon,A short  upright piece of timber in framing; a short post; an intermediate stud.,-1,3,1,Quarter,Mullion,Standard
-96251,Quad,Alt. of Quade,-1,3,1,Adunc,Adversifoliate,Advertence
+96251,Quad,Alt. of Quade,-1,3,1,Aaronic,Abatis,Abaxial
 96500,Quarter,The fourth of a hundred-weight  being 25 or 28 pounds according as the hundredweight is reckoned at 100 or 112 pounds.,616,14,1,Cental,Quintal,Candy
 96695,Questionary,Inquiring; asking questions; testing.,-1,2,1,Inquiry,Inquisitor,Interrogative
 96727,Quick,Characterized by life or liveliness; animated; sprightly; agile; brisk; ready.,-1,6,1,Lifesome,Alive,Pert
@@ -381,7 +383,6 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 103839,Sadden,To render heavy or cohesive.,883,5,1,Dull,Spice,Defer
 104286,Sanctification,the act of God's grace by which the affections of men are purified  or alienated from sin and the world and exalted to a supreme love to God; also the state of being thus purified or sanctified.,10,3,1,Sublimated,Alienation,Nonalienation
 104438,Sap,To subvert by digging or wearing away; to mine; to undermine; to destroy the foundation of.,301,6,1,Raze,Overturn,Outwear
-104629,Sate,imp. of Sit.,4,3,2,Sat,Seten,Sat
 105419,Scion,A piece of a slender branch or twig cut for grafting.,-1,2,1,Withe,Yard,Ris
 105424,Sciot,A native or inhabitant of Scio.,138,2,1,Belgian,Biscayan,Californian
 105486,Sclerotic,Pertaining to  or designating an acid obtained from ergot or the sclerotium of a fungus growing on rye.,-1,3,1,Ulmic,Noropianic,Ergotism
@@ -414,6 +415,7 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 116427,Stretcher,A piece of timber used in building.,-1,10,1,Sprag,Board,Skid
 116745,Stub,A pen with a short  blunt nib.,-1,4,1,Neb,Nib,Nebbed
 117081,Subcorneous,Situated under a horny part or layer.,38,2,1,Submucous,Subserous,Suburethral
+117264,Sublime,To exalt; to heighten; to improve; to purify.,78,11,1,Sublimate,Lift,Swell
 117939,Suit,The act of suing; the process by which one endeavors to gain an end or an object; an attempt to attain a certain result; pursuit; endeavor.,58,10,1,Assay,Stage,Try
 117949,Suitor,One who sues  petitions or entreats; a petitioner; an applicant.,7,4,1,Suppliant,Beggar,Suer
 118795,Surround,To inclose  as a body of troops between hostile forces so as to cut off means of communication or retreat; to invest as a city.,556,2,1,Intercept,Amputate,Prune
@@ -469,7 +471,6 @@ query_row,gold,definition,gold_rank,n_rows_for_gold,n_shared_def,top1,top2,top3
 132546,Water mole,The shrew mole. See under Shrew.,3,2,1,Sondeli,Platypus,Water mole
 132960,Weed,A garment; clothing; especially  an upper or outer garment.,-1,10,1,Coat,Over-garment,Overslop
 132964,Weed,Fig.: Something unprofitable or troublesome; anything useless.,393,10,1,Inutile,Frustraneous,Bootless
-132995,Weeper,The capuchin. See Capuchin  3 (a).,-1,3,1,Tomcod,Dart,Lentisk
 133432,Wherry,A long  narrow light boat sharp at both ends for fast rowing or sailing; esp. a racing boat rowed by one person with sculls.,-1,2,1,Whaleboat,Sculler,Clipper
 133504,Whimper,To utter in alow  whining tone.,8,2,1,Drawl,Whiningly,Cant
 133591,Whir,To hurry a long with a whizzing sound.,2,2,1,Whizzingly,Whir,Haste
