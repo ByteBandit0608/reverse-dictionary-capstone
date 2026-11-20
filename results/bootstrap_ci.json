@@ -1,0 +1,299 @@
+{
+ "B": 10000,
+ "methods": {
+  "all_minilm_l6_v2": {
+   "median_rank": {
+    "ci95": [
+     200.5,
+     442.5
+    ],
+    "value": 290.5
+   },
+   "recall@1": {
+    "ci95": [
+     0.026,
+     0.062
+    ],
+    "value": 0.044
+   },
+   "recall@10": {
+    "ci95": [
+     0.132,
+     0.198
+    ],
+    "value": 0.164
+   },
+   "recall@100": {
+    "ci95": [
+     0.338,
+     0.422
+    ],
+    "value": 0.38
+   }
+  },
+  "all_mpnet_base_v2": {
+   "median_rank": {
+    "ci95": [
+     214.0,
+     518.0
+    ],
+    "value": 335.5
+   },
+   "recall@1": {
+    "ci95": [
+     0.032,
+     0.07
+    ],
+    "value": 0.05
+   },
+   "recall@10": {
+    "ci95": [
+     0.136,
+     0.202
+    ],
+    "value": 0.168
+   },
+   "recall@100": {
+    "ci95": [
+     0.348,
+     0.436
+    ],
+    "value": 0.392
+   }
+  },
+  "bge_base_en_v1_5": {
+   "median_rank": {
+    "ci95": [
+     184.5,
+     545.0
+    ],
+    "value": 367.0
+   },
+   "recall@1": {
+    "ci95": [
+     0.022,
+     0.056
+    ],
+    "value": 0.038
+   },
+   "recall@10": {
+    "ci95": [
+     0.14,
+     0.206
+    ],
+    "value": 0.172
+   },
+   "recall@100": {
+    "ci95": [
+     0.34,
+     0.426
+    ],
+    "value": 0.382
+   }
+  },
+  "bm25": {
+   "median_rank": {
+    "ci95": [
+     509.0,
+     1000.0
+    ],
+    "value": 958.0
+   },
+   "recall@1": {
+    "ci95": [
+     0.026,
+     0.062
+    ],
+    "value": 0.044
+   },
+   "recall@10": {
+    "ci95": [
+     0.118,
+     0.18
+    ],
+    "value": 0.148
+   },
+   "recall@100": {
+    "ci95": [
+     0.28,
+     0.362
+    ],
+    "value": 0.32
+   }
+  },
+  "tfidf": {
+   "median_rank": {
+    "ci95": [
+     440.3,
+     1000.0
+    ],
+    "value": 912.5
+   },
+   "recall@1": {
+    "ci95": [
+     0.028,
+     0.066
+    ],
+    "value": 0.046
+   },
+   "recall@10": {
+    "ci95": [
+     0.126,
+     0.19
+    ],
+    "value": 0.158
+   },
+   "recall@100": {
+    "ci95": [
+     0.306,
+     0.39
+    ],
+    "value": 0.348
+   }
+  }
+ },
+ "mode": "strict",
+ "n_queries": 500,
+ "paired_vs_reference": {
+  "all_minilm_l6_v2": {
+   "median_rank": {
+    "ci95": [
+     -751.0,
+     -252.0
+    ],
+    "diff": -667.5,
+    "excludes_zero": true
+   },
+   "recall@1": {
+    "ci95": [
+     -0.02,
+     0.02
+    ],
+    "diff": 0.0,
+    "excludes_zero": false
+   },
+   "recall@10": {
+    "ci95": [
+     -0.016,
+     0.05
+    ],
+    "diff": 0.016,
+    "excludes_zero": false
+   },
+   "recall@100": {
+    "ci95": [
+     0.02,
+     0.102
+    ],
+    "diff": 0.06,
+    "excludes_zero": true
+   }
+  },
+  "all_mpnet_base_v2": {
+   "median_rank": {
+    "ci95": [
+     -741.5125,
+     -229.5
+    ],
+    "diff": -622.5,
+    "excludes_zero": true
+   },
+   "recall@1": {
+    "ci95": [
+     -0.014,
+     0.026
+    ],
+    "diff": 0.006,
+    "excludes_zero": false
+   },
+   "recall@10": {
+    "ci95": [
+     -0.014,
+     0.056
+    ],
+    "diff": 0.02,
+    "excludes_zero": false
+   },
+   "recall@100": {
+    "ci95": [
+     0.028,
+     0.114
+    ],
+    "diff": 0.072,
+    "excludes_zero": true
+   }
+  },
+  "bge_base_en_v1_5": {
+   "median_rank": {
+    "ci95": [
+     -767.0,
+     -204.4875
+    ],
+    "diff": -591.0,
+    "excludes_zero": true
+   },
+   "recall@1": {
+    "ci95": [
+     -0.024,
+     0.012
+    ],
+    "diff": -0.006,
+    "excludes_zero": false
+   },
+   "recall@10": {
+    "ci95": [
+     -0.008,
+     0.056
+    ],
+    "diff": 0.024,
+    "excludes_zero": false
+   },
+   "recall@100": {
+    "ci95": [
+     0.02,
+     0.102
+    ],
+    "diff": 0.062,
+    "excludes_zero": true
+   }
+  },
+  "tfidf": {
+   "median_rank": {
+    "ci95": [
+     -286.0,
+     119.025
+    ],
+    "diff": -45.5,
+    "excludes_zero": false
+   },
+   "recall@1": {
+    "ci95": [
+     -0.014,
+     0.018
+    ],
+    "diff": 0.002,
+    "excludes_zero": false
+   },
+   "recall@10": {
+    "ci95": [
+     -0.014,
+     0.034
+    ],
+    "diff": 0.01,
+    "excludes_zero": false
+   },
+   "recall@100": {
+    "ci95": [
+     0.01,
+     0.048
+    ],
+    "diff": 0.028,
+    "excludes_zero": true
+   }
+  }
+ },
+ "protocol": "leave_one_out",
+ "reference": "bm25",
+ "runtime_sec": 33.9,
+ "seed": 2026
+}

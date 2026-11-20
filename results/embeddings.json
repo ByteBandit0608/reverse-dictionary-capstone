@@ -5,6 +5,7 @@
   "rows_raw": 176009
  },
  "models": [
+  "BAAI/bge-base-en-v1.5",
   "sentence-transformers/all-MiniLM-L6-v2",
   "sentence-transformers/all-mpnet-base-v2"
  ],
@@ -14,8 +15,8 @@
    "in_dictionary": {
     "median_rank": 1,
     "pct_not_in_top1000": 0.0,
-    "pct_self_row_at_1": 99.0,
-    "recall@1": 0.99,
+    "pct_self_row_at_1": 99.2,
+    "recall@1": 0.992,
     "recall@10": 1.0,
     "recall@100": 1.0
    },
@@ -23,31 +24,63 @@
     "median_rank": 945,
     "pct_not_in_top1000": 49.4,
     "pct_self_row_at_1": 0.0,
-    "recall@1": 0.046,
-    "recall@10": 0.152,
-    "recall@100": 0.322
+    "recall@1": 0.044,
+    "recall@10": 0.148,
+    "recall@100": 0.32
    }
   },
   "tfidf": {
    "in_dictionary": {
     "median_rank": 1,
     "pct_not_in_top1000": 0.0,
-    "pct_self_row_at_1": 99.2,
-    "recall@1": 0.992,
+    "pct_self_row_at_1": 99.4,
+    "recall@1": 0.994,
     "recall@10": 1.0,
     "recall@100": 1.0
    },
    "leave_one_out": {
-    "median_rank": 884,
-    "pct_not_in_top1000": 49.6,
+    "median_rank": 964,
+    "pct_not_in_top1000": 50.0,
     "pct_self_row_at_1": 0.0,
-    "recall@1": 0.048,
-    "recall@10": 0.162,
-    "recall@100": 0.35
+    "recall@1": 0.046,
+    "recall@10": 0.158,
+    "recall@100": 0.348
    }
   }
  },
  "rows": [
+  {
+   "dim": 768,
+   "median_rank": 1,
+   "model": "BAAI/bge-base-en-v1.5",
+   "pct_not_in_top1000": 0.0,
+   "pct_self_row_at_1": 99.6,
+   "protocol": "in_dictionary",
+   "recall@1": 0.996,
+   "recall@10": 1.0,
+   "recall@100": 1.0,
+   "recall_at_100_tolerant": 1.0,
+   "recall_at_10_tolerant": 1.0,
+   "recall_at_1_tolerant": 1.0,
+   "secs": 201.6,
+   "short": "bge_base_en_v1_5"
+  },
+  {
+   "dim": 768,
+   "median_rank": 367,
+   "model": "BAAI/bge-base-en-v1.5",
+   "pct_not_in_top1000": 37.4,
+   "pct_self_row_at_1": 0.0,
+   "protocol": "leave_one_out",
+   "recall@1": 0.038,
+   "recall@10": 0.172,
+   "recall@100": 0.382,
+   "recall_at_100_tolerant": 0.39,
+   "recall_at_10_tolerant": 0.18,
+   "recall_at_1_tolerant": 0.046,
+   "secs": 203.7,
+   "short": "bge_base_en_v1_5"
+  },
   {
    "dim": 384,
    "median_rank": 1,
@@ -61,7 +94,7 @@
    "recall_at_100_tolerant": 1.0,
    "recall_at_10_tolerant": 1.0,
    "recall_at_1_tolerant": 1.0,
-   "secs": 340.6,
+   "secs": 35.9,
    "short": "all_minilm_l6_v2"
   },
   {
@@ -77,7 +110,7 @@
    "recall_at_100_tolerant": 0.388,
    "recall_at_10_tolerant": 0.172,
    "recall_at_1_tolerant": 0.052,
-   "secs": 341.9,
+   "secs": 37.4,
    "short": "all_minilm_l6_v2"
   },
   {
@@ -85,35 +118,53 @@
    "median_rank": 1,
    "model": "sentence-transformers/all-mpnet-base-v2",
    "pct_not_in_top1000": 0.0,
-   "pct_self_row_at_1": 99.2,
+   "pct_self_row_at_1": 99.4,
    "protocol": "in_dictionary",
-   "recall@1": 0.992,
+   "recall@1": 0.994,
    "recall@10": 1.0,
    "recall@100": 1.0,
    "recall_at_100_tolerant": 1.0,
    "recall_at_10_tolerant": 1.0,
    "recall_at_1_tolerant": 1.0,
-   "secs": 5.1,
+   "secs": 209.3,
    "short": "all_mpnet_base_v2"
   },
   {
    "dim": 768,
-   "median_rank": 319,
+   "median_rank": 335,
    "model": "sentence-transformers/all-mpnet-base-v2",
    "pct_not_in_top1000": 37.0,
    "pct_self_row_at_1": 0.0,
    "protocol": "leave_one_out",
    "recall@1": 0.05,
-   "recall@10": 0.17,
-   "recall@100": 0.394,
-   "recall_at_100_tolerant": 0.4,
-   "recall_at_10_tolerant": 0.18,
-   "recall_at_1_tolerant": 0.06,
-   "secs": 7.4,
+   "recall@10": 0.168,
+   "recall@100": 0.392,
+   "recall_at_100_tolerant": 0.398,
+   "recall_at_10_tolerant": 0.176,
+   "recall_at_1_tolerant": 0.058,
+   "secs": 211.3,
    "short": "all_mpnet_base_v2"
   }
  ],
  "table": [
+  {
+   "median_rank": 1,
+   "method": "bge_base_en_v1_5",
+   "n_queries": 500,
+   "protocol": "in_dictionary",
+   "recall@1": 0.996,
+   "recall@10": 1.0,
+   "recall@100": 1.0
+  },
+  {
+   "median_rank": 367,
+   "method": "bge_base_en_v1_5",
+   "n_queries": 500,
+   "protocol": "leave_one_out",
+   "recall@1": 0.038,
+   "recall@10": 0.172,
+   "recall@100": 0.382
+  },
   {
    "median_rank": 1,
    "method": "all_minilm_l6_v2",
@@ -137,18 +188,18 @@
    "method": "all_mpnet_base_v2",
    "n_queries": 500,
    "protocol": "in_dictionary",
-   "recall@1": 0.992,
+   "recall@1": 0.994,
    "recall@10": 1.0,
    "recall@100": 1.0
   },
   {
-   "median_rank": 319,
+   "median_rank": 335,
    "method": "all_mpnet_base_v2",
    "n_queries": 500,
    "protocol": "leave_one_out",
    "recall@1": 0.05,
-   "recall@10": 0.17,
-   "recall@100": 0.394
+   "recall@10": 0.168,
+   "recall@100": 0.392
   }
  ]
 }
