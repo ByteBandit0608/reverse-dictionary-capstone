@@ -1,21 +1,21 @@
 # failures, bm25 leave_one_out
 
-goes with results/baselines.md. 477 of 500 queries miss at rank 1 here.
+goes with results/baselines.md. 478 of 500 queries miss at rank 1 here.
 
 categories, from the script:
 
 - unreachable: 0
 - no lexical overlap: 244
-- outranked: 176
+- outranked: 178
 - right word, deep: 52
-- tied definition: 5
+- tied definition: 4
 
-two of these are properties of the file and not of the model. unreachable counts a query whose word had only the one row the protocol removes, it is 0 here, and the reason it is 0 is the rule that a query word keeps at least two rows. tied definition counts answers sharing their string with another word, 5 here, where rank 1 is a coin flip whatever the ranker is.
+two of these are properties of the file and not of the model. unreachable counts a query whose word had only the one row the protocol removes, it is 0 here, and the reason it is 0 is the rule that a query word keeps at least two rows. tied definition counts answers sharing their string with another word, 4 here, where rank 1 is a coin flip whatever the ranker is.
 
 three things the categories do not say on their own
 
 - 6.5% of these misses have a rank 1 that is a word the definition itself names as a synonym. so the model is often not lost, it returned a different dictionary word for the same thing and the strict metric calls it wrong. that is the same argument as the tolerant column, just counted on the failures.
-- 138 queries had the gold word inside the top 100 but not at rank 1, median rank 16. that is the pool a dense model or a reranker has to reorder, and it is why R@100 of 0.322 and R@1 of 0.046 are not the same statement.
+- 138 queries had the gold word inside the top 100 but not at rank 1, median rank 16. that is the pool a dense model or a reranker has to reorder, and it is why R@100 of 0.320 and R@1 of 0.044 are not the same statement.
 - on the misses the opening cue disagrees with the tag in the file for 2.5%, which is the same rule pos_roles.md uses, computed there over the whole query set and here over the failures only.
 
 phenomena, counted over the whole failure set instead of listed as examples
@@ -23,18 +23,20 @@ phenomena, counted over the whole failure set instead of listed as examples
 | what the model is actually missing | queries | mean tokens | mean rare terms |
 |---|---|---|---|
 | the dictionary words it up differently | 220 | 10.2 | 3% |
-| right word found, buried past the top 10 | 162 | 12.6 | 2% |
+| right word found, buried past the top 10 | 164 | 12.6 | 2% |
 | right word found, ranked just below | 47 | 16.1 | 2% |
+| long definition, several ideas at once | 19 | 31.2 | 4% |
 | returned a synonym the definition itself names | 19 | 14.0 | 5% |
-| long definition, several ideas at once | 18 | 30.8 | 4% |
-| rare or technical wording in the query | 6 | 3.5 | 75% |
-| structural, two words share the exact string | 5 | 4.6 | 20% |
+| rare or technical wording in the query | 5 | 3.2 | 70% |
+| structural, two words share the exact string | 4 | 5.0 | 25% |
 
 how much the misses overlap with the other methods, same 500 queries
 
-- all_mpnet_base_v2: 477 of its 500 misses are also bm25 misses, 95% of the union of the two sets. a high share means both methods go wrong on the same queries and a reranker over the two has little to add. a low one means they are looking at different things.
+- all_minilm_l6_v2: 464 of its 478 misses are also bm25 misses, 94% of the union of the two sets. a high share means both methods go wrong on the same queries and a reranker over the two has little to add. a low one means they are looking at different things.
+- all_mpnet_base_v2: 464 of its 475 misses are also bm25 misses, 95% of the union of the two sets. a high share means both methods go wrong on the same queries and a reranker over the two has little to add. a low one means they are looking at different things.
+- bge_base_en_v1_5: 469 of its 481 misses are also bm25 misses, 96% of the union of the two sets. a high share means both methods go wrong on the same queries and a reranker over the two has little to add. a low one means they are looking at different things.
 
-20 failures to read by hand, 5 from each category
+19 failures to read by hand, 5 from each category
 
 | query | gold | rank 1 | rank 2 | category | cue | gold pos | rank of gold | what happened |
 |---|---|---|---|---|---|---|---|---|
@@ -56,5 +58,4 @@ how much the misses overlap with the other methods, same 500 queries
 | The thread of a screw. | **Fillet** | Worm | Chase | tied definition | none | noun | not in top 100 |  |
 | One who harries. | **Harrower** | Harrier | Conferrer | tied definition | agent | noun | 412 |  |
 | One who speaks for another. | **Prolocutor** | Spokesman | Speaker | tied definition | agent | noun | not in top 100 |  |
-| imp. of Sit. | **Sate** | Sat | Seten | tied definition | none | missing | 4 |  |
 | The American night heron. See under Night. | **Squawk** | Qua-bird | Wapacut | tied definition | none | noun | not in top 100 |  |

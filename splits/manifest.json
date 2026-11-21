@@ -1,5 +1,5 @@
 {
- "ceiling_strict_top1": 0.995,
+ "ceiling_strict_top1": 0.996,
  "csv": "data/OPTED-Dictionary.csv",
  "max_definition_tie": 9,
  "max_tie": 9,
@@ -32,6 +32,8 @@
  "rows_named_in_word": 207,
  "rows_named_word_exact": 207,
  "rows_per_word": 1.426,
+ "rows_pointer_stub": 10368,
+ "rows_pointer_stub_in_index": 4478,
  "rows_raw": 176009,
  "rows_test": 13753,
  "rows_train": 108759,

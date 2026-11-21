@@ -282,14 +282,40 @@ def pick_queries(df, test_wids, n=N_QUERIES, min_toks=MIN_QUERY_TOKENS, seed=SEE
     only the three rows named in the task are replaced. the rest of the original draw is
     left alone, even if the wider detector recognizes another pointer-shaped entry. the
     replacement rows come from the same candidate pool, using the next draw from the
-    same seeded random stream and skipping other detected stubs. once the query ID file
-    exists, normal model runs use it instead of drawing again. force_draw is for the split
-    script to check that the frozen file still matches this version of the corpus."""
+    same seeded random stream and skipping other detected stubs. normal runs use the
+    frozen word and definition records when they exist, not a new draw. force_draw is for
+    the split script to check the first freeze against the seeded proposal."""
     split_dir = os.environ.get("REXDICT_SPLITS", "splits")
     frozen_path = os.path.join(split_dir, "test_query_ids.txt")
     fixed_rules = (len(df) > N_QUERIES and n == N_QUERIES and
                    min_toks == MIN_QUERY_TOKENS and min_senses == MIN_QUERY_SENSES and
                    seed == SEED)
+    records_path = os.path.join(split_dir, "test_query_records.csv")
+    if fixed_rules and not force_draw and os.path.isfile(records_path):
+        records = pd.read_csv(records_path, dtype=str, keep_default_na=False)
+        if not {"word", "definition"}.issubset(records.columns) or len(records) != n:
+            raise SystemExit("%s must contain %d frozen word/definition rows" % (records_path, n))
+        pair_to_rows = {}
+        for row, word, definition in zip(df.index, df["word"], df["definition"]):
+            pair_to_rows.setdefault((str(word), str(definition)), []).append(int(row))
+        mapped = []
+        for word, definition in zip(records["word"], records["definition"]):
+            hits = pair_to_rows.get((str(word), str(definition)), [])
+            if len(hits) != 1:
+                raise SystemExit("frozen query no longer maps uniquely: %s" % word)
+            mapped.append(hits[0])
+        if len(set(mapped)) != n:
+            raise SystemExit("frozen query records map to duplicate rows")
+        pool = set(query_pool(df, test_wids, min_toks, min_senses).tolist())
+        if not set(mapped).issubset(pool):
+            raise SystemExit("a frozen query is no longer eligible; do not silently replace it")
+        named_bad = {"sate", "rime", "weeper"}
+        if any(str(df.at[i, "word"]).strip().lower() in named_bad and is_stub(df, i)
+               for i in mapped):
+            raise SystemExit("frozen records still contain one of the three named bad queries")
+        print("using frozen query word/definition records (%d rows)" % n)
+        return np.sort(np.asarray(mapped, dtype=np.int64))
+
     if fixed_rules and not force_draw and os.path.isfile(frozen_path):
         try:
             frozen = np.array([int(x) for x in open(frozen_path).read().split()], dtype=np.int64)

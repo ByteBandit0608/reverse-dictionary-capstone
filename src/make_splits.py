@@ -1,6 +1,6 @@
 """by-word split + the fixed 500 queries, written to splits/
 python src/make_splits.py
-writes train_words.txt val_words.txt test_words.txt test_query_ids.txt manifest.json
+writes word splits, test_query_ids.txt, test_query_records.csv and manifest.json
 the id file is the point: it is what makes this week's baseline and the week 6 model
 comparable instead of two different numbers that happen to look alike.
 """
@@ -18,18 +18,19 @@ def main():
     df, meta = R.load()
     tr, va, te = R.make_word_split(df)
     prev = os.path.join(OUT, "test_query_ids.txt")
+    records_path = os.path.join(OUT, "test_query_records.csv")
     old = set()
     if os.path.exists(prev):
         old = {int(x) for x in open(prev).read().split()}
-    # Recreate the seeded proposal only to verify the frozen IDs. Do not replace an
-    # existing file with a new draw if anything has changed underneath it.
-    qidx = R.pick_queries(df, te, force_draw=True)
-    if old:
-        proposed = set(int(x) for x in qidx.tolist())
-        if old != proposed:
+    if os.path.isfile(records_path):
+        qidx = R.pick_queries(df, te)
+        prior_rows = old
+    else:
+        qidx = R.pick_queries(df, te, force_draw=True)
+        if old and old != set(int(x) for x in qidx.tolist()):
             raise SystemExit("frozen query IDs differ from the current corpus draw. "
                              "Stop here; do not overwrite the 500.")
-        qidx = pd.Series(sorted(old), dtype="int64").to_numpy()
+        prior_rows = old
     if len(qidx) < 25:
         raise SystemExit("only %d rows survive as queries. the cleaning rules are too "
                          "aggressive or the corpus is tiny, check rows_dropped_self_ref "
@@ -47,6 +48,9 @@ def main():
     dump("test_words.txt", te)
     pd.Series(qidx).to_csv(os.path.join(OUT, "test_query_ids.txt"),
                            index=False, header=False)
+    pd.DataFrame({"word": df.loc[qidx, "word"].to_numpy(),
+                  "definition": df.loc[qidx, "definition"].to_numpy()}).to_csv(
+                      records_path, index=False)
 
     def nrows(ids):
         return int(df["wid"].isin(set(ids.tolist())).sum())
@@ -81,19 +85,12 @@ def main():
     print("Strict Recall@1 cannot pass %.3f on this set without breaking those ties."
           % man["ceiling_strict_top1"])
 
-    # the freeze check: this set has to differ from the committed one only in the slots
-    # that were pointer stubs. anything else here means the draw moved and the 500 is
-    # no longer the one everyone scored on.
-    if old:
-        new = set(int(x) for x in qidx.tolist())
-        print("\nquery set against the committed splits file: %d kept, %d out, %d in"
-              % (len(old & new), len(old - new), len(new - old)))
-        for i in sorted(old - new):
-            print("  out  %-16s %s" % (df.at[i, "word"], df.at[i, "definition"]))
-        for i in sorted(new - old):
-            print("  in   %-16s %s" % (df.at[i, "word"], df.at[i, "definition"]))
-        if len(old & new) + len(new - old) != len(new):
-            print("  MISMATCH, the sizes do not add up")
+    if records_path and os.path.isfile(records_path):
+        new_rows = sorted(int(x) for x in qidx.tolist())
+        old_rows = sorted(prior_rows)
+        changed = sum(a != b for a, b in zip(old_rows, new_rows)) if old_rows else 0
+        print("\nfrozen word/definition records matched: %d; numeric row IDs changed: %d"
+              % (len(qidx), changed))
 
 
 if __name__ == "__main__":
