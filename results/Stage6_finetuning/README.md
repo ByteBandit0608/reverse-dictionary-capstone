@@ -22,3 +22,10 @@ task-specific MPNet fine-tuning for the Reverse Dictionary project.
 
 The fine-tuned model and large embedding matrices will be
 stored separately as large artifacts.
+
+## Stage 6: Fine-tuned MPNet Model and Embeddings
+
+The fine-tuned MPNet model and embedding matrices are available in our GitHub Release.
+
+[Download Stage 6 Assets – v1.0.0](https://github.com/ByteBandit0608/reverse-dictionary-capstone/releases/tag/v1.0.0)
+
