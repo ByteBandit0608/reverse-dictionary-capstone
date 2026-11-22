@@ -1,0 +1,38 @@
+{
+    "original_mpnet": {
+        "strict": {
+            "recall@1": 0.05,
+            "recall@10": 0.168,
+            "recall@100": 0.392,
+            "median_rank": 335,
+            "pct_not_in_top1000": 37.0,
+            "pct_self_row_at_1": 0.0
+        },
+        "tolerant": {
+            "recall@1": 0.058,
+            "recall@10": 0.176,
+            "recall@100": 0.398,
+            "median_rank": 287,
+            "pct_not_in_top1000": 36.6,
+            "pct_self_row_at_1": 0.0
+        }
+    },
+    "fine_tuned_mpnet": {
+        "strict": {
+            "recall@1": 0.058,
+            "recall@10": 0.21,
+            "recall@100": 0.418,
+            "median_rank": 250,
+            "pct_not_in_top1000": 35.4,
+            "pct_self_row_at_1": 0.0
+        },
+        "tolerant": {
+            "recall@1": 0.066,
+            "recall@10": 0.218,
+            "recall@100": 0.426,
+            "median_rank": 243,
+            "pct_not_in_top1000": 35.2,
+            "pct_self_row_at_1": 0.0
+        }
+    }
+}

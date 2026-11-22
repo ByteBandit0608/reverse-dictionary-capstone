@@ -1,0 +1,13 @@
+Evaluation,Metric,Original_MPNet,Fine_tuned_MPNet
+Strict,recall@1,0.05,0.058
+Strict,recall@10,0.168,0.21
+Strict,recall@100,0.392,0.418
+Strict,median_rank,335.0,250.0
+Strict,pct_not_in_top1000,37.0,35.4
+Strict,pct_self_row_at_1,0.0,0.0
+Tolerant,recall@1,0.058,0.066
+Tolerant,recall@10,0.176,0.218
+Tolerant,recall@100,0.398,0.426
+Tolerant,median_rank,287.0,243.0
+Tolerant,pct_not_in_top1000,36.6,35.2
+Tolerant,pct_self_row_at_1,0.0,0.0

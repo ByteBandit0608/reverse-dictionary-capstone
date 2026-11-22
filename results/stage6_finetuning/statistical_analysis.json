@@ -1,0 +1,18 @@
+{
+    "sign_test": {
+        "improved": 208,
+        "worsened": 156,
+        "unchanged": 136,
+        "p_value": 0.007430390029326179
+    },
+    "mcnemar_recall_10": {
+        "original_only": 31,
+        "fine_tuned_only": 52,
+        "p_value": 0.027534178012294533
+    },
+    "mcnemar_recall_100": {
+        "original_only": 46,
+        "fine_tuned_only": 59,
+        "p_value": 0.24143171756517778
+    }
+}
